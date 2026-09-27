@@ -44,7 +44,13 @@ Les calculs API sont stateless. Si FastAPI est arrêté, les calculs locaux de d
 
 ## Déploiement Vercel
 
-Le point d’entrée `main.py` sert l’API FastAPI et accroche le build React au CDN Vercel. `pyproject.toml` lance `npm ci && npm run build` ; les dépendances d’exécution sont listées à la racine dans `requirements.txt`. En production, les appels de calcul utilisent la même origine `/health`, `/compute/*` et `/exports/*`.
+Le frontend et l’API sont deux projets Vercel liés au même dépôt :
+
+- **Frontend `brokercontrol360`** : racine du dépôt, framework Vite, build `npm run build`.
+- **API `brokercontrol360-api`** : répertoire racine `backend/`, framework FastAPI.
+- Dans les variables d’environnement Production et Preview du frontend, définir `VITE_API_URL` sur l’URL HTTPS du projet API (par exemple `https://brokercontrol360-api.vercel.app`).
+
+L’API reste stateless ; les données métier continuent d’être conservées dans IndexedDB côté navigateur. Les règles CORS autorisent le domaine de production et les URLs Preview de ce frontend.
 
 ## Profils fictifs
 
@@ -115,4 +121,4 @@ json_demo_2026/         Historique 2026 démonstratif généré
 scripts/                Générateur et préparation des ressources locales
 ```
 
-Docker, CI/CD, cloud, persistance métier serveur et intégration de marché réel sont hors périmètre.
+Docker, CI/CD, persistance métier serveur et intégration de marché réel restent hors périmètre.
