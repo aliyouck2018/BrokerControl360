@@ -123,14 +123,28 @@ export async function ensureMarketData() {
 }
 
 export async function ensureDemoHistory() {
-  if (await db.marketQuotes.where('status').equals('SIMULATED').count() > 0) return
-  const response = await fetch('/history.json')
-  if (!response.ok) throw new Error('L’historique de démonstration est introuvable. Exécutez scripts/generate_demo_history.py.')
-  const history = await response.json() as { metadata: { seed: number; counts: Record<string, number> }; marketIndex: Record<string, unknown>[]; quotes: Record<string, unknown>[] }
+  const [response, csvResponse] = await Promise.all([fetch('/history.json'), fetch('/history.csv')])
+  if (!response.ok || !csvResponse.ok) throw new Error('L’historique JSON/CSV de démonstration est introuvable. Exécutez scripts/generate_demo_history.py.')
+  const history = await response.json() as { metadata: { seed: number; counts: Record<string, number> }; marketIndex: Record<string, unknown>[] }
+  const csvRows = parseCsv(await csvResponse.text())
+  const columns = (csvRows.shift() ?? []).map((column, index) => index === 0 ? column.replace(/^\uFEFF/, '') : column)
+  const historyQuotes = csvRows.map((row) => Object.fromEntries(columns.map((column, index) => [column, row[index] ?? ''])))
+    .map((quote) => ({
+      ...quote,
+      isin: String(quote.isin),
+      date: String(quote.date),
+      price: Number(quote.price),
+      volume: quote.volume === '' ? null : Number(quote.volume),
+      status: String(quote.data_status),
+      sourceBulletin: String(quote.sourceBulletin || '') || undefined,
+      method: String(quote.method || '') || undefined,
+      seed: Number(quote.seed),
+    }))
   const timestamp = now()
-  const generatedQuotes = history.quotes.map((quote) => ({
+  const generatedQuotes = historyQuotes.map((quote) => ({
     ...quote,
     id: `${String(quote.isin)}-${String(quote.date)}`,
+    instrumentId: String(quote.isin),
     status: quote.status,
     volume: typeof quote.volume === 'number' ? quote.volume : null,
     createdAt: timestamp,
@@ -142,11 +156,49 @@ export async function ensureDemoHistory() {
     createdAt: timestamp,
     updatedAt: timestamp,
   }))
+  let insertedQuotes = 0
+  let insertedIndices = 0
   await db.transaction('rw', [db.marketQuotes, db.marketIndex], async () => {
-    await db.marketQuotes.bulkPut(generatedQuotes as never[])
-    await db.marketIndex.bulkPut(generatedIndex)
+    const existing = await db.marketQuotes.bulkGet(generatedQuotes.map((quote) => String(quote.id)))
+    const quotesToUpsert = generatedQuotes.filter((quote, index) => {
+      const current = existing[index]
+      // A synthetic history row can share the natural ISIN/date key with an
+      // official observation. Keep the official record intact in that case.
+      if (current?.status === 'OBSERVED') return false
+      return !current || current.instrumentId !== quote.instrumentId || current.status !== quote.status
+    })
+    insertedQuotes = quotesToUpsert.length
+    if (quotesToUpsert.length) await db.marketQuotes.bulkPut(quotesToUpsert as never[])
+    const existingIndex = await db.marketIndex.bulkGet(generatedIndex.map((entry) => String(entry.id)))
+    const indexToUpsert = generatedIndex.filter((entry, index) => {
+      const current = existingIndex[index] as Record<string, unknown> | undefined
+      return !current || current.status !== (entry as Record<string, unknown>).status
+    })
+    insertedIndices = indexToUpsert.length
+    if (indexToUpsert.length) await db.marketIndex.bulkPut(indexToUpsert)
   })
-  await recordAudit({ actorId: 'system', actorName: 'Système de démonstration', action: 'DEMO_HISTORY_IMPORT', entityType: 'market', description: 'Import de l’historique BVMAC démonstratif, provenance SIMULATED et INTERPOLATED', metadata: { seed: history.metadata.seed, counts: history.metadata.counts } })
+  if (insertedQuotes || insertedIndices) await recordAudit({ actorId: 'system', actorName: 'Système de démonstration', action: 'DEMO_HISTORY_IMPORT', entityType: 'market', description: 'Import idempotent de l’historique BVMAC démonstratif, provenance SIMULATED et INTERPOLATED', metadata: { seed: history.metadata.seed, insertedQuotes, insertedIndices, counts: history.metadata.counts } })
+}
+
+function parseCsv(csv: string) {
+  const rows: string[][] = []
+  let row: string[] = []
+  let value = ''
+  let quoted = false
+  for (let index = 0; index < csv.length; index += 1) {
+    const character = csv[index]
+    if (character === '"' && quoted && csv[index + 1] === '"') { value += '"'; index += 1 }
+    else if (character === '"') quoted = !quoted
+    else if (character === ',' && !quoted) { row.push(value); value = '' }
+    else if ((character === '\n' || character === '\r') && !quoted) {
+      if (character === '\r' && csv[index + 1] === '\n') index += 1
+      row.push(value); value = ''
+      if (row.some((cell) => cell.length)) rows.push(row)
+      row = []
+    } else value += character
+  }
+  if (value.length || row.length) { row.push(value); rows.push(row) }
+  return rows
 }
 
 export async function marketSummary() {

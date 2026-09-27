@@ -4,11 +4,13 @@ import { Card, ErrorMessage, formatMoney, ModuleLoading, PageHeader, StatusBadge
 import { db } from '../db/database'
 import { approveOrder, createOrder, executeOrder, listOrders, rejectOrder } from '../services/orders'
 import { demoRoles, readDemoRole } from '../services/roles'
-import { listPortfolios } from '../services/portfolio'
+import { latestInstrumentPrice, listPortfolios } from '../services/portfolio'
+import { useSearchParams } from 'react-router-dom'
 
 type OrderRecord = Record<string, unknown>
 
 export default function OrdersPage() {
+  const [searchParams] = useSearchParams()
   const [orders, setOrders] = useState<OrderRecord[]>([])
   const [portfolios, setPortfolios] = useState<Record<string, unknown>[]>([])
   const [instruments, setInstruments] = useState<Record<string, unknown>[]>([])
@@ -27,8 +29,24 @@ export default function OrdersPage() {
     setLoading(true)
     const [nextOrders, nextPortfolios, nextInstruments, nextChecks] = await Promise.all([listOrders(), listPortfolios(), db.instruments.toArray(), db.orderChecks.toArray()])
     setOrders(nextOrders as unknown as OrderRecord[]); setPortfolios(nextPortfolios as unknown as Record<string, unknown>[]); setInstruments(nextInstruments as unknown as Record<string, unknown>[]); setChecks(nextChecks as unknown as Record<string, unknown>[])
-    if (!portfolioId && nextPortfolios[0]) setPortfolioId(nextPortfolios[0].id)
-    if (!instrumentId && nextInstruments[0]) { setInstrumentId(nextInstruments[0].id); setLimitPrice(String((await db.marketQuotes.where('instrumentId').equals(nextInstruments[0].id).last())?.price ?? 0)) }
+    const requestedPortfolioId = searchParams.get('portfolioId')
+    const requestedInstrumentId = searchParams.get('instrumentId')
+    const requestedQuantity = searchParams.get('quantity')
+    if (requestedPortfolioId && nextPortfolios.some((item) => item.id === requestedPortfolioId)) {
+      setPortfolioId(requestedPortfolioId)
+      setShowForm(true)
+    }
+    else if (!portfolioId && nextPortfolios[0]) setPortfolioId(nextPortfolios[0].id)
+    if (requestedInstrumentId && nextInstruments.some((item) => item.id === requestedInstrumentId)) {
+      setInstrumentId(requestedInstrumentId)
+      setLimitPrice(String(await latestInstrumentPrice(requestedInstrumentId)))
+    } else if (!instrumentId && nextInstruments[0]) {
+      setInstrumentId(nextInstruments[0].id)
+      setLimitPrice(String(await latestInstrumentPrice(nextInstruments[0].id)))
+    }
+    if (requestedQuantity && Number.isInteger(Number(requestedQuantity)) && Number(requestedQuantity) > 0) setQuantity(requestedQuantity)
+    const requestedSide = searchParams.get('side')
+    if (requestedSide === 'BUY' || requestedSide === 'SELL') setSide(requestedSide)
     setLoading(false)
   }
   useEffect(() => { void load() }, [])

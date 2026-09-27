@@ -4,14 +4,18 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
+import math
 import random
+import statistics
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
+CSV_FIELDS = ['date', 'isin', 'mnemonic', 'assetClass', 'price', 'volume', 'data_status', 'sourceBulletin', 'method', 'seed']
 
 
 def parse_date(value: str) -> date:
@@ -57,6 +61,34 @@ def weekdays(start: date, end: date):
         if day.weekday() < 5:
             yield day
         day += timedelta(days=1)
+
+
+def observed_return_parameters(records: list[dict[str, Any]]) -> tuple[float, float, int]:
+    """Estimate daily log-return drift and dispersion, reducing sparse/outlier impact."""
+    ordered = sorted(records, key=lambda item: item['date'])
+    returns: list[float] = []
+    active_changes = 0
+    for left, right in zip(ordered, ordered[1:]):
+        left_price, right_price = float(left['price']), float(right['price'])
+        if left_price <= 0 or right_price <= 0:
+            continue
+        sessions = max(1, sum(1 for _ in weekdays(date.fromisoformat(left['date']) + timedelta(days=1), date.fromisoformat(right['date']))))
+        daily_return = math.log(right_price / left_price) / sessions
+        returns.append(daily_return)
+        if abs(daily_return) > 0.00001:
+            active_changes += 1
+    if len(returns) < 2:
+        return 0.0, 0.0, active_changes
+    ordered_returns = sorted(returns)
+    low, high = ordered_returns[int((len(ordered_returns) - 1) * 0.05)], ordered_returns[int((len(ordered_returns) - 1) * 0.95)]
+    winsorized = [min(max(value, low), high) for value in returns]
+    return statistics.mean(winsorized), statistics.stdev(winsorized), active_changes
+
+
+def observed_index_parameters(records: list[dict[str, Any]]) -> tuple[float, float]:
+    prices = [{'date': item['date'], 'price': item['value']} for item in records]
+    drift, volatility, _ = observed_return_parameters(prices)
+    return drift, volatility
 
 
 def generate_history(seed: int = 360, start: date = date(2026, 1, 1), end: date = date(2026, 9, 25)) -> dict[str, Any]:
@@ -123,40 +155,52 @@ def generate_history(seed: int = 360, start: date = date(2026, 1, 1), end: date 
     simulated_indices: list[dict[str, Any]] = []
     simulated_quotes: list[dict[str, Any]] = []
     if start < first_observed:
-        annual_return = 0.025
         market_days = list(weekdays(start, first_observed - timedelta(days=1)))
-        count = max(1, len(market_days))
-        anchor = observed_indices[0]['value']
-        for offset, day in enumerate(market_days):
-            remaining = (count - offset) / count
-            drift = (1 + annual_return) ** (-remaining / 252)
-            price = anchor * drift * (1 + rng.gauss(0, 0.0018))
+        index_drift, index_volatility = observed_index_parameters(observed_indices)
+        anchor = float(observed_indices[0]['value'])
+        price = anchor
+        for day in reversed(market_days):
+            daily_return = rng.gauss(index_drift, index_volatility)
+            price /= math.exp(daily_return)
             simulated_indices.append({
                 'code': observed_indices[0]['code'], 'date': day.isoformat(), 'value': round(price, 2),
                 'status': 'SIMULATED', 'sourceBulletin': None,
-                'method': 'Trajectoire illustrative ancrée sur la première séance observée', 'seed': seed,
+                'method': 'Trajectoire illustrative ancrée sur septembre, paramètres estimés sur les séances observées', 'seed': seed,
             })
         for isin, history in by_isin.items():
             first = min(history, key=lambda item: item['date'])
-            final_price = first['price']
-            yearly_hint = 0.0
+            final_price = float(first['price'])
             yearly_high = first.get('yearlyHigh') if isinstance(first.get('yearlyHigh'), (int, float)) else final_price * 1.05
             yearly_low = first.get('yearlyLow') if isinstance(first.get('yearlyLow'), (int, float)) else final_price * 0.95
-            # The published year-to-date range constrains a plausible demo path;
-            # it is not treated as an observed daily series.
-            target = min(max(final_price - (yearly_high - yearly_low) * 0.22, yearly_low), yearly_high)
-            for day in weekdays(start, first_observed - timedelta(days=1)):
-                progress = (day - start).days / max(1, (first_observed - start).days)
-                if first['assetClass'] == 'BOND':
-                    simulated_price = final_price
-                else:
-                    base = target + (final_price - target) * progress
-                    simulated_price = min(max(base * (1 + rng.gauss(0, 0.002)), yearly_low), yearly_high)
+            daily_drift, daily_volatility, active_changes = observed_return_parameters(history)
+            class_returns = [
+                observed_return_parameters(class_history)[1]
+                for class_history in by_isin.values()
+                if class_history[0]['assetClass'] == first['assetClass']
+                and observed_return_parameters(class_history)[2] >= 5
+            ]
+            if active_changes < 5:
+                # Thinly traded instruments use a zero drift and pooled class
+                # dispersion; bonds remain flat unless the observations show activity.
+                daily_drift = 0.0
+                daily_volatility = statistics.median(class_returns) if class_returns else 0.0
+            if first['assetClass'] == 'BOND' and active_changes < 5:
+                daily_volatility = 0.0
+            lower_bound, upper_bound = sorted((float(yearly_low), float(yearly_high)))
+            daily_volatility = min(daily_volatility, 0.03)
+            simulated_prices: dict[date, float] = {}
+            simulated_price = final_price
+            for day in reversed(list(weekdays(start, first_observed - timedelta(days=1)))):
+                simulated_price /= math.exp(rng.gauss(daily_drift, daily_volatility))
+                simulated_price = min(max(simulated_price, lower_bound), upper_bound)
+                simulated_prices[day] = simulated_price
+            for day, simulated_price in sorted(simulated_prices.items()):
                 simulated_quotes.append({
                     'isin': isin, 'mnemonic': first['mnemonic'], 'assetClass': first['assetClass'],
                     'date': day.isoformat(), 'price': round(simulated_price, 4), 'volume': None,
                     'status': 'SIMULATED', 'sourceBulletin': None,
-        'method': 'Génération illustrative déterministe, graine fixe et repères annuels ancrés sur septembre', 'seed': seed,
+                    'method': f"Rendements observés estimés sur septembre ({active_changes} variation(s)); paramètres mutualisés si série illiquide",
+                    'seed': seed,
                 })
 
     return {
@@ -172,7 +216,7 @@ def generate_history(seed: int = 360, start: date = date(2026, 1, 1), end: date 
                 'simulatedIndex': len(simulated_indices), 'observedQuotes': len(observed_quotes),
                 'interpolatedQuotes': len(interpolated_quotes), 'simulatedQuotes': len(simulated_quotes),
             },
-            'rules': ['Volumes non observés laissés vides.', 'Obligations maintenues entre deux séances.', 'Jours de week-end exclus.'],
+            'rules': ['Volumes non observés laissés vides.', 'Rendements/dispersion estimés sur observations disponibles et mutualisés pour séries illiquides.', 'Jours de week-end exclus.'],
         },
         'marketIndex': sorted(observed_indices + interpolated_indices + simulated_indices, key=lambda item: item['date']),
         'quotes': sorted(observed_quotes + interpolated_quotes + simulated_quotes, key=lambda item: (item['date'], item['isin'])),
@@ -190,7 +234,20 @@ def main() -> None:
     args.output.mkdir(parents=True, exist_ok=True)
     output_file = args.output / 'history.json'
     output_file.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f"Fichier créé : {output_file}")
+    csv_file = args.output / 'history.csv'
+    with csv_file.open('w', encoding='utf-8-sig', newline='') as handle:
+        writer = csv.DictWriter(handle, fieldnames=CSV_FIELDS, extrasaction='ignore', lineterminator='\n')
+        writer.writeheader()
+        for quote in data['quotes']:
+            writer.writerow({
+                **quote,
+                'data_status': quote['status'],
+                'volume': '' if quote.get('volume') is None else quote['volume'],
+                'sourceBulletin': quote.get('sourceBulletin') or '',
+                'method': quote.get('method') or ('Import direct du bulletin officiel' if quote['status'] == 'OBSERVED' else ''),
+                'seed': quote.get('seed', args.seed),
+            })
+    print(f"Fichiers créés : {output_file} et {csv_file}")
     print(json.dumps(data['metadata']['counts'], ensure_ascii=False))
 
 

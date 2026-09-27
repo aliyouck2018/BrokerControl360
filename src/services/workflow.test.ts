@@ -8,6 +8,7 @@ import { approveOrder, createOrder, executeOrder } from './orders'
 import { portfolioValuation, seedDemoPortfolios } from './portfolio'
 import { ensureWiki, searchWiki } from './wiki'
 import { ensureDemoRoles } from './roles'
+import { listReports, makeReport } from './reports'
 
 describe('parcours métier local de démonstration', () => {
   const sourceData = import.meta.glob('../../json/BOC-*.json', { eager: true, import: 'default' }) as Record<string, unknown>
@@ -15,13 +16,15 @@ describe('parcours métier local de démonstration', () => {
   afterEach(async () => { await db.delete() })
 
   beforeEach(() => {
-    let randomByte = 1
+    let randomId = 1
     vi.stubGlobal('crypto', {
       getRandomValues: (values: Uint8Array) => {
-        for (let index = 0; index < values.length; index += 1) {
-          values[index] = randomByte
-          randomByte = (randomByte + 1) & 0xff
-        }
+        values.fill(randomId & 0xff)
+        values[0] = (randomId >>> 24) & 0xff
+        if (values.length > 1) values[1] = (randomId >>> 16) & 0xff
+        if (values.length > 2) values[2] = (randomId >>> 8) & 0xff
+        if (values.length > 3) values[3] = randomId & 0xff
+        randomId += 1
         return values
       },
     })
@@ -30,7 +33,16 @@ describe('parcours métier local de démonstration', () => {
       const payload = url.endsWith('/history.json')
         ? { ...demoHistory, marketIndex: demoHistory.marketIndex.slice(0, 10), quotes: demoHistory.quotes.slice(0, 120) }
         : sourceData[`../../json/${url.split('/').at(-1)}`]
-      return { ok: Boolean(payload), json: async () => payload }
+      if (url.endsWith('/history.csv')) {
+        const fields = ['date', 'isin', 'mnemonic', 'assetClass', 'price', 'volume', 'data_status', 'sourceBulletin', 'method', 'seed']
+        const quoteCSV = [fields.join(','), ...demoHistory.quotes.slice(0, 120).map((quote) => fields.map((field) => {
+          const key = field === 'data_status' ? 'status' : field
+          const cell = String((quote as unknown as Record<string, unknown>)[key] ?? '')
+          return `"${cell.replaceAll('"', '""')}"`
+        }).join(','))].join('\n')
+        return { ok: true, text: async () => quoteCSV, json: async () => ({}) }
+      }
+      return { ok: Boolean(payload), json: async () => payload, text: async () => '' }
     }))
   })
   afterEach(() => { vi.unstubAllGlobals() })
@@ -53,6 +65,17 @@ describe('parcours métier local de démonstration', () => {
     expect(await db.marketQuotes.where('status').equals('SIMULATED').count()).toBeGreaterThan(0)
     expect(await db.marketIndex.where('status').equals('SIMULATED').count()).toBeGreaterThan(0)
     expect(await db.portfolios.count()).toBeGreaterThan(0)
+    const bondPortfolio = await portfolioValuation('portfolio-obligataire')
+    const diversifiedPortfolio = await portfolioValuation('portfolio-diversifie')
+    const cashPortfolio = await portfolioValuation('portfolio-tresorerie')
+    expect(bondPortfolio?.positions.some((position) => position.instrument.assetClass === 'BOND')).toBe(true)
+    expect(diversifiedPortfolio?.positions.some((position) => position.instrument.assetClass === 'EQUITY')).toBe(true)
+    expect(cashPortfolio?.positions.some((position) => position.instrument.assetClass === 'FUND')).toBe(true)
+    const seededTransactions = await db.transactions.count()
+    const seededCash = await db.cashAccounts.toArray()
+    await seedDemoPortfolios()
+    expect(await db.transactions.count()).toBe(seededTransactions)
+    expect(await db.cashAccounts.toArray()).toEqual(seededCash)
     expect(await db.wikiArticles.count()).toBeGreaterThan(10)
     expect(await db.roles.count()).toBeGreaterThan(5)
   })
@@ -80,6 +103,21 @@ describe('parcours métier local de démonstration', () => {
     expect(afterQuantity).toBe(beforeQuantity + 1)
     expect((await db.orders.get(order.order.id))?.status).toBe('EXECUTED')
     expect(await db.transactions.where('orderId').equals(order.order.id).count()).toBe(1)
+  })
+
+  it('génère et archive chaque modèle de rapport avec des versions successives', async () => {
+    await importMarketBulletins()
+    await ensureDemoHistory()
+    await seedDemoPortfolios()
+    const types = ['COMPOSITION', 'PERFORMANCE', 'LIMITS', 'OPERATIONS', 'INTERNAL_CONTROL', 'RECONCILIATION']
+    for (const type of types) {
+      const first = await makeReport('portfolio-obligataire', type, { id: 'director', name: 'Patrice Ondo' })
+      const second = await makeReport('portfolio-obligataire', type, { id: 'director', name: 'Patrice Ondo' })
+      expect(first.version).toBe(1)
+      expect(second.version).toBe(2)
+      expect(second.payload).toHaveProperty('positions')
+    }
+    expect((await listReports()).filter((report) => types.includes(String(report.type)))).toHaveLength(12)
   })
 
   it('valide une sauvegarde complète avant restauration de la base navigateur', async () => {

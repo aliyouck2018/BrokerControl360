@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/marche", "destination": "/index.html" },
+    { "source": "/portefeuilles", "destination": "/index.html" },
+    { "source": "/ordres", "destination": "/index.html" },
+    { "source": "/risques", "destination": "/index.html" },
+    { "source": "/rapprochements", "destination": "/index.html" },
+    { "source": "/rapports", "destination": "/index.html" },
+    { "source": "/wiki", "destination": "/index.html" },
+    { "source": "/administration", "destination": "/index.html" },
+    { "source": "/audit", "destination": "/index.html" }
+  ]
+}

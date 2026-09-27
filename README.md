@@ -84,6 +84,7 @@ Un auteur d’ordre ne peut pas approuver son propre ordre. Pour illustrer le co
 - `SIMULATED` : trajectoire fictive déterministe, graine par défaut `360`, ancrée sur les cours observés.
 - Les volumes non observés restent vides. Les obligations sont maintenues entre observations.
 - Chaque bulletin observé de septembre et son volume restent importés tels quels. Les données générées sont placées séparément dans `json_demo_2026/`.
+- `json_demo_2026/history.csv` fournit les champs `date, isin, mnemonic, assetClass, price, volume, data_status, sourceBulletin, method, seed`; il est copié dans `public/history.csv` au démarrage et au build. Les rendements et dispersions simulés sont estimés sur les observations disponibles, avec mutualisation prudente pour les instruments illiquides.
 - Les valeurs simulées et seuils `TO_VERIFY` ne sont pas des données réglementaires ni des règles COSUMAF confirmées.
 
 Recréer la série :
@@ -93,6 +94,16 @@ Recréer la série :
 ```
 
 Options du générateur : `--seed 360`, `--start 2026-01-01`, `--end 2026-09-25`, `--output json_demo_2026`.
+
+## Captures d’écran
+
+Captures locales de l’interface de démonstration, sans données personnelles :
+
+![Vue d’ensemble avec positions et historique de provenance observée/simulée](docs/screenshots/dashboard.png)
+
+![Référentiel marché avec filtre de provenance](docs/screenshots/market.png)
+
+![Rapports et aperçu de portefeuille](docs/screenshots/reports.png)
 
 ## Stockage, sauvegarde et réinitialisation
 

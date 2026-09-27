@@ -134,6 +134,34 @@ export class BrokerControlDatabase extends Dexie {
       wikiArticles: 'id, &slug, title, categoryId, ruleClass, verificationStatus, createdAt',
       wikiCategories: 'id, &slug, title, createdAt',
     })
+
+    this.version(5).stores({
+      countries: 'id, code, name, createdAt',
+      issuers: 'id, name, countryCode, sector, createdAt',
+      instruments: 'id, &isin, mnemonic, name, issuer, country, assetClass, currency, createdAt',
+      marketQuotes: 'id, instrumentId, date, status, sourceBulletin, createdAt, [instrumentId+date], [status+date]',
+      marketIndex: 'id, code, date, status, createdAt, [code+date]',
+      opcvmFunds: 'id, code, name, issuer, createdAt',
+      opcvmNavs: 'id, fundId, date, status, createdAt, [fundId+date]',
+      portfolios: 'id, &code, name, strategy, currency, benchmark, createdAt',
+      cashAccounts: 'id, portfolioId, currency, createdAt',
+      transactions: 'id, portfolioId, instrumentId, type, date, status, orderId, createdAt, [portfolioId+date]',
+      orders: 'id, portfolioId, instrumentId, side, status, createdAt',
+      orderChecks: 'id, orderId, severity, status, createdAt',
+      reconciliationSessions: 'id, portfolioId, date, status, createdAt',
+      reconciliationItems: 'id, sessionId, type, status, assignee, createdAt',
+      limitRules: 'id, scope, scopeId, metric, active, createdAt',
+      users: 'id, name, roleId, createdAt',
+      roles: 'id, name, createdAt',
+      auditEvents: 'id, actorId, action, entityType, entityId, createdAt',
+      reports: 'id, type, portfolioId, generatedAt, status, createdAt',
+      wikiArticles: 'id, &slug, title, categoryId, ruleClass, verificationStatus, createdAt',
+      wikiCategories: 'id, &slug, title, createdAt',
+    }).upgrade(async (transaction) => {
+      await transaction.table('marketQuotes').toCollection().modify((quote: MarketQuote & { isin?: string }) => {
+        quote.instrumentId ||= quote.isin || quote.id.replace(/-\d{4}-\d{2}-\d{2}$/, '')
+      })
+    })
   }
 }
 

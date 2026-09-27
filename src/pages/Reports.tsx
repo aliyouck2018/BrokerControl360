@@ -52,8 +52,23 @@ export default function ReportsPage() {
   function printReport(report: ReportRecord) {
     const blobUrl = URL.createObjectURL(new Blob([reportHtml(report)], { type: 'text/html' }))
     const reportWindow = window.open(blobUrl, '_blank')
-    if (!reportWindow) { setError('Autorisez l’ouverture d’un nouvel onglet pour imprimer le rapport en PDF.'); return }
-    setTimeout(() => { reportWindow.print(); URL.revokeObjectURL(blobUrl) }, 500)
+    if (!reportWindow) { URL.revokeObjectURL(blobUrl); setError('Autorisez l’ouverture d’un nouvel onglet pour imprimer le rapport en PDF.'); return }
+    setError('')
+    let printed = false
+    const printWhenLoaded = () => {
+      if (printed || reportWindow.closed) return
+      printed = true
+      reportWindow.focus()
+      reportWindow.print()
+    }
+    reportWindow.addEventListener('load', printWhenLoaded, { once: true })
+    if (reportWindow.document.readyState === 'complete') window.setTimeout(printWhenLoaded, 0)
+    const releaseUrlWhenClosed = window.setInterval(() => {
+      if (reportWindow.closed) {
+        URL.revokeObjectURL(blobUrl)
+        window.clearInterval(releaseUrlWhenClosed)
+      }
+    }, 1000)
   }
 
   if (loading) return <ModuleLoading />

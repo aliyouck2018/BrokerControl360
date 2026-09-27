@@ -22,6 +22,10 @@ def main() -> None:
     if not history.is_file():
         raise FileNotFoundError('L’historique démo manque : lancez scripts/generate_demo_history.py.')
     shutil.copy2(history, PUBLIC / 'history.json')
+    history_csv = ROOT / 'json_demo_2026' / 'history.csv'
+    if not history_csv.is_file():
+        raise FileNotFoundError('Le CSV démo manque : lancez scripts/generate_demo_history.py.')
+    shutil.copy2(history_csv, PUBLIC / 'history.csv')
     print(f'{len(source_files)} bulletins et l’historique démo prêts pour Vite.')
 
 
