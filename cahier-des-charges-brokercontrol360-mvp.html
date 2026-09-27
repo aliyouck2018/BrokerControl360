@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cahier des charges - BrokerControl360 MVP</title>
+  <style>
+    @page { size: A4; margin: 15mm 14mm 15mm 14mm; }
+    :root { --navy:#12324a; --blue:#1d6f9f; --pale:#eef6fa; --line:#cbd7df; --text:#1d2935; --muted:#5a6b78; --gold:#a87412; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--text); background:#f4f7f9; font:13px/1.5 Arial, sans-serif; }
+    .document { max-width:980px; margin:0 auto; background:#fff; padding:35px 45px 55px; }
+    .cover { min-height:245mm; display:flex; flex-direction:column; justify-content:center; border-bottom:1px solid var(--line); page-break-after:always; }
+    .cover .label { color:var(--blue); font-weight:bold; letter-spacing:2px; text-transform:uppercase; font-size:12px; }
+    h1 { color:var(--navy); font-size:34px; line-height:1.15; margin:14px 0 10px; }
+    h2 { color:var(--navy); font-size:21px; border-bottom:2px solid var(--blue); padding-bottom:5px; margin:28px 0 12px; page-break-after:avoid; }
+    h3 { color:var(--blue); font-size:16px; margin:19px 0 6px; page-break-after:avoid; }
+    h4 { color:var(--navy); font-size:14px; margin:13px 0 4px; }
+    p { margin:6px 0 10px; }
+    ul, ol { margin:5px 0 10px 21px; padding:0; }
+    li { margin:3px 0; }
+    .subtitle { font-size:18px; color:var(--muted); max-width:700px; }
+    .meta { color:var(--muted); margin-top:30px; line-height:1.8; }
+    .notice { background:var(--pale); border-left:5px solid var(--blue); padding:11px 14px; margin:12px 0; }
+    .warning { background:#fff8e7; border-left:5px solid var(--gold); padding:11px 14px; margin:12px 0; }
+    .small { color:var(--muted); font-size:11px; }
+    table { width:100%; border-collapse:collapse; margin:9px 0 13px; font-size:11.5px; }
+    th { background:var(--navy); color:#fff; text-align:left; padding:7px 6px; }
+    td { border:1px solid var(--line); padding:6px; vertical-align:top; }
+    tr:nth-child(even) td { background:#f8fbfd; }
+    .req { white-space:nowrap; font-weight:bold; color:var(--blue); }
+    .page-break { page-break-before:always; }
+    code { background:#edf1f4; padding:1px 4px; border-radius:3px; font-family:monospace; }
+    pre { background:#172532; color:#e7f3f8; padding:12px; overflow:hidden; font:10.5px/1.4 monospace; border-radius:5px; }
+    .toc { columns:2; column-gap:30px; background:#f7fafc; padding:14px 22px; border:1px solid var(--line); }
+    .toc li { break-inside:avoid; }
+    .status { display:inline-block; padding:2px 7px; border-radius:10px; font-size:10px; font-weight:bold; }
+    .must { color:#8a2b18; background:#fdebe7; }
+    .should { color:#76520c; background:#fff2c9; }
+    @media print { body { background:#fff; } .document { padding:0; max-width:none; } }
+  </style>
+</head>
+<body>
+<div class="document">
+  <section class="cover">
+    <div class="label">Cahier des charges fonctionnel et technique</div>
+    <h1>BrokerControl360</h1>
+    <div class="subtitle">MVP de contrôle et de pilotage pour sociétés de bourse opérant sur le marché financier régional CEMAC</div>
+    <div class="meta">
+      <strong>Version :</strong> 1.1 MVP enrichi<br>
+      <strong>Date :</strong> 26 septembre 2026<br>
+      <strong>Stack :</strong> React, FastAPI, IndexedDB (Dexie.js)<br>
+      <strong>Mode d'exécution :</strong> développement local uniquement<br>
+      <strong>Hors périmètre :</strong> Docker, CI/CD et déploiement cloud
+    </div>
+    <div class="warning"><strong>Nature du produit :</strong> démonstrateur professionnel. Les données synthétiques et les règles de conformité doivent être identifiées comme telles et ne constituent ni un système de négociation en production, ni un avis juridique ou réglementaire.</div>
+  </section>
+
+  <h2>Sommaire</h2>
+  <ol class="toc">
+    <li>Contexte et vision</li>
+    <li>Objectifs du MVP</li>
+    <li>Périmètre fonctionnel</li>
+    <li>Acteurs et droits</li>
+    <li>Exigences fonctionnelles</li>
+    <li>Parcours de démonstration</li>
+    <li>Données et interpolation 2026</li>
+    <li>Architecture technique</li>
+    <li>Modèle de données</li>
+    <li>API et intégrations</li>
+    <li>Interface utilisateur</li>
+    <li>Sécurité</li>
+    <li>Exigences non fonctionnelles</li>
+    <li>Tests et critères d'acceptation</li>
+    <li>Livrables et planning</li>
+    <li>Hors périmètre et risques</li>
+    <li>Plan d'implémentation pour un LLM</li>
+  </ol>
+
+  <h2>1. Contexte et vision</h2>
+  <p>Les sociétés de bourse de la zone CEMAC doivent suivre des instruments cotés, des ordres, des portefeuilles, des règlements, des limites internes et des obligations de reporting. Les données peuvent être réparties entre fichiers, outils bureautiques, systèmes de conservation et applications métiers.</p>
+  <p>BrokerControl360 vise à démontrer une solution locale de centralisation et de contrôle : référentiel BVMAC, gestion de portefeuilles, ordres fictifs, contrôles pré-trade, rapprochements, analyse des risques et génération de rapports.</p>
+  <div class="notice"><strong>Proposition de valeur:</strong> réduire les contrôles manuels, rendre les anomalies visibles, améliorer la traçabilité des décisions et fournir une vue commune aux opérations, au risque, à la conformité et à la direction.</div>
+
+  <h2>2. Objectifs du MVP</h2>
+  <ul>
+    <li>Construire une application démontrable en React, FastAPI et IndexedDB via Dexie.js.</li>
+    <li>Importer et consulter les historiques BVMAC extraits des bulletins de septembre 2026.</li>
+    <li>Générer une extension démonstrative de l'historique 2026 avec provenance explicite.</li>
+    <li>Créer des portefeuilles synthétiques sur des instruments réels.</li>
+    <li>Simuler un ordre, appliquer des contrôles et suivre son cycle de vie.</li>
+    <li>Calculer valorisation, performance, exposition, concentration et risques de base.</li>
+    <li>Produire un rapport PDF ou HTML de composition et de contrôle.</li>
+    <li>Présenter un produit crédible à une société de bourse, une banque ou une compagnie d'assurance.</li>
+  </ul>
+
+  <h2>3. Périmètre fonctionnel</h2>
+  <table>
+    <thead><tr><th>Module</th><th>Inclus dans le MVP</th><th>Priorité</th></tr></thead>
+    <tbody>
+      <tr><td>Profil de démonstration</td><td>Sélection d'un rôle fictif pour les parcours d'interface ; pas d'authentification réelle.</td><td><span class="status must">Obligatoire</span></td></tr>
+      <tr><td>Référentiel marché</td><td>Actions, obligations, OPCVM, émetteurs, cours, indice et provenance.</td><td><span class="status must">Obligatoire</span></td></tr>
+      <tr><td>Portefeuilles</td><td>Création, positions, transactions fictives, cash et valorisation.</td><td><span class="status must">Obligatoire</span></td></tr>
+      <tr><td>Ordres</td><td>Saisie, validation, contrôles et exécution simulée.</td><td><span class="status must">Obligatoire</span></td></tr>
+      <tr><td>Risque</td><td>Concentration, allocation, liquidité, durée, stress test simple.</td><td><span class="status must">Obligatoire</span></td></tr>
+      <tr><td>Rapprochement</td><td>Positions, espèces et ordres avec anomalies simulées.</td><td><span class="status must">Obligatoire</span></td></tr>
+      <tr><td>Reporting</td><td>Rapport de portefeuille, contrôles et export.</td><td><span class="status must">Obligatoire</span></td></tr>
+      <tr><td>Clients/KYC</td><td>Fiche client simplifiée et statut documentaire.</td><td><span class="status should">Version MVP+</span></td></tr>
+      <tr><td>Notifications</td><td>Alertes dans l'application ; pas d'envoi réel d'e-mail.</td><td><span class="status should">Version MVP+</span></td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Acteurs et droits</h2>
+  <table>
+    <thead><tr><th>Rôle</th><th>Responsabilités</th><th>Accès MVP</th></tr></thead>
+    <tbody>
+      <tr><td>Administrateur</td><td>Utilisateurs, référentiels, paramètres, données de démonstration.</td><td>Accès complet</td></tr>
+      <tr><td>Opérateur / back-office</td><td>Ordres, exécutions, positions, rapprochements et suspens.</td><td>Lecture/écriture opérations</td></tr>
+      <tr><td>Gestionnaire</td><td>Portefeuilles, allocations, transactions et performance.</td><td>Lecture/écriture portefeuilles</td></tr>
+      <tr><td>Risk manager</td><td>Limites, alertes, stress tests et validation des risques.</td><td>Lecture globale, règles de risque</td></tr>
+      <tr><td>Compliance officer</td><td>Contrôles, anomalies, reporting et audit.</td><td>Lecture globale, contrôles</td></tr>
+      <tr><td>Auditeur</td><td>Consultation des historiques et journaux.</td><td>Lecture seule</td></tr>
+      <tr><td>Direction</td><td>Dashboard, indicateurs et rapports.</td><td>Lecture synthétique</td></tr>
+    </tbody>
+  </table>
+
+  <h2>5. Exigences fonctionnelles</h2>
+  <h3>5.1 Profils de démonstration et utilisateurs fictifs</h3>
+  <ul>
+    <li>Pour la démonstration locale, l'utilisateur choisit un profil fictif parmi les rôles proposés.</li>
+    <li>Aucun vrai compte utilisateur ni mot de passe n'est requis : le sélecteur de rôle est une simulation d'interface, pas une authentification sécurisée.</li>
+    <li>Chaque utilisateur doit posséder un rôle.</li>
+    <li>Le filtrage des actions par rôle sert uniquement à illustrer l'expérience ; le client local contrôle lui-même ses données et peut contourner cette interface.</li>
+    <li>Le profil sélectionné et les préférences peuvent être conservés dans localStorage ; les données métier restent dans IndexedDB.</li>
+    <li>Les actions importantes doivent alimenter le journal d'audit.</li>
+  </ul>
+
+  <h3>5.2 Référentiel des instruments</h3>
+  <ul>
+    <li>Afficher une liste paginée et filtrable des instruments.</li>
+    <li>Filtrer par classe, pays, émetteur, ISIN et mnémonique.</li>
+    <li>Afficher une fiche instrument avec cours, rendement, échéance et historique.</li>
+    <li>Afficher une distinction visuelle entre données observées et données générées.</li>
+    <li>Permettre l'import idempotent des fichiers JSON BVMAC.</li>
+    <li>Rejeter ou journaliser les doublons et incohérences d'ISIN.</li>
+  </ul>
+
+  <h3>5.3 Portefeuilles et valorisation</h3>
+  <ul>
+    <li>Créer un portefeuille avec code, nom, stratégie, devise et benchmark.</li>
+    <li>Enregistrer les apports de cash, achats, ventes, coupons, dividendes et échéances.</li>
+    <li>Calculer les quantités courantes par instrument.</li>
+    <li>Calculer la valeur de marché par position et la NAV globale.</li>
+    <li>Valoriser les actions au dernier cours disponible.</li>
+    <li>Valoriser les obligations selon nominal, cours en pourcentage et coupon couru.</li>
+    <li>Calculer les expositions par classe, pays, émetteur et devise.</li>
+  </ul>
+
+  <h3>5.4 Ordres et contrôles pré-trade</h3>
+  <ul>
+    <li>Créer un ordre avec portefeuille, instrument, sens, quantité, prix et validité.</li>
+    <li>Calculer le montant brut et les frais fictifs configurables.</li>
+    <li>Vérifier le cash disponible pour un achat.</li>
+    <li>Vérifier les quantités disponibles pour une vente.</li>
+    <li>Vérifier les limites de concentration et d'allocation.</li>
+    <li>Attribuer un statut conforme, avertissement ou bloqué.</li>
+    <li>Permettre la validation maker-checker.</li>
+    <li>Simuler la transmission et l'exécution sans connexion BVMAC réelle.</li>
+  </ul>
+
+  <h3>5.5 Limites et risques</h3>
+  <ul>
+    <li>Configurer des limites par ligne, émetteur, classe d'actifs, pays et devise.</li>
+    <li>Afficher la limite, l'exposition observée, l'écart et le statut.</li>
+    <li>Identifier les dépassements critiques.</li>
+    <li>Calculer la concentration HHI et les principales lignes.</li>
+    <li>Produire un stress test de baisse des actions et de hausse des taux.</li>
+    <li>Afficher une limite de liquidité à titre de paramètre de démonstration.</li>
+    <li>Étiqueter les seuils COSUMAF non confirmés comme valeurs de démonstration.</li>
+  </ul>
+
+  <h3>5.6 Rapprochements</h3>
+  <ul>
+    <li>Créer une session de rapprochement à une date donnée.</li>
+    <li>Comparer positions internes et positions externes simulées.</li>
+    <li>Comparer cash interne et cash bancaire simulé.</li>
+    <li>Créer automatiquement des anomalies en cas d'écart.</li>
+    <li>Attribuer une anomalie, ajouter un commentaire et changer son statut.</li>
+    <li>Conserver la date de résolution et l'utilisateur responsable.</li>
+  </ul>
+
+  <h3>5.7 Reporting</h3>
+  <ul>
+    <li>Produire un rapport de composition du portefeuille.</li>
+    <li>Produire un rapport des limites et dépassements.</li>
+    <li>Produire un rapport de performance.</li>
+    <li>Inclure la date d'arrêté et la provenance des données.</li>
+    <li>Exporter en PDF et CSV.</li>
+    <li>Archiver la version générée du rapport.</li>
+  </ul>
+
+  <h2>6. Parcours de démonstration</h2>
+  <ol>
+    <li>Connexion en tant que risk manager.</li>
+    <li>Consultation du dashboard BVMAC.</li>
+    <li>Ouverture d'un portefeuille obligataire synthétique.</li>
+    <li>Consultation de ses positions et de sa NAV.</li>
+    <li>Saisie d'un achat d'obligation.</li>
+    <li>Détection d'un dépassement de concentration.</li>
+    <li>Validation ou rejet par un second utilisateur.</li>
+    <li>Exécution simulée de l'ordre.</li>
+    <li>Rapprochement avec une position externe contenant une anomalie.</li>
+    <li>Résolution de l'anomalie.</li>
+    <li>Ouverture du rapport de risque et export PDF.</li>
+  </ol>
+
+  <h2>7. Données BVMAC et interpolation 2026</h2>
+  <p>Le projet dispose de 19 fichiers JSON correspondant aux bulletins du 1er au 25 septembre 2026. Ils contiennent 7 actions, 31 obligations, des données OPCVM, l'indice BVMAC-AS, les volumes, la capitalisation et les encours.</p>
+  <div class="warning"><strong>Règle de gouvernance des données:</strong> les fichiers originaux du dossier <code>json/</code> ne doivent jamais être modifiés. Les données produites doivent être écrites dans un dossier séparé, par exemple <code>json_demo_2026/</code>.</div>
+  <h3>Statuts de provenance</h3>
+  <table>
+    <thead><tr><th>Statut</th><th>Définition</th><th>Usage autorisé</th></tr></thead>
+    <tbody>
+      <tr><td><code>OBSERVED</code></td><td>Valeur extraite directement d'un bulletin.</td><td>Calculs de référence et reporting.</td></tr>
+      <tr><td><code>INTERPOLATED</code></td><td>Valeur calculée entre observations réelles.</td><td>Visualisations démonstratives.</td></tr>
+      <tr><td><code>SIMULATED</code></td><td>Valeur générée sur une période sans observations.</td><td>Démonstration uniquement.</td></tr>
+    </tbody>
+  </table>
+  <h3>Règles de génération</h3>
+  <ul>
+    <li>Septembre : conserver exactement les observations.</li>
+    <li>Jours ouvrés entre deux séances : interpoler l'indice et les actions.</li>
+    <li>Obligations illiquides : maintenir le dernier cours connu par défaut.</li>
+    <li>OPCVM : interpoler uniquement lorsque la périodicité le permet.</li>
+    <li>Volumes sans observation : ne pas inventer une activité de marché.</li>
+    <li>Janvier à août : générer une trajectoire de démonstration ancrée sur septembre.</li>
+    <li>Utiliser une graine fixe afin de rendre la génération reproductible.</li>
+    <li>Exclure les valeurs simulées des rapports réglementaires réels.</li>
+  </ul>
+  <p>Les indicateurs tels que volatilité, Sharpe, VaR, drawdown et performance annuelle doivent afficher séparément leur période observée et leur période démonstrative.</p>
+
+  <h2>8. Architecture technique</h2>
+  <h3>8.1 Vue d'ensemble</h3>
+  <pre>React SPA  &lt;-- HTTP/JSON --&gt;  FastAPI stateless
+    |                              |
+ Dexie.js                    Services métier / exports
+    |                              |
+ IndexedDB navigateur  &lt;-- payloads temporaires --&gt;  Pydantic
+    |
+ tables locales, index, transactions, migrations versionnées</pre>
+  <h3>8.2 Stack imposée</h3>
+  <table>
+    <thead><tr><th>Couche</th><th>Technologie</th><th>Rôle</th></tr></thead>
+    <tbody>
+      <tr><td>Frontend</td><td>React + TypeScript</td><td>Interface utilisateur et composants métier.</td></tr>
+      <tr><td>Routing</td><td>React Router</td><td>Navigation entre dashboard, marché, portefeuilles, ordres et rapports.</td></tr>
+      <tr><td>Data fetching</td><td>TanStack Query</td><td>Cache, états de chargement, invalidation après mutation.</td></tr>
+      <tr><td>Graphiques</td><td>Recharts ou ApexCharts</td><td>Courbes, allocations, risques et séries temporelles.</td></tr>
+      <tr><td>Backend</td><td>FastAPI + Python 3.12+</td><td>API stateless pour données de référence, calculs lourds et génération de rapports ; aucune persistance métier.</td></tr>
+      <tr><td>Validation</td><td>Pydantic</td><td>Schémas d'entrée et de sortie des API.</td></tr>
+      <tr><td>Stockage</td><td>IndexedDB + Dexie.js</td><td>Stockage persistant local dans le navigateur pour marché, portefeuilles, ordres, contrôles et audit de démonstration.</td></tr>
+      <tr><td>Versionnement du stockage</td><td>Migrations Dexie.js</td><td>Évolution versionnée des tables et index IndexedDB.</td></tr>
+      <tr><td>Validation frontend</td><td>Zod ou schémas TypeScript</td><td>Validation des mutations locales avant écriture et des payloads transmis à FastAPI.</td></tr>
+      <tr><td>Tests</td><td>Pytest + Vitest/Testing Library</td><td>Tests métier, API et composants.</td></tr>
+    </tbody>
+  </table>
+  <div class="notice"><strong>Déploiement MVP:</strong> exécution locale avec un terminal pour FastAPI et un terminal pour le serveur de développement React. Les données métier résident dans IndexedDB sur le navigateur utilisé. FastAPI ne conserve pas ces données après la requête. Docker, base serveur, pipeline CI/CD, hébergement cloud, reverse proxy et orchestration sont exclus.</div>
+
+  <h2>9. Modèle de données IndexedDB avec Dexie.js</h2>
+  <p>Les tables Dexie sont des object stores IndexedDB. Chaque enregistrement possède une clé primaire et les index nécessaires aux filtres. Les opérations composées utilisent les transactions IndexedDB/Dexie.</p>
+  <h3>Référentiels marché</h3>
+  <ul>
+    <li><code>countries</code> : pays et appartenance CEMAC.</li>
+    <li><code>issuers</code> : émetteurs, secteur, profil et informations financières.</li>
+    <li><code>instruments</code> : ISIN, classe, devise, coupon, nominal et maturité.</li>
+    <li><code>marketQuotes</code> : cours, volumes, transactions et statut de provenance.</li>
+    <li><code>marketIndex</code> : valeur quotidienne de BVMAC-AS.</li>
+    <li><code>opcvmFunds</code> et <code>opcvmNavs</code> : fonds et valeurs liquidatives.</li>
+    <li>La provenance est conservée avec chaque observation : statut, bulletin source, date d'origine, méthode et graine de simulation.</li>
+  </ul>
+  <h3>Portefeuilles et opérations</h3>
+  <ul>
+    <li><code>portfolios</code> : portefeuilles et stratégies.</li>
+    <li><code>cashAccounts</code> : comptes espèces.</li>
+    <li><code>transactions</code> : achats, ventes, coupons, dividendes et mouvements de cash.</li>
+    <li><code>orders</code> : ordres internes et cycle de vie.</li>
+    <li><code>orderChecks</code> : résultats des contrôles pré-trade.</li>
+    <li><code>reconciliationSessions</code> et <code>reconciliationItems</code> : rapprochements et anomalies.</li>
+    <li><code>limitRules</code> : limites paramétrables.</li>
+  </ul>
+  <h3>Utilisateurs et audit</h3>
+  <ul>
+    <li><code>users</code> et <code>roles</code> : utilisateurs et rôles fictifs stockés uniquement sur ce navigateur.</li>
+    <li><code>auditEvents</code> : action, utilisateur, objet, date et métadonnées.</li>
+    <li><code>reports</code> : rapports générés, période, statut et version.</li>
+    <li><code>wikiArticles</code> et <code>wikiCategories</code> : contenu Wiki préchargé en IndexedDB.</li>
+  </ul>
+  <h3>9.1 Versionnement et sauvegarde locale</h3>
+  <ul>
+    <li>Déclarer les tables et index avec <code>db.version(n).stores(...)</code>.</li>
+    <li>Fournir des migrations Dexie pour chaque évolution incompatible du modèle.</li>
+    <li>Importer les données initiales une seule fois, avec une version de seed et des upserts idempotents.</li>
+    <li>Ajouter export JSON complet, import de sauvegarde validé et bouton « Réinitialiser la démo ».</li>
+    <li>Afficher une bannière persistante : « Données locales à ce navigateur/appareil — non synchronisées ».</li>
+    <li>Gérer les erreurs de quota, l'indisponibilité du stockage et la demande de persistance navigateur lorsque disponible.</li>
+  </ul>
+  <div class="warning"><strong>Limite d'architecture:</strong> IndexedDB est isolé par origine et par navigateur. Les données ne sont ni partagées entre utilisateurs ni synchronisées entre appareils. Les rôles locaux sont uniquement illustratifs et ne constituent pas une frontière de sécurité.</div>
+
+  <h2>10. API REST FastAPI (stateless)</h2>
+  <p>FastAPI ne stocke ni ne synchronise les données métier. Les mutations CRUD des portefeuilles, ordres, transactions, règles, rapprochements et audits s'effectuent localement via les repositories Dexie. Les calculs ou exports confiés à FastAPI reçoivent les données nécessaires dans le corps de la requête et retournent un résultat sans persistance serveur.</p>
+  <table>
+    <thead><tr><th>Groupe</th><th>Endpoints indicatifs</th></tr></thead>
+    <tbody>
+      <tr><td>Santé</td><td><code>GET /health</code>, <code>GET /version</code></td></tr>
+      <tr><td>Calculs</td><td><code>POST /compute/valuation</code>, <code>POST /compute/risk</code>, <code>POST /compute/stress-test</code></td></tr>
+      <tr><td>Rapports</td><td><code>POST /exports/portfolio-report</code>, <code>POST /exports/control-report</code> — retourne le fichier sans le conserver.</td></tr>
+      <tr><td>Données statiques optionnelles</td><td><code>GET /reference/instruments</code>, <code>GET /reference/wiki</code> — seulement si ces JSON ne sont pas chargés directement par le frontend.</td></tr>
+    </tbody>
+  </table>
+  <p>Les API doivent être documentées automatiquement par OpenAPI, avec validation Pydantic et erreurs cohérentes. Les listes persistantes sont paginées et filtrées côté IndexedDB/Dexie, pas côté FastAPI.</p>
+
+  <h2>11 bis. Rapports COSUMAF et Wiki</h2>
+  <h3>11 bis.1 Rapports intégrés</h3>
+  <p>Le MVP doit fournir des modèles de démonstration inspirés des ressources officielles COSUMAF. Ils ne doivent pas être présentés comme des formulaires réglementaires définitifs sans validation des annexes et des procédures applicables.</p>
+  <ul>
+    <li><strong>Composition de portefeuille :</strong> positions, cours, valorisation, cash, poids, émetteur et provenance.</li>
+    <li><strong>Contrôle des limites :</strong> seuil, exposition, écart, statut, responsable et action corrective.</li>
+    <li><strong>Contrôle interne :</strong> gouvernance, ordres, conflits d'intérêts, KYC/LBC-FT, rapprochements, incidents, sécurité et continuité.</li>
+    <li><strong>Opérations :</strong> ordres reçus, exécutés, rejetés, volumes, valeurs et incidents de règlement-livraison.</li>
+    <li><strong>Rapprochement :</strong> positions et espèces internes/externes, écarts, motif, responsable et résolution.</li>
+  </ul>
+  <p class="small">Références à afficher : Instruction COSUMAF n°39-25 sur le rapport de contrôle interne des sociétés de bourse, Lettre circulaire n°005/2024 sur les informations permanentes et périodiques, Règlement général COSUMAF du 23 mai 2023 et Règlement CEMAC/UMAC/COSUMAF du 21 juillet 2022.</p>
+  <h3>11 bis.2 Wiki public et méthodologie</h3>
+  <p>La page Wiki doit être compréhensible par un visiteur non spécialiste tout en fournissant une lecture technique aux professionnels.</p>
+  <ul>
+    <li><strong>Marché :</strong> COSUMAF, BVMAC, CEMAC, BEAC, marché primaire et secondaire.</li>
+    <li><strong>Instruments :</strong> action, obligation, OPCVM, FCP, SICAV, ISIN, coupon, nominal, rendement, duration et valeur liquidative.</li>
+    <li><strong>Gestion d'actifs :</strong> mandat, allocation, benchmark, NAV, TWR, MWR, volatilité, Sharpe, drawdown, VaR et concentration.</li>
+    <li><strong>Société de bourse :</strong> ordre, négociation, placement, tenue de compte, règlement-livraison et rapprochement.</li>
+    <li><strong>Conformité :</strong> KYC, PEP, LBC/FT, conflits d'intérêts, maker-checker et piste d'audit.</li>
+    <li><strong>Application :</strong> explication détaillée de chaque écran, indicateur, contrôle et rapport.</li>
+    <li><strong>Données :</strong> différences entre OBSERVED, INTERPOLATED et SIMULATED, méthodes et limites.</li>
+  </ul>
+  <p>Chaque article doit comporter un résumé simple, une définition professionnelle, un exemple, une formule éventuelle, une interprétation, une limite et une source. Les règles sont classées <code>OFFICIAL</code>, <code>MARKET_PRACTICE</code> ou <code>DEMO</code>, avec un statut <code>CONFIRMED</code> ou <code>TO_VERIFY</code>.</p>
+
+  <h2>11. Interface utilisateur React</h2>
+  <table>
+    <thead><tr><th>Écran</th><th>Contenu attendu</th></tr></thead>
+    <tbody>
+      <tr><td>Profil de démo</td><td>Sélection d'un rôle fictif et mode de démonstration ; aucune authentification réelle.</td></tr>
+      <tr><td>Dashboard</td><td>NAV, BVMAC-AS, alertes, top lignes, allocation et statut des données.</td></tr>
+      <tr><td>Marché</td><td>Liste filtrable, fiche instrument, graphique de cours et provenance.</td></tr>
+      <tr><td>Portefeuilles</td><td>Liste, détail, positions, transactions, valorisation et performance.</td></tr>
+      <tr><td>Ordres</td><td>Formulaire, pré-contrôles, statut, validation et exécution simulée.</td></tr>
+      <tr><td>Risques</td><td>Limites, concentrations, alertes, stress tests et historique.</td></tr>
+      <tr><td>Rapprochements</td><td>Sessions, anomalies, filtres, responsables et résolution.</td></tr>
+      <tr><td>Rapports</td><td>Génération, aperçu, téléchargement et historique des versions.</td></tr>
+      <tr><td>Wiki / méthodologie</td><td>Concepts, définitions, calculs, fonctionnalités, sources et limites des données.</td></tr>
+      <tr><td>Administration</td><td>Utilisateurs, rôles, limites, paramètres et statut de l'import.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>12. Sécurité</h2>
+  <ul>
+    <li>Validation stricte des entrées côté FastAPI.</li>
+    <li>Requêtes React vers FastAPI uniquement pour calculs stateless et génération de fichiers.</li>
+    <li>Les profils et rôles dans le navigateur sont démonstratifs et ne protègent pas les données contre l'utilisateur local.</li>
+    <li>Ne jamais saisir ou stocker dans IndexedDB de secrets, identifiants bancaires, KYC réel ou données personnelles sensibles.</li>
+    <li>Journalisation des créations, modifications, validations et suppressions.</li>
+    <li>Absence de secrets dans le dépôt de code.</li>
+    <li>Variables locales dans un fichier d'environnement non versionné.</li>
+    <li>Les données de démo ne doivent contenir aucune donnée personnelle réelle.</li>
+    <li>Les endpoints FastAPI n'écrivent pas de données métier et ne gardent pas les payloads envoyés par le navigateur.</li>
+  </ul>
+  <p class="small">IndexedDB est accessible au propriétaire du navigateur et peut être effacée par celui-ci. Le sélecteur de rôle ne constitue pas une authentification ni un contrôle d'accès fiable. Cette architecture convient uniquement à une démo sur données fictives et n'est pas homologuée pour la production financière.</p>
+
+  <h2>13. Exigences non fonctionnelles</h2>
+  <table>
+    <thead><tr><th>Exigence</th><th>Cible MVP</th></tr></thead>
+    <tbody>
+      <tr><td>Performance</td><td>Réponse API inférieure à 1 seconde pour les vues courantes sur le jeu de données de démonstration.</td></tr>
+      <tr><td>Pagination</td><td>Obligatoire pour instruments, transactions, ordres, anomalies et audit.</td></tr>
+      <tr><td>Disponibilité</td><td>Application exécutable localement ; aucune garantie de disponibilité réseau.</td></tr>
+      <tr><td>Maintenabilité</td><td>Types TypeScript, repositories Dexie isolés, migrations Dexie versionnées, services FastAPI stateless et README.</td></tr>
+      <tr><td>Traçabilité</td><td>Toute mutation métier importante doit produire un événement d'audit.</td></tr>
+      <tr><td>Accessibilité</td><td>Contraste correct, navigation clavier basique, libellés explicites.</td></tr>
+      <tr><td>Responsive</td><td>Utilisable sur écran de bureau et tablette ; mobile secondaire.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>14. Tests et critères d'acceptation</h2>
+  <h3>Tests backend stateless</h3>
+  <ul>
+    <li>Test d'import idempotent d'un bulletin.</li>
+    <li>Test de valorisation d'une action.</li>
+    <li>Test de valorisation d'une obligation avec coupon couru.</li>
+    <li>Test de calcul de position après achat et vente.</li>
+    <li>Test de contrôle de cash insuffisant.</li>
+    <li>Test de dépassement de limite.</li>
+    <li>Test de génération reproductible de l'historique simulé.</li>
+    <li>Tests de validation des payloads de calcul et de génération d'exports.</li>
+  </ul>
+  <h3>Tests frontend</h3>
+  <ul>
+    <li>Tests des repositories Dexie : création, lecture, modification, suppression et filtres indexés.</li>
+    <li>Test de migration entre deux versions du schéma Dexie.</li>
+    <li>Test d'import initial idempotent et test de réinitialisation sans toucher aux données originales.</li>
+    <li>Test d'export JSON puis réimport d'une sauvegarde locale.</li>
+    <li>Affichage du dashboard avec données chargées.</li>
+    <li>Filtrage du référentiel.</li>
+    <li>Validation du formulaire d'ordre.</li>
+    <li>Affichage d'un blocage pré-trade.</li>
+    <li>Parcours d'approbation maker-checker.</li>
+    <li>Affichage du statut OBSERVED, INTERPOLATED ou SIMULATED.</li>
+    <li>Recherche Wiki, affichage d'un article et lien contextuel depuis un indicateur.</li>
+    <li>Génération des rapports de composition, limites, contrôle interne et rapprochement.</li>
+  </ul>
+  <h3>Critères d'acceptation globaux</h3>
+  <ol>
+    <li>Un développeur peut installer les dépendances, démarrer FastAPI et React en local, puis l'application crée/migre IndexedDB et importe les données de seed.</li>
+    <li>Le dashboard affiche les principaux indicateurs de marché et de portefeuille.</li>
+    <li>Un ordre peut être créé, contrôlé, approuvé et exécuté en mode simulation.</li>
+    <li>Un dépassement de limite est détecté, visible et conservé dans l'audit.</li>
+    <li>Un rapprochement peut être ouvert, traité et clôturé.</li>
+    <li>Les données restent disponibles au rechargement dans le même navigateur et ne sont pas présentées comme synchronisées.</li>
+    <li>L'export puis le réimport d'une sauvegarde JSON restaure le jeu de démonstration.</li>
+    <li>Un rapport de composition et de risque peut être généré.</li>
+    <li>Les données synthétiques sont toujours identifiées dans l'interface et les exports.</li>
+    <li>Les tests automatisés critiques passent avec succès.</li>
+  </ol>
+
+  <h2>15. Livrables</h2>
+  <ul>
+    <li>Code source React TypeScript.</li>
+    <li>Code source FastAPI Python.</li>
+    <li>Schéma Dexie.js, index IndexedDB et migrations versionnées.</li>
+    <li>Repositories frontend pour les lectures et écritures métier locales.</li>
+    <li>Utilitaires d'export/import et de réinitialisation de la base locale.</li>
+    <li>Script d'import des bulletins JSON.</li>
+    <li>Script de génération <code>json_demo_2026/</code>.</li>
+    <li>Jeu de données synthétique pour les clients, portefeuilles et ordres.</li>
+    <li>Tests backend et frontend.</li>
+    <li>Documentation d'installation locale.</li>
+    <li>Documentation API OpenAPI.</li>
+    <li>Guide de démonstration commerciale.</li>
+    <li>Articles Wiki et page de méthodologie.</li>
+    <li>Modèles de rapports de démonstration avec sources et statut de validation.</li>
+  </ul>
+
+  <h2>16. Planning indicatif</h2>
+  <table>
+    <thead><tr><th>Phase</th><th>Contenu</th><th>Durée indicative</th></tr></thead>
+    <tbody>
+      <tr><td>1. Fondations</td><td>Structure React/FastAPI, IndexedDB/Dexie, migrations, profil de démonstration.</td><td>3 à 4 jours</td></tr>
+      <tr><td>2. Marché</td><td>Import JSON, référentiel, cours, indice et provenance.</td><td>4 à 5 jours</td></tr>
+      <tr><td>3. Portefeuilles</td><td>Transactions, cash, positions, valorisation et performance.</td><td>5 à 7 jours</td></tr>
+      <tr><td>4. Ordres</td><td>Workflow, contrôles pré-trade, approbation et exécution simulée.</td><td>5 à 7 jours</td></tr>
+      <tr><td>5. Risques</td><td>Limites, expositions, stress tests et alertes.</td><td>4 à 5 jours</td></tr>
+      <tr><td>6. Rapprochements</td><td>Sessions, anomalies, résolution et audit.</td><td>3 à 4 jours</td></tr>
+      <tr><td>7. Rapports &amp; Wiki</td><td>Rapports de composition, limites, contrôle interne, rapprochement, articles et recherche.</td><td>5 à 7 jours</td></tr>
+      <tr><td>8. Stabilisation</td><td>Tests, corrections, jeu de démo, méthodologie et documentation.</td><td>4 à 5 jours</td></tr>
+    </tbody>
+  </table>
+
+  <h2>17. Hors périmètre MVP</h2>
+  <ul>
+    <li>Connexion directe à la BVMAC ou à un carnet d'ordres réel.</li>
+    <li>Connexion réelle à un dépositaire central ou à une banque.</li>
+    <li>Exécution réelle d'ordres.</li>
+    <li>Conseil en investissement automatisé.</li>
+    <li>Validation juridique des règles COSUMAF.</li>
+    <li>Gestion de production multi-tenant.</li>
+    <li>Application mobile native.</li>
+    <li>Notifications SMS ou e-mail en production.</li>
+    <li>Docker et orchestration.</li>
+    <li>CI/CD.</li>
+    <li>Déploiement cloud.</li>
+    <li>Haute disponibilité, réplication et plan de reprise d'activité.</li>
+    <li>Signature électronique juridiquement qualifiée.</li>
+  </ul>
+
+  <h2>18. Risques et mesures de réduction</h2>
+  <table>
+    <thead><tr><th>Risque</th><th>Mesure</th></tr></thead>
+    <tbody>
+      <tr><td>Confusion entre données réelles et synthétiques</td><td>Statut de provenance obligatoire, badges, filtres et avertissements dans les rapports.</td></tr>
+      <tr><td>Règles réglementaires incomplètes</td><td>Paramétrer les limites et les présenter comme valeurs de démonstration à confirmer.</td></tr>
+      <tr><td>Données BVMAC peu liquides</td><td>Conserver les prix, volumes et statuts observés ; ne pas inventer les transactions.</td></tr>
+      <tr><td>Faible profondeur historique</td><td>Séparer les métriques observées des métriques démonstratives.</td></tr>
+      <tr><td>Scope trop large</td><td>Prioriser le workflow ordre → contrôle → exécution simulée → rapprochement → rapport.</td></tr>
+      <tr><td>Fuite de données personnelles</td><td>Utiliser uniquement des clients fictifs et aucune donnée sensible réelle.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>19. Plan d'implémentation étape par étape pour un LLM</h2>
+  <div class="notice"><strong>Règle d'exécution:</strong> le LLM doit traiter une seule étape à la fois, lire les fichiers existants avant toute modification, préserver les changements utilisateur, exécuter les tests après chaque étape et ne passer à l'étape suivante qu'après validation.</div>
+  <h3>19.1 Contexte obligatoire à fournir au LLM</h3>
+  <ul>
+    <li>Stack imposée : React + TypeScript, FastAPI + Python stateless, IndexedDB via Dexie.js.</li>
+    <li>Exécution locale uniquement : aucun Docker, CI/CD ou cloud.</li>
+    <li>Données marché originales dans <code>json/</code> et PDF dans <code>bulletins/</code>.</li>
+    <li>Données synthétiques séparées dans <code>json_demo_2026/</code>.</li>
+    <li>Statuts de données obligatoires : OBSERVED, INTERPOLATED, SIMULATED.</li>
+    <li>Les seuils COSUMAF sont configurables et marqués à vérifier.</li>
+    <li>Aucune donnée personnelle réelle ni connexion à une place de marché.</li>
+  </ul>
+  <h3>19.2 Étapes de réalisation</h3>
+  <table>
+    <thead><tr><th>Étape</th><th>Instruction de travail pour le LLM</th><th>Sortie attendue</th><th>Validation</th></tr></thead>
+    <tbody>
+      <tr><td>0. Inspection</td><td>Lire README, arborescence, configuration, tests et schéma existants. Identifier ce qui peut être réutilisé.</td><td>Note d'architecture et liste des fichiers à créer/modifier.</td><td>Aucune modification avant compréhension du dépôt.</td></tr>
+      <tr><td>1. Fondations</td><td>Créer les applications frontend/backend, Dexie database, schéma versionné, repositories, configuration locale et scripts de démarrage.</td><td>Application React et API FastAPI démarrables localement ; IndexedDB est créée automatiquement.</td><td>Healthcheck API, ouverture/migration Dexie et build frontend.</td></tr>
+      <tr><td>2. Profil de démonstration</td><td>Créer un sélecteur de rôle fictif et protéger seulement la navigation UX ; ne pas implémenter de fausse authentification présentée comme sécurisée.</td><td>Choix de rôle persistant en préférence locale.</td><td>Le rôle survit au rechargement et l'écran indique le mode démo.</td></tr>
+      <tr><td>3. Import marché</td><td>Lire les JSON BVMAC et importer les données normalisées dans Dexie avec upserts idempotents. Garder FastAPI non persistant.</td><td>Object stores marché remplis sans doublons.</td><td>Comptages comparés aux sources et rechargement sans doublons.</td></tr>
+      <tr><td>4. Historique démo</td><td>Créer <code>generate_demo_history.py</code>. Conserver septembre, générer les jours manquants et écrire les métadonnées de provenance.</td><td><code>json_demo_2026/</code> reproductible et séparé.</td><td>Même sortie avec la même graine, aucun fichier source modifié.</td></tr>
+      <tr><td>5. Référentiel React</td><td>Créer liste filtrable, pagination, fiche instrument, graphique et badges de provenance.</td><td>Écran Marché fonctionnel.</td><td>Recherche ISIN/mnémonique et filtre de statut.</td></tr>
+      <tr><td>6. Portefeuilles</td><td>Créer modèles TypeScript, repositories Dexie, transactions locales, cash, positions, valorisation, performance et expositions.</td><td>Écran Portefeuille et données persistées dans le navigateur.</td><td>Tests repository et calculs sur un portefeuille connu.</td></tr>
+      <tr><td>7. Ordres</td><td>Créer formulaire, cycle de vie, contrôles cash/titres/limites, maker-checker et exécution simulée.</td><td>Parcours ordre complet.</td><td>Un ordre conforme passe ; un ordre bloqué ne s'exécute pas.</td></tr>
+      <tr><td>8. Risques</td><td>Implémenter règles configurables, concentrations, liquidité, duration, stress tests et alertes.</td><td>Écran Risques exploitable.</td><td>Cas de dépassement détecté avec écart correct.</td></tr>
+      <tr><td>9. Rapprochements</td><td>Créer sessions, imports externes simulés, anomalies, responsables, commentaires et résolution.</td><td>Écran Rapprochements.</td><td>Écart créé, affecté et clôturé avec audit.</td></tr>
+      <tr><td>10. Rapports</td><td>Créer modèles de composition, limites, opérations, contrôle interne et rapprochement, avec période, version, sources et statut.</td><td>Rapports HTML/PDF/CSV de démonstration.</td><td>Rapports reproductibles et avertissement synthétique visible.</td></tr>
+      <tr><td>11. Wiki</td><td>Créer catégories, articles seedés, recherche, niveaux de lecture et liens contextuels vers les écrans.</td><td>Page Wiki/méthodologie complète.</td><td>Recherche d'OPCVM, FCP, COSUMAF et duration fonctionnelle.</td></tr>
+      <tr><td>12. Audit</td><td>Journaliser choix de profil, import, ordre, validation, changement de règle, rapprochement, rapport et administration dans Dexie.</td><td>Journal local filtrable.</td><td>Chaque mutation critique produit un événement persistant au rechargement.</td></tr>
+      <tr><td>13. Qualité</td><td>Ajouter tests backend, tests frontend, tests d'intégration et données de démonstration nettoyées.</td><td>Suite de tests et rapport de couverture ciblé.</td><td>Tests critiques verts et absence de régression.</td></tr>
+      <tr><td>14. Documentation</td><td>Mettre à jour README, variables locales, commandes, comptes de démo, architecture, limites et scénario commercial.</td><td>Projet exécutable par un tiers.</td><td>Installation vierge validée manuellement.</td></tr>
+    </tbody>
+  </table>
+  <h3>19.3 Format de consigne à utiliser pour chaque étape</h3>
+  <pre>Tu travailles sur l'étape N du cahier des charges BrokerControl360.
+1. Inspecte d'abord les fichiers concernés.
+2. N'efface aucune modification existante non liée.
+3. Implémente uniquement le périmètre de cette étape.
+4. Ajoute ou mets à jour les tests correspondants.
+5. Lance les commandes de vérification locales.
+6. Corrige les erreurs rencontrées.
+7. Termine par: fichiers modifiés, tests exécutés, résultats et limites restantes.</pre>
+  <h3>19.4 Conditions d'arrêt du LLM</h3>
+  <ul>
+    <li>Ne pas inventer une règle COSUMAF lorsqu'une source n'est pas disponible.</li>
+    <li>Ne pas mélanger données officielles et données simulées.</li>
+    <li>Ne pas ajouter Docker, CI/CD, cloud ou intégration BVMAC sans demande explicite.</li>
+    <li>Ne pas stocker de secret ou de donnée personnelle réelle.</li>
+    <li>Ne pas contourner un test en le supprimant.</li>
+    <li>Demander une clarification uniquement si une décision bloque réellement l'implémentation.</li>
+  </ul>
+
+  <div class="notice"><strong>Décision de conception:</strong> la première version doit privilégier un parcours métier cohérent et vérifiable plutôt qu'un grand nombre de modules superficiels. Le scénario le plus important est : ordre fictif, contrôles, validation, position, risque, rapprochement, rapport et explication Wiki.</div>
+  <p class="small">Document de cadrage pour un MVP de démonstration. Les exigences réglementaires, seuils et formats de reporting devront être confirmés contre les textes COSUMAF et les procédures de l'établissement avant tout usage opérationnel.</p>
+</div>
+</body>
+</html>

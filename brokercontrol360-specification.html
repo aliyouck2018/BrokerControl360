@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrokerControl360 - Spécification</title>
+  <style>
+    :root { --navy:#12324a; --blue:#1d6f9f; --pale:#eef6fa; --line:#ccd8e0; --text:#1d2935; --muted:#5b6b78; --gold:#b88318; }
+    * { box-sizing: border-box; }
+    body { margin:0; color:var(--text); background:#f5f8fa; font:15px/1.55 Arial, sans-serif; }
+    .wrap { max-width:1100px; margin:0 auto; padding:34px 24px 54px; }
+    h1 { color:var(--navy); font-size:32px; line-height:1.15; margin:0 0 8px; }
+    h2 { color:var(--navy); border-bottom:2px solid var(--blue); padding-bottom:6px; margin:34px 0 14px; font-size:22px; }
+    h3 { color:var(--blue); margin:0 0 7px; font-size:17px; }
+    p { margin:7px 0 12px; }
+    .subtitle { color:var(--muted); font-size:17px; margin-bottom:24px; }
+    .notice { background:var(--pale); border-left:5px solid var(--blue); padding:14px 17px; margin:18px 0; }
+    .warning { background:#fff8e6; border-left:5px solid var(--gold); padding:14px 17px; margin:18px 0; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
+    .card { background:white; border:1px solid var(--line); border-radius:8px; padding:15px; break-inside:avoid; }
+    .tag { display:inline-block; color:#155f87; background:#e8f3f8; border-radius:12px; padding:2px 9px; font-size:12px; margin-bottom:6px; }
+    ul, ol { margin:7px 0 12px 21px; padding:0; }
+    li { margin:4px 0; }
+    code { background:#edf1f4; border-radius:3px; padding:1px 4px; font-family:monospace; }
+    pre { background:#172532; color:#e6f2f8; border-radius:7px; padding:15px; overflow:auto; font-size:13px; }
+    table { width:100%; border-collapse:collapse; margin:12px 0; }
+    th { text-align:left; background:var(--navy); color:white; padding:8px; }
+    td { border:1px solid var(--line); padding:8px; vertical-align:top; }
+    tr:nth-child(even) td { background:#f8fbfd; }
+    .small { color:var(--muted); font-size:12px; }
+    @media print { body { background:white; } .wrap { padding:0; } .card { box-shadow:none; } }
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <h1>BrokerControl360</h1>
+  <div class="subtitle">Spécification fonctionnelle et stratégie de génération d'un historique BVMAC 2026 pour une démonstration</div>
+
+  <div class="notice"><strong>Positionnement.</strong> BrokerControl360 est une plateforme de contrôle et de pilotage pour les sociétés de bourse agréées par la COSUMAF. Elle complète un système de négociation ou de conservation ; elle ne cherche pas à les remplacer.</div>
+
+  <h2>1. Fonctionnalités principales</h2>
+  <div class="grid">
+    <article class="card"><span class="tag">Données</span><h3>Référentiel des instruments</h3><ul><li>Actions, obligations et OPCVM</li><li>ISIN, mnémonique, émetteur et pays</li><li>Coupon, nominal, échéance et périodicité</li><li>Historique des cours et des émissions</li><li>Statut de cotation et provenance des données</li></ul></article>
+    <article class="card"><span class="tag">Clients</span><h3>Investisseurs et KYC</h3><ul><li>Fiche personne physique ou morale</li><li>Profil de risque et objectifs</li><li>Documents obligatoires et expirations</li><li>Statut PEP et sanctions</li><li>Historique des validations</li></ul></article>
+    <article class="card"><span class="tag">Onboarding</span><h3>Ouverture de compte titres</h3><ul><li>Workflow de création de compte</li><li>Checklist documentaire</li><li>Validation maker-checker</li><li>Association à un portefeuille</li><li>Alertes sur dossiers incomplets</li></ul></article>
+    <article class="card"><span class="tag">Opérations</span><h3>Carnet d'ordres interne</h3><ul><li>Saisie d'ordres d'achat et de vente</li><li>Quantité, prix limite et validité</li><li>Client et instrument concernés</li><li>Statuts de l'ordre</li><li>Historique complet et annulation</li></ul></article>
+    <article class="card"><span class="tag">Contrôle</span><h3>Contrôles pré-trade</h3><ul><li>Cash et titres disponibles</li><li>Respect du profil de risque</li><li>Limites par émetteur et instrument</li><li>Allocation cible</li><li>Détection des ordres inhabituels</li><li>Blocage automatique si nécessaire</li></ul></article>
+    <article class="card"><span class="tag">Back-office</span><h3>Rapprochements</h3><ul><li>Ordres et exécutions BVMAC</li><li>Positions et dépositaire</li><li>Espèces et banque</li><li>Coupons, dividendes et échéances</li><li>Gestion des suspens et responsables</li></ul></article>
+    <article class="card"><span class="tag">Portefeuilles</span><h3>Valorisation et performance</h3><ul><li>Valorisation quotidienne</li><li>Allocation par classe, pays et émetteur</li><li>TWR et MWR/XIRR</li><li>Volatilité, Sharpe et drawdown</li><li>VaR indicative et durée obligataire</li><li>Comparaison avec BVMAC-AS</li></ul></article>
+    <article class="card"><span class="tag">Risques</span><h3>Risk management</h3><ul><li>Concentration, liquidité et marché</li><li>Risque émetteur, taux et change</li><li>Risque opérationnel et règlement-livraison</li><li>Stress tests et scénarios</li><li>Matrice des risques et plans correctifs</li></ul></article>
+    <article class="card"><span class="tag">Réglementaire</span><h3>Reporting COSUMAF</h3><ul><li>Composition et expositions</li><li>Dépassements de limites</li><li>Rapports d'activité</li><li>Opérations primaires et secondaires</li><li>Export PDF/Excel</li><li>Versioning et historique des dépôts</li></ul></article>
+    <article class="card"><span class="tag">Gouvernance</span><h3>Sécurité et audit</h3><ul><li>Rôles et permissions</li><li>Maker-checker</li><li>Journal d'audit</li><li>Historique des connexions</li><li>MFA simulée pour la démo</li><li>Séparation des environnements</li></ul></article>
+  </div>
+
+  <h2>2. MVP recommandé</h2>
+  <ol>
+    <li>Référentiel des instruments BVMAC</li>
+    <li>Portefeuilles et positions</li>
+    <li>Saisie d'ordres fictifs</li>
+    <li>Contrôles pré-trade</li>
+    <li>Rapprochement des positions et du cash</li>
+    <li>Reporting risques et COSUMAF</li>
+  </ol>
+  <div class="notice"><strong>Parcours de démonstration:</strong> créer un client institutionnel, créer un portefeuille, ajouter des espèces, saisir un ordre obligataire, contrôler les limites, valider l'ordre, simuler son exécution, mettre à jour la position, valoriser le portefeuille et générer le rapport de risque.</div>
+
+  <h2>3. Données BVMAC disponibles</h2>
+  <p>Le dossier <code>json</code> contient 19 bulletins BVMAC couvrant les séances du 1er au 25 septembre 2026. Chaque bulletin contient 7 actions, 31 obligations, l'indice BVMAC All Share, les volumes, la capitalisation, les encours obligataires et des lignes OPCVM.</p>
+  <p>Les principales actions présentes sont SEMC, SAFACAM, SOCAPALM, La Régionale, BANGE, SCG-Re et BGFI Holding Corporation.</p>
+  <div class="warning"><strong>Point important:</strong> le statut <code>NC</code> apparaît fréquemment. Une absence de transaction ne signifie pas nécessairement une variation de prix. Les volumes nuls ne doivent donc pas être remplacés par des valeurs inventées.</div>
+
+  <h2>4. Limite de l'historique annuel</h2>
+  <p>Les données de janvier à août 2026 ne peuvent pas être réellement interpolées puisque les observations disponibles commencent en septembre. Il faut distinguer clairement :</p>
+  <table>
+    <thead><tr><th>Statut</th><th>Signification</th><th>Utilisation</th></tr></thead>
+    <tbody>
+      <tr><td><code>OBSERVED</code></td><td>Valeur directement extraite d'un bulletin BVMAC.</td><td>Calculs et reporting de référence.</td></tr>
+      <tr><td><code>INTERPOLATED</code></td><td>Valeur calculée entre deux observations réelles.</td><td>Graphiques et démonstrations, avec avertissement.</td></tr>
+      <tr><td><code>SIMULATED</code></td><td>Valeur générée pour une période sans observation.</td><td>Scénario de démonstration uniquement.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>5. Méthode recommandée</h2>
+  <h3>Septembre 2026</h3>
+  <ul><li>Conserver les cours, l'indice et les volumes observés.</li><li>Ne pas remplacer les volumes nuls.</li><li>Forward-filler seulement les données explicitement non cotées.</li></ul>
+  <h3>Jours ouvrés entre deux séances</h3>
+  <ul><li>Actions : interpolation du dernier cours connu au prochain cours connu.</li><li>Obligations : maintien du dernier cours connu, compte tenu de l'illiquidité.</li><li>OPCVM : interpolation seulement si la périodicité le permet.</li><li>Indice : interpolation linéaire entre les observations.</li><li>Volumes : valeur vide ou zéro selon une convention documentée.</li></ul>
+  <h3>Janvier à août 2026</h3>
+  <ul><li>Ancrer les prix au premier cours observé de septembre.</li><li>Utiliser les plus hauts, plus bas et variations annuelles publiés comme repères.</li><li>Générer une trajectoire progressive et reproductible.</li><li>Utiliser une graine aléatoire fixe.</li><li>Marquer chaque valeur comme <code>SIMULATED</code>.</li><li>Privilégier un prix stable pour les titres très illiquides.</li></ul>
+
+  <h2>6. Métadonnées à ajouter</h2>
+  <p>Les tables de cotation devraient conserver la provenance de chaque valeur :</p>
+  <pre>data_status VARCHAR(20) NOT NULL DEFAULT 'OBSERVED',
+source_date DATE,
+interpolation_method VARCHAR(50),
+  <p>Une table dédiée peut également être créée :</p>
+  <pre>CREATE TABLE market_data_provenance (
+    id BIGSERIAL PRIMARY KEY,
+    instrument_code TEXT,
+    observation_date DATE NOT NULL,
+    data_status TEXT NOT NULL,
+    method TEXT,
+    source_bulletin TEXT,
+    source_date DATE,
+    confidence_score NUMERIC(5,2),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);</pre>
+
+  <h2>7. Fonctionnalités liées aux données synthétiques</h2>
+  <ul>
+    <li>Filtre Observé / Interpolé / Simulé</li>
+    <li>Badge de provenance sur les graphiques</li>
+    <li>Légende distincte pour les données synthétiques</li>
+    <li>Option d'exclusion des données simulées des calculs réglementaires</li>
+    <li>Export séparé des données officielles et synthétiques</li>
+    <li>Page de méthodologie</li>
+    <li>Score de confiance par instrument</li>
+    <li>Journal de génération de l'historique</li>
+  </ul>
+
+  <h2>8. Limites des métriques</h2>
+  <p>La volatilité, le Sharpe, la VaR, le drawdown, la performance annuelle et les corrélations seront artificiellement influencés par les données simulées.</p>
+  <div class="warning"><strong>Présentation recommandée:</strong> afficher séparément « Performance observée : septembre 2026 » et « Performance démonstrative : janvier à décembre 2026 ». Les rapports COSUMAF doivent utiliser uniquement les valeurs observées, sauf s'ils sont explicitement marqués comme démonstratifs.</div>
+
+  <h2>9. Prochaine étape technique</h2>
+  <p>Créer un générateur dédié, par exemple <code>generate_demo_history.py</code>, qui produit un répertoire séparé comme <code>json_demo_2026/</code> sans modifier les fichiers JSON officiels.</p>
+  <p class="small">Document préparé à partir de l'état actuel du projet CEMAC360 et des 19 bulletins BVMAC présents dans <code>bulletins/</code> et <code>json/</code>.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,5213 @@
+{
+  "metadata": {
+    "emetteur": "BOURSE DES VALEURS MOBILIERES DE L'AFRIQUE CENTRALE (BVMAC)",
+    "document": "BULLETIN OFFICIEL DE LA COTE",
+    "bulletin_numero": 2599,
+    "date": "21/09/2026",
+    "nombre_de_pages": 28,
+    "indice": {
+      "nom": "BVMAC ALL SHARE INDEX",
+      "code": "BVMAC-AS",
+      "valeur": 1146.14,
+      "variation_jour": "0,00%"
+    }
+  },
+  "synthese_du_marche": {
+    "instruments": {
+      "ACTIONS": {
+        "volume_transige": 9,
+        "valeur_transigee": 450000,
+        "nombre_de_transactions": 2,
+        "nombre_emetteurs": 7
+      },
+      "OBLIGATIONS": {
+        "volume_transige": 20000,
+        "valeur_transigee": 126719200,
+        "nombre_de_transactions": 1,
+        "nombre_emetteurs": 7
+      },
+      "TOTAL": {
+        "volume_transige": 20009,
+        "valeur_transigee": 127169200,
+        "nombre_de_transactions": 3,
+        "nombre_emetteurs": 14
+      }
+    }
+  },
+  "marche_des_actions": [
+    {
+      "designation_emetteur": "SOCIETE DES EAUX MINERALES DU CAMEROUN",
+      "code_isin": "CM0000010009",
+      "mnemo": "SEMC",
+      "nom_court_emetteur": "SEMC",
+      "cours_precedent": 53000,
+      "seance_date": "18/09/2026",
+      "volume_demande": 13,
+      "volume_offert": 0,
+      "volume_transige": 0,
+      "valeur_transigee": 0,
+      "nbr_transactions": 0,
+      "statut": "NC",
+      "cours_du_jour_ouverture": 53000,
+      "cours_du_jour_cloture": 53000,
+      "seuil_haut": 58300,
+      "seuil_bas": 47700,
+      "variation_pct": "0,00%",
+      "cours_reference_seance_suivante": 53000,
+      "cours_depuis_janvier_haut": 53000,
+      "cours_depuis_janvier_bas": 48200,
+      "variation_annee_precedente_pct": 8.16
+    },
+    {
+      "designation_emetteur": "SOCIETE AFRICAINE FORESTIERE ET AGRICOLE DU CAMEROUN",
+      "code_isin": "CM0000010017",
+      "mnemo": "SAF",
+      "nom_court_emetteur": "SAFACAM",
+      "cours_precedent": 38500,
+      "seance_date": "18/09/2026",
+      "volume_demande": 711,
+      "volume_offert": 23,
+      "volume_transige": 0,
+      "valeur_transigee": 0,
+      "nbr_transactions": 0,
+      "statut": "NC",
+      "cours_du_jour_ouverture": 38500,
+      "cours_du_jour_cloture": 38500,
+      "seuil_haut": 42350,
+      "seuil_bas": 34650,
+      "variation_pct": "0,00%",
+      "cours_reference_seance_suivante": 38500,
+      "cours_depuis_janvier_haut": 38500,
+      "cours_depuis_janvier_bas": 30000,
+      "variation_annee_precedente_pct": 45.28
+    },
+    {
+      "designation_emetteur": "SOCIETE CAMEROUNAISE DE PALMERAIE",
+      "code_isin": "CM0000010025",
+      "mnemo": "SOCAP",
+      "nom_court_emetteur": "SOCAPALM",
+      "cours_precedent": 50000,
+      "seance_date": "18/09/2026",
+      "volume_demande": 9,
+      "volume_offert": 2610,
+      "volume_transige": 9,
+      "valeur_transigee": 450000,
+      "nbr_transactions": 2,
+      "statut": "PEq",
+      "cours_du_jour_ouverture": 50000,
+      "cours_du_jour_cloture": 50000,
+      "seuil_haut": 55000,
+      "seuil_bas": 45000,
+      "variation_pct": "0,00%",
+      "cours_reference_seance_suivante": 50000,
+      "cours_depuis_janvier_haut": 55001,
+      "cours_depuis_janvier_bas": 50000,
+      "variation_annee_precedente_pct": 3.09
+    },
+    {
+      "designation_emetteur": "LA REGIONALE EPARGNE CREDIT",
+      "code_isin": "CM0000010041",
+      "mnemo": "REG",
+      "nom_court_emetteur": "LA REGIONALE",
+      "cours_precedent": 39000,
+      "seance_date": "18/09/2026",
+      "volume_demande": 0,
+      "volume_offert": 337,
+      "volume_transige": 0,
+      "valeur_transigee": 0,
+      "nbr_transactions": 0,
+      "statut": "NC",
+      "cours_du_jour_ouverture": 39000,
+      "cours_du_jour_cloture": 39000,
+      "seuil_haut": 42900,
+      "seuil_bas": 35100,
+      "variation_pct": "0,00%",
+      "cours_reference_seance_suivante": 39000,
+      "cours_depuis_janvier_haut": 42000,
+      "cours_depuis_janvier_bas": 39000,
+      "variation_annee_precedente_pct": -7.14
+    },
+    {
+      "designation_emetteur": "BANCO NACIONAL DE GUINEA ECUATORIAL",
+      "code_isin": "GQ0000010050",
+      "mnemo": "BANGE",
+      "nom_court_emetteur": "BANGE",
+      "cours_precedent": 223255,
+      "seance_date": "18/09/2026",
+      "volume_demande": 0,
+      "volume_offert": 70,
+      "volume_transige": 0,
+      "valeur_transigee": 0,
+      "nbr_transactions": 0,
+      "statut": "NC",
+      "cours_du_jour_ouverture": 223255,
+      "cours_du_jour_cloture": 223255,
+      "seuil_haut": 245581,
+      "seuil_bas": 200930,
+      "variation_pct": "0,00%",
+      "cours_reference_seance_suivante": 223255,
+      "cours_depuis_janvier_haut": 228085,
+      "cours_depuis_janvier_bas": 223255,
+      "variation_annee_precedente_pct": 10.04
+    },
+    {
+      "designation_emetteur": "SOCIETE COMMERCIALE GABONAISE DE REASSURANCE",
+      "code_isin": "GA0000010066",
+      "mnemo": "SCGRE",
+      "nom_court_emetteur": "SCG-Re",
+      "cours_precedent": 20000,
+      "seance_date": "18/09/2026",
+      "volume_demande": 0,
+      "volume_offert": 597,
+      "volume_transige": 0,
+      "valeur_transigee": 0,
+      "nbr_transactions": 0,
+      "statut": "NC",
+      "cours_du_jour_ouverture": 20000,
+      "cours_du_jour_cloture": 20000,
+      "seuil_haut": 22000,
+      "seuil_bas": 18000,
+      "variation_pct": "0,00%",
+      "cours_reference_seance_suivante": 20000,
+      "cours_depuis_janvier_haut": 21500,
+      "cours_depuis_janvier_bas": 20000,
+      "variation_annee_precedente_pct": -6.98
+    },
+    {
+      "designation_emetteur": "BGFI HOLDING CORPORATION",
+      "code_isin": "GA0000010074",
+      "mnemo": "BHC",
+      "nom_court_emetteur": "BGFI HC",
+      "cours_precedent": 90000,
+      "seance_date": "18/09/2026",
+      "volume_demande": 0,
+      "volume_offert": 66,
+      "volume_transige": 0,
+      "valeur_transigee": 0,
+      "nbr_transactions": 0,
+      "statut": "NC",
+      "cours_du_jour_ouverture": 90000,
+      "cours_du_jour_cloture": 90000,
+      "seuil_haut": 99000,
+      "seuil_bas": 81000,
+      "variation_pct": "0,00%",
+      "cours_reference_seance_suivante": 90000,
+      "cours_depuis_janvier_haut": 93051,
+      "cours_depuis_janvier_bas": 82000,
+      "variation_annee_precedente_pct": "-"
+    }
+  ],
+  "marche_des_obligations": {
+    "obligations_des_etats": [
+      {
+        "designation_emetteur": "ETAT DU CAMEROUN",
+        "designation_titre": "ECMR 6.25% NET 2022-2029",
+        "code_isin": "CM0000020305",
+        "mnemo": "ECMR6",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 6000,
+        "nominal_j3": 6000,
+        "coupon_couru_j3": 123.29,
+        "volume_demande": 995,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 6000
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6.25% NET 2022-2028",
+        "code_isin": "GA0000020313",
+        "mnemo": "EGA07",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 6000,
+        "nominal_j3": 6000,
+        "coupon_couru_j3": 335.96,
+        "volume_demande": 20000,
+        "volume_offert": 20000,
+        "volume_transige": 20000,
+        "valeur_transigee": 126719200,
+        "nbr_transactions": 1,
+        "statut": "PEq",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 6000
+      },
+      {
+        "designation_emetteur": "ETAT DU TCHAD",
+        "designation_titre": "EOTD 6.5% NET 2022-2027",
+        "code_isin": "TD0000020331",
+        "mnemo": "ETD01",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 5000,
+        "nominal_j3": 5000,
+        "coupon_couru_j3": 238.63,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 5000
+      },
+      {
+        "designation_emetteur": "ETAT DU CAMEROUN",
+        "designation_titre": "ECMR 6.00% NET 2023-2027",
+        "code_isin": "CM0000020362",
+        "mnemo": "ECMR8",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 5000,
+        "nominal_j3": 5000,
+        "coupon_couru_j3": 76.44,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 5000
+      },
+      {
+        "designation_emetteur": "ETAT DU CAMEROUN",
+        "designation_titre": "ECMR 6.75% NET 2023-2029",
+        "code_isin": "CM0000020370",
+        "mnemo": "ECMR9",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 171.99,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "ETAT DU CAMEROUN",
+        "designation_titre": "ECMR 7.25% NET 2023-2031",
+        "code_isin": "CM0000020388",
+        "mnemo": "ECM10",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 99,
+        "cours_precedent_fcfa": 9900,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 184.73,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 99,
+        "cloture": 99,
+        "seuil_haut": 104.94,
+        "seuil_bas": 93.06,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 9900
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6.25% NET 2023-2028",
+        "code_isin": "GA0000020396",
+        "mnemo": "EGA08",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 96,
+        "cours_precedent_fcfa": 4800,
+        "nominal_j3": 5000,
+        "coupon_couru_j3": 60.79,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 96,
+        "cloture": 96,
+        "seuil_haut": 101.76,
+        "seuil_bas": 90.24,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 4800
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6% NET 2024-2027",
+        "code_isin": "GA0000020487",
+        "mnemo": "EGA09",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 294.25,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6,5% NET 2024-2029",
+        "code_isin": "GA0000020495",
+        "mnemo": "EGA10",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 318.77,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 7,5% NET 2024-2031",
+        "code_isin": "GA0000020503",
+        "mnemo": "EGA11",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 367.81,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 6,60% NET 2024-2027",
+        "code_isin": "GA0000020511",
+        "mnemo": "EGA12",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 98,
+        "cours_precedent_fcfa": 4900,
+        "nominal_j3": 5000,
+        "coupon_couru_j3": 76.85,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 98,
+        "cloture": 98,
+        "seuil_haut": 103.88,
+        "seuil_bas": 92.12,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 4900
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 6,75% NET 2024-2028",
+        "code_isin": "GA0000020529",
+        "mnemo": "EGA13",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 157.19,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 7% NET 2024-2030",
+        "code_isin": "GA0000020537",
+        "mnemo": "EGA14",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 163.01,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 6,6% NET 2024-2027-II",
+        "code_isin": "GA0000020552",
+        "mnemo": "EGA15",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 97,
+        "cours_precedent_fcfa": 9700,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 484.6,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 97,
+        "cloture": 97,
+        "seuil_haut": 102.82,
+        "seuil_bas": 91.18,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 9700
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 6,75% NET 2024-2028-I",
+        "code_isin": "GA0000020560",
+        "mnemo": "EGA16",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 97,
+        "cours_precedent_fcfa": 9700,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 495.62,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 97,
+        "cloture": 97,
+        "seuil_haut": 102.82,
+        "seuil_bas": 91.18,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 9700
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 7,00% NET 2024-2030-I",
+        "code_isin": "GA0000020578",
+        "mnemo": "EGA17",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 513.97,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 5,6% NET 2025-2027",
+        "code_isin": "GA0000020594",
+        "mnemo": "EGA18",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 263.89,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6% NET 2025-2028",
+        "code_isin": "GA0000020602",
+        "mnemo": "EGA19",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 282.74,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 5,6% NET 2025-2027 II",
+        "code_isin": "GA0000020636",
+        "mnemo": "EGA20",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 549.26,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6% NET 2025-2028 II",
+        "code_isin": "GA0000020644",
+        "mnemo": "EGA21",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 588.49,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      }
+    ],
+    "obligations_regionales": [
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 5.45% NET 2020 - 2027",
+        "code_isin": "CG0000020220",
+        "mnemo": "EBD01",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 4000,
+        "nominal_j3": 4000,
+        "coupon_couru_j3": 159.47,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 4000
+      },
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 5.6% NET 2021-2028",
+        "code_isin": "CG0000020261",
+        "mnemo": "EBD02",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 98.5,
+        "cours_precedent_fcfa": 5910,
+        "nominal_j3": 6000,
+        "coupon_couru_j3": 266.96,
+        "volume_demande": 0,
+        "volume_offert": 5000,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 98.5,
+        "cloture": 98.5,
+        "seuil_haut": 104.41,
+        "seuil_bas": 92.59,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 5910
+      },
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 6% NET 2022-2029",
+        "code_isin": "CG0000020329",
+        "mnemo": "EBD03",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 8000,
+        "nominal_j3": 8000,
+        "coupon_couru_j3": 352.44,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 8000
+      },
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 6,20% NET 2024-2031",
+        "code_isin": "CG0000020469",
+        "mnemo": "EBD04",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 315.95,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      },
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 5,95% NET 2024-2029",
+        "code_isin": "CG0000020436",
+        "mnemo": "EBD05",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 94.96,
+        "cours_precedent_fcfa": 9496,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 303.21,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 94.96,
+        "cloture": 94.96,
+        "seuil_haut": 100.66,
+        "seuil_bas": 89.26,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 9496
+      },
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 4,70% NET 2024-2027",
+        "code_isin": "CG0000020444",
+        "mnemo": "EBD06",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 10000,
+        "nominal_j3": 10000,
+        "coupon_couru_j3": 239.51,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 10000
+      }
+    ],
+    "obligations_privees": [
+      {
+        "designation_emetteur": "ALIOS FINANCE",
+        "designation_titre": "ALIOS 6.5% BRUT 2023-2028",
+        "code_isin": "CM0000020412",
+        "mnemo": "AFC03",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 5000,
+        "nominal_j3": 5000,
+        "coupon_couru_j3": 34.73,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 5000
+      },
+      {
+        "designation_emetteur": "ACEP CAMEROUN",
+        "designation_titre": "ACEP 7% BRUT 2024-2027",
+        "code_isin": "CM0000020545",
+        "mnemo": "ACEP1",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 6000,
+        "nominal_j3": 6000,
+        "coupon_couru_j3": 98.96,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 6000
+      },
+      {
+        "designation_emetteur": "SNPC",
+        "designation_titre": "SNPC 6,5% NET 2024-2029",
+        "code_isin": "CG0000020584",
+        "mnemo": "SNPC1",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 8000,
+        "nominal_j3": 8000,
+        "coupon_couru_j3": 380.38,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 8000
+      },
+      {
+        "designation_emetteur": "ALIOS FINANCE",
+        "designation_titre": "ALIOS-05 6% BRUT 2025-2028",
+        "code_isin": "CM0000020610",
+        "mnemo": "AFC05",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 8000,
+        "nominal_j3": 8000,
+        "coupon_couru_j3": 63.12,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 8000
+      },
+      {
+        "designation_emetteur": "ALIOS FINANCE",
+        "designation_titre": "ALIOS-06 7% BRUT 2025-2030",
+        "code_isin": "CM0000020628",
+        "mnemo": "AFC06",
+        "seance_date": "18/09/2026",
+        "cours_precedent_pct": 100,
+        "cours_precedent_fcfa": 8888.89,
+        "nominal_j3": 8888.889,
+        "coupon_couru_j3": 81.83,
+        "volume_demande": 0,
+        "volume_offert": 0,
+        "volume_transige": 0,
+        "valeur_transigee": 0,
+        "nbr_transactions": 0,
+        "statut": "NC",
+        "ouverture": 100,
+        "cloture": 100,
+        "seuil_haut": 106,
+        "seuil_bas": 94,
+        "variation": "0,00%",
+        "cours_reference_seance_suivante_fcfa": 8888.89
+      }
+    ]
+  },
+  "capitalisation_boursiere_et_encours": {
+    "marche_actions": [
+      {
+        "designation_emetteur": "SEMC",
+        "code_isin": "CM0000010009",
+        "mnemo": "SEMC",
+        "nom_court_emetteur": "SEMC",
+        "cours_de_cloture": 53000,
+        "volume_flottant_cote": 38367,
+        "volume_global": 192473,
+        "dernier_dividende_paye": 800,
+        "annee": 2025,
+        "date": "25/06/2026",
+        "liquidite_3_mois": 0,
+        "benefice_net_par_action": "-",
+        "per": "-",
+        "capitalisation_flottante_cotee": 2033451000,
+        "capitalisation_globale": 10201069000
+      },
+      {
+        "designation_emetteur": "SAFACAM",
+        "code_isin": "CM0000010017",
+        "mnemo": "SAF",
+        "nom_court_emetteur": "SAFACAM",
+        "cours_de_cloture": 38500,
+        "volume_flottant_cote": 248400,
+        "volume_global": 1242000,
+        "dernier_dividende_paye": 2200,
+        "annee": 2025,
+        "date": "20/07/2026",
+        "liquidite_3_mois": 0,
+        "benefice_net_par_action": "-",
+        "per": "-",
+        "capitalisation_flottante_cotee": 9563400000,
+        "capitalisation_globale": 47817000000
+      },
+      {
+        "designation_emetteur": "SOCAPALM",
+        "code_isin": "CM0000010025",
+        "mnemo": "SOCAP",
+        "nom_court_emetteur": "SOCAPALM",
+        "cours_de_cloture": 50000,
+        "volume_flottant_cote": 787080,
+        "volume_global": 4575789,
+        "dernier_dividende_paye": 2325,
+        "annee": 2025,
+        "date": "20/07/2026",
+        "liquidite_3_mois": 0,
+        "benefice_net_par_action": "-",
+        "per": "-",
+        "capitalisation_flottante_cotee": 39354000000,
+        "capitalisation_globale": 228789450000
+      },
+      {
+        "designation_emetteur": "LA REGIONALE",
+        "code_isin": "CM0000010041",
+        "mnemo": "REG",
+        "nom_court_emetteur": "LA REGIONALE",
+        "cours_de_cloture": 39000,
+        "volume_flottant_cote": 72089,
+        "volume_global": 1012536,
+        "dernier_dividende_paye": 894,
+        "annee": 2023,
+        "date": "18/09/2024",
+        "liquidite_3_mois": 0,
+        "benefice_net_par_action": "-",
+        "per": "-",
+        "capitalisation_flottante_cotee": 2811471000,
+        "capitalisation_globale": 39488904000
+      },
+      {
+        "designation_emetteur": "BANGE",
+        "code_isin": "GQ0000010050",
+        "mnemo": "BANGE",
+        "nom_court_emetteur": "BANGE",
+        "cours_de_cloture": 223255,
+        "volume_flottant_cote": 50000,
+        "volume_global": 558960,
+        "dernier_dividende_paye": 4830,
+        "annee": 2025,
+        "date": "31/07/2026",
+        "liquidite_3_mois": 0,
+        "benefice_net_par_action": "-",
+        "per": "-",
+        "capitalisation_flottante_cotee": 11162750000,
+        "capitalisation_globale": 124790614800
+      },
+      {
+        "designation_emetteur": "SCG-Re",
+        "code_isin": "GA0000010066",
+        "mnemo": "SCGRE",
+        "nom_court_emetteur": "SCG-Re",
+        "cours_de_cloture": 20000,
+        "volume_flottant_cote": 300000,
+        "volume_global": 1500000,
+        "dernier_dividende_paye": 433.16,
+        "annee": 2024,
+        "date": "22/10/2025",
+        "liquidite_3_mois": 0,
+        "benefice_net_par_action": "-",
+        "per": "-",
+        "capitalisation_flottante_cotee": 6000000000,
+        "capitalisation_globale": 30000000000
+      },
+      {
+        "designation_emetteur": "BGFI HC",
+        "code_isin": "GA0000010074",
+        "mnemo": "BHC",
+        "nom_court_emetteur": "BGFI HC",
+        "cours_de_cloture": 90000,
+        "volume_flottant_cote": 566561,
+        "volume_global": 14728385,
+        "dernier_dividende_paye": 2500,
+        "annee": 2025,
+        "date": "18/05/2026",
+        "liquidite_3_mois": 0,
+        "benefice_net_par_action": "-",
+        "per": "-",
+        "capitalisation_flottante_cotee": 50990490000,
+        "capitalisation_globale": 1325554650000
+      }
+    ],
+    "total_capitalisation_flottante_cotee": 121915562000,
+    "total_capitalisation_globale": 1806641687800
+  },
+  "encours_des_titres_de_dettes": {
+    "obligations_etats": [
+      {
+        "designation_emetteur": "ETAT DU CAMEROUN",
+        "designation_titre": "ECMR 6.25% NET 2022-2029",
+        "code_isin": "CM0000020305",
+        "mnemo": "ECMR6",
+        "taux_facial": 6.25,
+        "date_1ere_cotation": "28/09/2022",
+        "montant_leve": 235000000000,
+        "nombre_titres_cotes": 23500000,
+        "nominal": 6000,
+        "cours_en_pct": 100,
+        "mat": 7,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "27/05/2026",
+        "date_theorique_echeance_suivante": "27/05/2027",
+        "encours_calcule_ce_jour": 141000000000,
+        "rendement_net": 6.3,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6.25% NET 2022-2028",
+        "code_isin": "GA0000020313",
+        "mnemo": "EGA07",
+        "taux_facial": 6.25,
+        "date_1ere_cotation": "26/01/2023",
+        "montant_leve": 175000000000,
+        "nombre_titres_cotes": 17500000,
+        "nominal": 6000,
+        "cours_en_pct": 100,
+        "mat": 6,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "01/11/2025",
+        "date_theorique_echeance_suivante": "01/11/2026",
+        "encours_calcule_ce_jour": 105000000000,
+        "rendement_net": 6.3,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU TCHAD",
+        "designation_titre": "EOTD 6.5% NET 2022-2027",
+        "code_isin": "TD0000020331",
+        "mnemo": "ETD01",
+        "taux_facial": 6.5,
+        "date_1ere_cotation": "24/03/2023",
+        "montant_leve": 100000000000,
+        "nombre_titres_cotes": 10000000,
+        "nominal": 5000,
+        "cours_en_pct": 100,
+        "mat": 5,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "30/12/2025",
+        "date_theorique_echeance_suivante": "30/12/2026",
+        "encours_calcule_ce_jour": 50000000000,
+        "rendement_net": 6.5,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU CAMEROUN",
+        "designation_titre": "ECMR 6.00% NET 2023-2027",
+        "code_isin": "CM0000020362",
+        "mnemo": "ECMR8",
+        "taux_facial": 6,
+        "date_1ere_cotation": "23/11/2023",
+        "montant_leve": 61514680000,
+        "nombre_titres_cotes": 6151468,
+        "nominal": 5000,
+        "cours_en_pct": 100,
+        "mat": 4,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "23/06/2026",
+        "date_theorique_echeance_suivante": "23/06/2027",
+        "encours_calcule_ce_jour": 30757340000,
+        "rendement_net": 6,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU CAMEROUN",
+        "designation_titre": "ECMR 6.75% NET 2023-2029",
+        "code_isin": "CM0000020370",
+        "mnemo": "ECMR9",
+        "taux_facial": 6.75,
+        "date_1ere_cotation": "23/11/2023",
+        "montant_leve": 25052520000,
+        "nombre_titres_cotes": 2505252,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 6,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "23/06/2026",
+        "date_theorique_echeance_suivante": "23/06/2027",
+        "encours_calcule_ce_jour": 25052520000,
+        "rendement_net": 6.8,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU CAMEROUN",
+        "designation_titre": "ECMR 7.25% NET 2023-2031",
+        "code_isin": "CM0000020388",
+        "mnemo": "ECM10",
+        "taux_facial": 7.25,
+        "date_1ere_cotation": "23/11/2023",
+        "montant_leve": 11032250000,
+        "nombre_titres_cotes": 1103225,
+        "nominal": 10000,
+        "cours_en_pct": 99,
+        "mat": 8,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "23/06/2026",
+        "date_theorique_echeance_suivante": "23/06/2027",
+        "encours_calcule_ce_jour": 10921927500,
+        "rendement_net": 7.2,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6.25% NET 2023-2028",
+        "code_isin": "GA0000020396",
+        "mnemo": "EGA08",
+        "taux_facial": 6.25,
+        "date_1ere_cotation": "30/12/2024",
+        "montant_leve": 154605500000,
+        "nombre_titres_cotes": 15460550,
+        "nominal": 5000,
+        "cours_en_pct": 96,
+        "mat": 5,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "15/07/2026",
+        "date_theorique_echeance_suivante": "15/07/2027",
+        "encours_calcule_ce_jour": 74210640000,
+        "rendement_net": 6.2,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6% NET 2024-2027",
+        "code_isin": "GA0000020487",
+        "mnemo": "EGA09",
+        "taux_facial": 6,
+        "date_1ere_cotation": "30/12/2024",
+        "montant_leve": 109889950000,
+        "nombre_titres_cotes": 10988995,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 3,
+        "amortissement": "IN FINE",
+        "periodicite": "AN",
+        "date_precedente_echeance": "29/03/2026",
+        "date_theorique_echeance_suivante": "29/03/2027",
+        "encours_calcule_ce_jour": 109889950000,
+        "rendement_net": 6,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6,5% NET 2024-2029",
+        "code_isin": "GA0000020495",
+        "mnemo": "EGA10",
+        "taux_facial": 6.5,
+        "date_1ere_cotation": "30/12/2024",
+        "montant_leve": 8272950000,
+        "nombre_titres_cotes": 827295,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 5,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "29/03/2026",
+        "date_theorique_echeance_suivante": "29/03/2027",
+        "encours_calcule_ce_jour": 8272950000,
+        "rendement_net": 6.5,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 7,5% NET 2024-2031",
+        "code_isin": "GA0000020503",
+        "mnemo": "EGA11",
+        "taux_facial": 7.5,
+        "date_1ere_cotation": "30/12/2024",
+        "montant_leve": 50945040000,
+        "nombre_titres_cotes": 5094504,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 7,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "29/03/2026",
+        "date_theorique_echeance_suivante": "29/03/2027",
+        "encours_calcule_ce_jour": 50945040000,
+        "rendement_net": 7.5,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 6,60% NET 2024-2027",
+        "code_isin": "GA0000020511",
+        "mnemo": "EGA12",
+        "taux_facial": 6.6,
+        "date_1ere_cotation": "30/12/2024",
+        "montant_leve": 46629860000,
+        "nombre_titres_cotes": 4662986,
+        "nominal": 5000,
+        "cours_en_pct": 98,
+        "mat": 3,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "01/07/2026",
+        "date_theorique_echeance_suivante": "01/07/2027",
+        "encours_calcule_ce_jour": 22848631400,
+        "rendement_net": 6.6,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 6,75% NET 2024-2028",
+        "code_isin": "GA0000020529",
+        "mnemo": "EGA13",
+        "taux_facial": 6.75,
+        "date_1ere_cotation": "30/12/2024",
+        "montant_leve": 120300000,
+        "nombre_titres_cotes": 12030,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 4,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "01/07/2026",
+        "date_theorique_echeance_suivante": "01/07/2027",
+        "encours_calcule_ce_jour": 120300000,
+        "rendement_net": 6.8,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 7% NET 2024-2030",
+        "code_isin": "GA0000020537",
+        "mnemo": "EGA14",
+        "taux_facial": 7,
+        "date_1ere_cotation": "30/12/2024",
+        "montant_leve": 1691350000,
+        "nombre_titres_cotes": 169135,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 6,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "01/07/2026",
+        "date_theorique_echeance_suivante": "01/07/2027",
+        "encours_calcule_ce_jour": 1691350000,
+        "rendement_net": 7,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 6,6% NET 2024-2027",
+        "code_isin": "GA0000020552",
+        "mnemo": "EGA15",
+        "taux_facial": 6.6,
+        "date_1ere_cotation": "30/05/2025",
+        "montant_leve": 66249570000,
+        "nombre_titres_cotes": 6624957,
+        "nominal": 10000,
+        "cours_en_pct": 97,
+        "mat": 3,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "30/12/2025",
+        "date_theorique_echeance_suivante": "30/12/2026",
+        "encours_calcule_ce_jour": 64262082900,
+        "rendement_net": 6.6,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 6,75% NET 2024-2028",
+        "code_isin": "GA0000020560",
+        "mnemo": "EGA16",
+        "taux_facial": 6.75,
+        "date_1ere_cotation": "30/05/2025",
+        "montant_leve": 356230000,
+        "nombre_titres_cotes": 35623,
+        "nominal": 10000,
+        "cours_en_pct": 97,
+        "mat": 4,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "30/12/2025",
+        "date_theorique_echeance_suivante": "30/12/2026",
+        "encours_calcule_ce_jour": 345543100,
+        "rendement_net": 6.7,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG MT 7,00% NET 2024-2030",
+        "code_isin": "GA0000020578",
+        "mnemo": "EGA17",
+        "taux_facial": 7,
+        "date_1ere_cotation": "30/05/2025",
+        "montant_leve": 13459960000,
+        "nombre_titres_cotes": 1345996,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 6,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "30/12/2025",
+        "date_theorique_echeance_suivante": "30/12/2026",
+        "encours_calcule_ce_jour": 13459960000,
+        "rendement_net": 7,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 5,6% NET 2025-2027",
+        "code_isin": "GA0000020594",
+        "mnemo": "EGA18",
+        "taux_facial": 5.6,
+        "date_1ere_cotation": "23/02/2026",
+        "montant_leve": 63318040000,
+        "nombre_titres_cotes": 6331804,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 2,
+        "amortissement": "IN FINE",
+        "periodicite": "AN",
+        "date_precedente_echeance": "05/04/2026",
+        "date_theorique_echeance_suivante": "05/04/2027",
+        "encours_calcule_ce_jour": 63318040000,
+        "rendement_net": 5.6,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6% NET 2025-2028",
+        "code_isin": "GA0000020602",
+        "mnemo": "EGA19",
+        "taux_facial": 6,
+        "date_1ere_cotation": "23/02/2026",
+        "montant_leve": 56592680000,
+        "nombre_titres_cotes": 5659268,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 3,
+        "amortissement": "IN FINE",
+        "periodicite": "AN",
+        "date_precedente_echeance": "05/04/2026",
+        "date_theorique_echeance_suivante": "05/04/2027",
+        "encours_calcule_ce_jour": 56592680000,
+        "rendement_net": 6,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 5,6% NET 2025-2027 II",
+        "code_isin": "GA0000020636",
+        "mnemo": "EGA20",
+        "taux_facial": 5.6,
+        "date_1ere_cotation": "18/05/2026",
+        "montant_leve": 85216350000,
+        "nombre_titres_cotes": 8521635,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 2,
+        "amortissement": "IN FINE",
+        "periodicite": "AN",
+        "date_precedente_echeance": "01/10/2025",
+        "date_theorique_echeance_suivante": "01/10/2026",
+        "encours_calcule_ce_jour": 85216350000,
+        "rendement_net": 5.6,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ETAT DU GABON",
+        "designation_titre": "EOG 6% NET 2025-2028 II",
+        "code_isin": "GA0000020644",
+        "mnemo": "EGA21",
+        "taux_facial": 6,
+        "date_1ere_cotation": "18/05/2026",
+        "montant_leve": 21262410000,
+        "nombre_titres_cotes": 2126241,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 3,
+        "amortissement": "IN FINE",
+        "periodicite": "AN",
+        "date_precedente_echeance": "01/10/2025",
+        "date_theorique_echeance_suivante": "01/10/2026",
+        "encours_calcule_ce_jour": 21262410000,
+        "rendement_net": 6,
+        "taux_rotation_liquidite": 0
+      }
+    ],
+    "obligations_regionales": [
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 5.45% NET 2020 - 2027",
+        "code_isin": "CG0000020220",
+        "mnemo": "EBD01",
+        "taux_facial": 5.45,
+        "date_1ere_cotation": "03/02/2021",
+        "montant_leve": 106791920000,
+        "nombre_titres_cotes": 10679192,
+        "nominal": 4000,
+        "cours_en_pct": 100,
+        "mat": 7,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "31/12/2025",
+        "date_theorique_echeance_suivante": "31/12/2026",
+        "encours_calcule_ce_jour": 42716768000,
+        "rendement_net": 5.45,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 5.6% NET 2021-2028",
+        "code_isin": "CG0000020261",
+        "mnemo": "EBD02",
+        "taux_facial": 5.6,
+        "date_1ere_cotation": "11/03/2022",
+        "montant_leve": 114873410000,
+        "nombre_titres_cotes": 11487341,
+        "nominal": 6000,
+        "cours_en_pct": 98.5,
+        "mat": 7,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "08/12/2025",
+        "date_theorique_echeance_suivante": "08/12/2026",
+        "encours_calcule_ce_jour": 67890185310,
+        "rendement_net": 5.58,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 6% NET 2022-2029",
+        "code_isin": "CG0000020329",
+        "mnemo": "EBD03",
+        "taux_facial": 6,
+        "date_1ere_cotation": "15/02/2023",
+        "montant_leve": 110856330000,
+        "nombre_titres_cotes": 11085633,
+        "nominal": 8000,
+        "cours_en_pct": 100,
+        "mat": 7,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "30/12/2025",
+        "date_theorique_echeance_suivante": "30/12/2026",
+        "encours_calcule_ce_jour": 88685064000,
+        "rendement_net": 6,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 6,20% NET 2024-2031",
+        "code_isin": "CG0000020469",
+        "mnemo": "EBD04",
+        "taux_facial": 6.2,
+        "date_1ere_cotation": "07/08/2024",
+        "montant_leve": 23615870000,
+        "nombre_titres_cotes": 2361587,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 7,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "22/03/2026",
+        "date_theorique_echeance_suivante": "22/03/2027",
+        "encours_calcule_ce_jour": 23615870000,
+        "rendement_net": 6.2,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 5,95% NET 2024-2029",
+        "code_isin": "CG0000020436",
+        "mnemo": "EBD05",
+        "taux_facial": 5.95,
+        "date_1ere_cotation": "07/08/2024",
+        "montant_leve": 15386850000,
+        "nombre_titres_cotes": 1538685,
+        "nominal": 10000,
+        "cours_en_pct": 94.96,
+        "mat": 5,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "22/03/2026",
+        "date_theorique_echeance_suivante": "22/03/2027",
+        "encours_calcule_ce_jour": 14611352760,
+        "rendement_net": 5.9,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "BDEAC",
+        "designation_titre": "BDEAC 4,70% NET 2024-2027",
+        "code_isin": "CG0000020444",
+        "mnemo": "EBD06",
+        "taux_facial": 4.7,
+        "date_1ere_cotation": "07/08/2024",
+        "montant_leve": 15766990000,
+        "nombre_titres_cotes": 1576699,
+        "nominal": 10000,
+        "cours_en_pct": 100,
+        "mat": 3,
+        "amortissement": "IN FINE",
+        "periodicite": "AN",
+        "date_precedente_echeance": "22/03/2026",
+        "date_theorique_echeance_suivante": "22/03/2027",
+        "encours_calcule_ce_jour": 15766990000,
+        "rendement_net": 4.7,
+        "taux_rotation_liquidite": 0
+      }
+    ],
+    "obligations_privees": [
+      {
+        "designation_emetteur": "ALIOS FINANCE",
+        "designation_titre": "ALIOS 6.5% BRUT 2023-2028",
+        "code_isin": "CM0000020412",
+        "mnemo": "AFC03",
+        "taux_facial": 6.5,
+        "date_1ere_cotation": "05/02/2024",
+        "montant_leve": 3473030000,
+        "nombre_titres_cotes": 347303,
+        "nominal": 5000,
+        "cours_en_pct": 100,
+        "mat": 5,
+        "amortissement": "CONSTANT",
+        "periodicite": "SEM",
+        "date_precedente_echeance": "16/08/2026",
+        "date_theorique_echeance_suivante": "16/02/2027",
+        "encours_calcule_ce_jour": 1736515000,
+        "rendement_net": 6.5,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ACEP CAMEROUN",
+        "designation_titre": "ACEP 7% BRUT 2024-2027",
+        "code_isin": "CM0000020545",
+        "mnemo": "ACEP1",
+        "taux_facial": 7,
+        "date_1ere_cotation": "08/04/2025",
+        "montant_leve": 5000000000,
+        "nombre_titres_cotes": 500000,
+        "nominal": 6000,
+        "cours_en_pct": 100,
+        "mat": 3,
+        "amortissement": "CONSTANT",
+        "periodicite": "SEM",
+        "date_precedente_echeance": "30/06/2026",
+        "date_theorique_echeance_suivante": "31/12/2026",
+        "encours_calcule_ce_jour": 3000000000,
+        "rendement_net": 7,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "SNPC",
+        "designation_titre": "SNPC 6,5% NET 2024-2029",
+        "code_isin": "CG0000020584",
+        "mnemo": "SNPC1",
+        "taux_facial": 6.5,
+        "date_1ere_cotation": "15/10/2025",
+        "montant_leve": 32086000000,
+        "nombre_titres_cotes": 3208600,
+        "nominal": 8000,
+        "cours_en_pct": 100,
+        "mat": 5,
+        "amortissement": "CONSTANT",
+        "periodicite": "AN",
+        "date_precedente_echeance": "31/12/2025",
+        "date_theorique_echeance_suivante": "31/12/2026",
+        "encours_calcule_ce_jour": 25668800000,
+        "rendement_net": 6.5,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ALIOS FINANCE",
+        "designation_titre": "ALIOS-05 6% BRUT 2025-2028",
+        "code_isin": "CM0000020610",
+        "mnemo": "AFC05",
+        "taux_facial": 6,
+        "date_1ere_cotation": "19/12/2025",
+        "montant_leve": 2873000000,
+        "nombre_titres_cotes": 287300,
+        "nominal": 8000,
+        "cours_en_pct": 100,
+        "mat": 3,
+        "amortissement": "CONSTANT",
+        "periodicite": "TRIM",
+        "date_precedente_echeance": "07/08/2026",
+        "date_theorique_echeance_suivante": "07/11/2026",
+        "encours_calcule_ce_jour": 2298400000,
+        "rendement_net": 6,
+        "taux_rotation_liquidite": 0
+      },
+      {
+        "designation_emetteur": "ALIOS FINANCE",
+        "designation_titre": "ALIOS-06 7% BRUT 2025-2030",
+        "code_isin": "CM0000020628",
+        "mnemo": "AFC06",
+        "taux_facial": 7,
+        "date_1ere_cotation": "19/12/2025",
+        "montant_leve": 6129550000,
+        "nombre_titres_cotes": 612955,
+        "nominal": 8888.889,
+        "cours_en_pct": 100,
+        "mat": 5,
+        "amortissement": "CONSTANT",
+        "periodicite": "TRIM",
+        "date_precedente_echeance": "07/08/2026",
+        "date_theorique_echeance_suivante": "07/11/2026",
+        "encours_calcule_ce_jour": 5448489570,
+        "rendement_net": 7,
+        "taux_rotation_liquidite": 0
+      }
+    ],
+    "total_encours_etats": 935167714900,
+    "total_encours_regionales": 253286230070,
+    "total_encours_privees": 38152204570,
+    "total_general_encours": 1226606149540
+  },
+  "commentaires": {
+    "page": 8,
+    "texte_integral": "BULLETIN OFFICIEL DE LA COTE N° 2599 DU 21/09/2026 \n \n \n8 \n \n \n \nLa Bourse des Valeurs Mobilières de l’Afrique Centrale a clôturé sa séance de cotation du 21 septembre 2026.  \nLa cotation se tient tous les jours ouvrés de la semaine de lundi à vendredi pour l’ensemble des valeurs inscrites à la cote de la BVMAC. \n \nFAITS MARQUANTS DU COMPARTIMENT « ACTIONS »  \nEn termes de physionomie de marché, deux transactions ont été enregistrées sur la même valeur : \n• \n09 actions SOCAPALM ont été échangées au prix unitaire de FCFA 50 000 (avec un cours stable par rapport à son niveau de clôture de la veille), pour un montant global de \nFCFA 450 000 (quatre cent cinquante mille) ;   \nLes prix des autres instruments financiers cotés restent inchangés par rapport à leur situation de clôture de la veille (18/09/2026). \n \nLa capitalisation boursière se maintient à 1 806 641 687 800 (mille huit cent six milliards six cent quarante-un millions six cent quatre-vingt-sept mille huit cents) FCFA, par \nrapport à son niveau de clôture de la veille. De même, le flottant se maintient à 121 915 562 000 (cent-vingt-un milliards neuf cent quinze millions cinq cent soixante-deux mille) \nFCFA. \n \nToutefois, plusieurs propositions d’achat et de vente de titres demeurent en carnet dans les livres des sociétés de bourse : \n• \nTitres demandés à l’achat : 13 actions SEMC et 711 actions SAFACAM.  \n• \nTitres offerts à la vente : 23 actions SAFACAM, 2 601 actions SOCAPALM, 337 actions LA REGIONALE, 70 actions BANGE, 597 actions SCG-Ré et 66 actions BGFI HC. \nMalgré les propositions d’achat et de vente pour le titre SAFACAM, aucune transaction n’a été effectuée car le prix à l'achat est inférieur au prix à la vente. \n \nL’Indice « BVMAC All Share Index » reste stable à 1 146,14 points par rapport à son niveau de la veille. \nFAITS MARQUANTS DU COMPARTIMENT « OBLIGATIONS »  \nEn termes de physionomie de marché, une transaction a été enregistrée sur ce compartiment :  \n• \n20 000 obligations « EOG 6,25% NET 2022-2028 » ont été échangées au prix unitaire de 100% de la valeur nominale de 6 000 Fcfa (avec un cours stable par rapport à son \nniveau de clôture de la veille) et un coupon couru de FCFA 335,96 pour un montant de FCFA 126 719 200 (cent-vingt-six millions sept cent dix-neuf mille deux cents) ;  \nLes prix des autres actifs restent inchangés par rapport à leur situation de clôture de la veille (18/09/2026). \n \nL’encours des dettes reste stable à 1 226 606 149 540 (mille deux cent vingt-six milliards six cent six millions cent quarante-neuf mille cinq cent quarante) FCFA, sauf erreur \nou omission de notre part.  \nToutefois, les offres d’achat et de vente ci-après restent en carnet dans les livres des sociétés de bourse : \n \n \n \nDésignation du titre \nMnemo \nCoupon couru (j+3) au \n24/09/2026 \nVolume demandé \nVolume offert \nCours du jour \nETAT DU CAMEROUN \n« ECMR 6,25% NET 2022-2029 » \nECMR6 \n123,29 \n995 \n0 \n100% \nBDEAC \n« BDEAC 5,6% NET 2021-2028 » \nEBD02 \n266,96 \n0 \n5 000 \n98,50% \nCOMMENTAIRES DU BULLETIN OFFICIEL DE LA COTE N° 2599 DU 21 SEPTEMBRE 2026",
+    "date_seance": null,
+    "capitalisation_boursiere_fcfa": 1806641687800,
+    "flottant_fcfa": 121915562000,
+    "encours_dettes_fcfa": 1226606149540,
+    "indice_bvmac_as_valeur": 1146.14,
+    "titres_demandes_achat": [],
+    "titres_offerts_vente": [
+      {
+        "valeur": "SAFACAM",
+        "volume": 23
+      },
+      {
+        "valeur": "SOCAPALM",
+        "volume": 2601
+      },
+      {
+        "valeur": "LA REGIONALE",
+        "volume": 337
+      },
+      {
+        "valeur": "BANGE",
+        "volume": 70
+      },
+      {
+        "valeur": "SCG-Ré",
+        "volume": 597
+      },
+      {
+        "valeur": "BGFI HC",
+        "volume": 66
+      }
+    ],
+    "ordres_en_carnet": [
+      [
+        "ETAT DU CAMEROUN",
+        null,
+        null,
+        "« ECMR 6,25% NET 2022-2029 »",
+        "ECMR6",
+        "123,29",
+        "995",
+        "0",
+        "100%"
+      ],
+      [
+        "BDEAC",
+        null,
+        null,
+        "« BDEAC 5,6% NET 2021-2028 »",
+        "EBD02",
+        "266,96",
+        "0",
+        "5 000",
+        "98,50%"
+      ]
+    ]
+  },
+  "autres_publications": [
+    {
+      "page": 9,
+      "texte": "BULLETIN OFFICIEL DE LA COTE N° 2599 DU 21/09/2026 \n \n \n9 \nAVIS A L’ATTENTION DES PARTIES PRENANTES DU MARCHE FINANCIER REGIONAL CEMAC \n \n \nAVIS N°060/2026/BVMAC/DG \n-------------------------------- \nTransaction Sur Dossier  \n--------------------------------- \n \nLa Bourse Des Valeurs Mobilières De L’Afrique Centrale (BVMAC) porte à la connaissance du public et des intervenants du marché qu’une (01) Transaction Sur Dossier a été \nréalisée le vendredi 18 septembre 2026. \n \nLadite transaction a porté sur le titre suivant :  \n• \n30 actions BGFI HC, cédées au prix unitaire de 93 051 FCFA, pour un montant global de 2 791 530 FCFA. \n \nPour toute information complémentaire, veuillez contacter la Bourse des Valeurs Mobilières de l’Afrique Centrale à l’adresse e-mail : bvmac@bvmac.cm. \n \nFait à Douala, le 18 septembre 2026. \n \n \nLe Directeur Général \n \n \n \n \n \n                        \n \n \n \nLouis BANGA NTOLO"
+    }
+  ],
+  "opcvm": [
+    {
+      "periodicite": "Quotidiennes",
+      "societe_de_gestion": "AFRICA BRIGHT ASSET MANAGEMENT",
+      "depositaire": "BGFIBANK CAMEROUN",
+      "opcvm": "FCP AB AVENIR",
+      "categorie": "D",
+      "valeur_liquidative_origine": 1000,
+      "valeur_liquidative_precedente": 1291.38,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 1292.45,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "21/09/2023",
+      "variation_origine_pct": "29,25%",
+      "variation_precedente_pct": "0,08%"
+    },
+    {
+      "periodicite": "Quotidiennes",
+      "societe_de_gestion": "EDC ASSET MANAGEMENT CEMAC",
+      "depositaire": "ECOBANK CAMEROUN",
+      "opcvm": "FCP ECOBANK MONETAIRE CEMAC",
+      "categorie": "M",
+      "valeur_liquidative_origine": 1000,
+      "valeur_liquidative_precedente": 1185.24,
+      "date_precedente": "17/09/2026",
+      "valeur_liquidative_actuelle": 1185.49,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "07/03/2020",
+      "variation_origine_pct": "18,55%",
+      "variation_precedente_pct": "0,02%"
+    },
+    {
+      "periodicite": "Quotidiennes",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP HARVEST DIVERSIFIE",
+      "categorie": "D",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 108983.35,
+      "date_precedente": "17/09/2026",
+      "valeur_liquidative_actuelle": 108535.1,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "25/07/2025",
+      "variation_origine_pct": "8,54%",
+      "variation_precedente_pct": "-0,41%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "AFRICA BRIGHT ASSET MANAGEMENT",
+      "depositaire": "UBA BANK CAMEROUN",
+      "opcvm": "FCP AB CASH",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 13262.27,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 13273.65,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "10/07/2026",
+      "variation_origine_pct": "32,74%",
+      "variation_precedente_pct": "0,09%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "AFRICA BRIGHT ASSET MANAGEMENT",
+      "depositaire": "UBA BANK CAMEROUN",
+      "opcvm": "FCP AB INVEST",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12750.61,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 12759.81,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "10/07/2026",
+      "variation_origine_pct": "27,60%",
+      "variation_precedente_pct": "0,07%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "AFRICA BRIGHT ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP PERFORMANCE",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 11939.23,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 11948.61,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "10/07/2026",
+      "variation_origine_pct": "19,49%",
+      "variation_precedente_pct": "0,08%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "AFRICA BRIGHT ASSET MANAGEMENT",
+      "depositaire": "BGFIBANK CAMEROUN",
+      "opcvm": "FCP CAP OBLIGATIONS",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12721.4,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 12730.3,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "10/07/2026",
+      "variation_origine_pct": "27,30%",
+      "variation_precedente_pct": "0,07%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "AFRICA BRIGHT ASSET MANAGEMENT",
+      "depositaire": "BGFIBANK CAMEROUN",
+      "opcvm": "FCP AB DIVERSIFIE",
+      "categorie": "D",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 11372.95,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 11381.81,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "10/07/2026",
+      "variation_origine_pct": "13,82%",
+      "variation_precedente_pct": "0,08%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ASCA ASSET MANAGEMENT",
+      "depositaire": "ASCA",
+      "opcvm": "FCP ASCA LIQUIDITES",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 14985.7,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 14998.65,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "03/02/2017",
+      "variation_origine_pct": "49,99%",
+      "variation_precedente_pct": "0,09%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ASCA ASSET MANAGEMENT",
+      "depositaire": "ASCA",
+      "opcvm": "FCP ASCA PATRIMOINE",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 16194.78,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 16208.08,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "03/02/2017",
+      "variation_origine_pct": "62,08%",
+      "variation_precedente_pct": "0,08%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ASCA ASSET MANAGEMENT",
+      "depositaire": "CREDIT DU CONGO",
+      "opcvm": "FCP ASCA HORIZON",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 15772.73,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 15784.01,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "11/05/2018",
+      "variation_origine_pct": "57,84%",
+      "variation_precedente_pct": "0,07%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ASCA ASSET MANAGEMENT",
+      "depositaire": "ASCA",
+      "opcvm": "FCP CRBC PROSPERITE",
+      "categorie": "0",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 14353.8,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 14363.51,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "26/06/2020",
+      "variation_origine_pct": "43,64%",
+      "variation_precedente_pct": "0,07%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ASCA ASSET MANAGEMENT",
+      "depositaire": "CREDIT DU CONGO",
+      "opcvm": "FCP WAFA ASSURANCE CEMAC",
+      "categorie": "0",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 11874.1,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 11884.67,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "26/11/2021",
+      "variation_origine_pct": "18,85%",
+      "variation_precedente_pct": "0,09%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "CONTACTURER ASSET MANAGEMENT",
+      "depositaire": "BGFIBANK CAMEROUN",
+      "opcvm": "FCP CONTACTURER OBLIGATAIRE-\nPARTS A",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 11531.78,
+      "date_precedente": "04/09/2026",
+      "valeur_liquidative_actuelle": 11541.22,
+      "date_actuelle": "11/09/2026",
+      "date_origine": "26/09/2025",
+      "variation_origine_pct": "15,41%",
+      "variation_precedente_pct": "0,08%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "CONTACTURER ASSET MANAGEMENT",
+      "depositaire": "BGFIBANK CAMEROUN",
+      "opcvm": "FCP CONTACTURER OBLIGATAIRE-\nPARTS B",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 10585.68,
+      "date_precedente": "04/09/2026",
+      "valeur_liquidative_actuelle": 10596.41,
+      "date_actuelle": "11/09/2026",
+      "date_origine": "26/09/2025",
+      "variation_origine_pct": "5,96%",
+      "variation_precedente_pct": "0,10%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "CONTACTURER ASSET MANAGEMENT",
+      "depositaire": "UBA CAMEROON",
+      "opcvm": "FCPE CONTACTURER EPARGNE\nSALARIALE",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 10626.41,
+      "date_precedente": "04/09/2026",
+      "valeur_liquidative_actuelle": 10638.16,
+      "date_actuelle": "11/09/2026",
+      "date_origine": "26/09/2025",
+      "variation_origine_pct": "6,38%",
+      "variation_precedente_pct": "0,11%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "CORRIDOR ASSET MANAGEMENT",
+      "depositaire": "LCB BANK",
+      "opcvm": "FCP CORRIDOR RENDEMENT",
+      "categorie": "D",
+      "valeur_liquidative_origine": 7723,
+      "valeur_liquidative_precedente": 12313.33,
+      "date_precedente": "21/08/2026",
+      "valeur_liquidative_actuelle": 12315.11,
+      "date_actuelle": "28/08/2026",
+      "date_origine": "27/12/2019",
+      "variation_origine_pct": "59,46%",
+      "variation_precedente_pct": "0,01%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "EDC ASSET MANAGEMENT CEMAC",
+      "depositaire": "ECOBANK CAMEROUN",
+      "opcvm": "FCP ECOBANK OBLIGATAIRE\nCEMAC",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 14881.14,
+      "date_precedente": "09/09/2026",
+      "valeur_liquidative_actuelle": 14904.46,
+      "date_actuelle": "16/09/2026",
+      "date_origine": "21/07/2020",
+      "variation_origine_pct": "49,04%",
+      "variation_precedente_pct": "0,16%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "EDC ASSET MANAGEMENT CEMAC",
+      "depositaire": "ECOBANK CAMEROUN",
+      "opcvm": "FCP ECOBANK TRANSFORMATION",
+      "categorie": "M",
+      "valeur_liquidative_origine": 1000000,
+      "valeur_liquidative_precedente": 1035143,
+      "date_precedente": "09/09/2026",
+      "valeur_liquidative_actuelle": 1036664,
+      "date_actuelle": "16/09/2026",
+      "date_origine": "08/04/2026",
+      "variation_origine_pct": "3,67%",
+      "variation_precedente_pct": "0,15%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ELITE CAPITAL ASSET MANAGEMENT S.A.",
+      "depositaire": "Afriland First Bank",
+      "opcvm": "FCP ELITE CAPITAL INVEST",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12883.72,
+      "date_precedente": "04/09/2026",
+      "valeur_liquidative_actuelle": 12897.04,
+      "date_actuelle": "11/09/2026",
+      "date_origine": "12/08/2022",
+      "variation_origine_pct": "28,97%",
+      "variation_precedente_pct": "0,10%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ELITE CAPITAL ASSET MANAGEMENT S.A.",
+      "depositaire": "Afriland First Bank",
+      "opcvm": "FCP ELITE CAPITAL RECORD",
+      "categorie": "D",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12796.12,
+      "date_precedente": "04/09/2026",
+      "valeur_liquidative_actuelle": 12811.59,
+      "date_actuelle": "11/09/2026",
+      "date_origine": "12/08/2022",
+      "variation_origine_pct": "28,12%",
+      "variation_precedente_pct": "0,12%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ELITE CAPITAL ASSET MANAGEMENT S.A.",
+      "depositaire": "CCA -Bank",
+      "opcvm": "FCP CCA PERFORMANCE",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 13126.46,
+      "date_precedente": "04/09/2026",
+      "valeur_liquidative_actuelle": 13141,
+      "date_actuelle": "11/09/2026",
+      "date_origine": "20/01/2023",
+      "variation_origine_pct": "31,41%",
+      "variation_precedente_pct": "0,11%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ENKO CAPITAL CENTRAL AFRICA",
+      "depositaire": "UBA CAMEROUN",
+      "opcvm": "FCP ENKO CAPITAL PALMARES",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 13000.13,
+      "date_precedente": "10/09/2026",
+      "valeur_liquidative_actuelle": 13106.48,
+      "date_actuelle": "17/09/2026",
+      "date_origine": "20/12/2022",
+      "variation_origine_pct": "31,06%",
+      "variation_precedente_pct": "0,82%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ENKO CAPITAL CENTRAL AFRICA",
+      "depositaire": "UBA CAMEROUN",
+      "opcvm": "FCP ENKO CAPITAL TRESORERIE",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 10212.11,
+      "date_precedente": "09/09/2026",
+      "valeur_liquidative_actuelle": 10229.44,
+      "date_actuelle": "16/09/2026",
+      "date_origine": "27/04/2026",
+      "variation_origine_pct": "2,29%",
+      "variation_precedente_pct": "0,17%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ENKO CAPITAL CENTRAL AFRICA",
+      "depositaire": "UBA CAMEROUN",
+      "opcvm": "FCP CRBC PERENNITE",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 10214.26,
+      "date_precedente": "09/09/2026",
+      "valeur_liquidative_actuelle": 10253.74,
+      "date_actuelle": "16/09/2026",
+      "date_origine": "27/04/2026",
+      "variation_origine_pct": "2,54%",
+      "variation_precedente_pct": "0,39%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS CONFORT",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12963,
+      "date_precedente": "08/09/2026",
+      "valeur_liquidative_actuelle": 12980,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "29,80%",
+      "variation_precedente_pct": "0,13%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS TRESO PRIVILEGE",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12622,
+      "date_precedente": "08/09/2026",
+      "valeur_liquidative_actuelle": 12636,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "26,36%",
+      "variation_precedente_pct": "0,11%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS PROMO PME",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12168,
+      "date_precedente": "08/09/2026",
+      "valeur_liquidative_actuelle": 12178,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "21,78%",
+      "variation_precedente_pct": "0,08%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS CONFORT",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 10397,
+      "date_precedente": "08/09/2026",
+      "valeur_liquidative_actuelle": 10415,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "4,15%",
+      "variation_precedente_pct": "0,17%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCPHARVEST DIVERSIFIE",
+      "categorie": "0",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 108964.59,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 108535.1,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "25/07/2025",
+      "variation_origine_pct": "8,54%",
+      "variation_precedente_pct": "-0,39%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP ATLANTIQUE PERFORMANCE",
+      "categorie": "0",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 15460.75,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 15492.76,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "21/12/2018",
+      "variation_origine_pct": "54,93%",
+      "variation_precedente_pct": "0,21%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP HARVEST LIQUIDITÉS",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12730.27,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 12739.46,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "17/09/2021",
+      "variation_origine_pct": "27,39%",
+      "variation_precedente_pct": "0,07%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP EVEREST FINANCE\nRENDEMENT",
+      "categorie": "O",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 128900.01,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 129033.82,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "05/04/2021",
+      "variation_origine_pct": "29,03%",
+      "variation_precedente_pct": "0,10%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP HARVEST ACTIONS CEMAC",
+      "categorie": "A",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 138567.39,
+      "date_precedente": "28/08/2026",
+      "valeur_liquidative_actuelle": 145905.83,
+      "date_actuelle": "11/08/2026",
+      "date_origine": "06/08/2021",
+      "variation_origine_pct": "45,91%",
+      "variation_precedente_pct": "5,30%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "ECOBANK CAMEROUN",
+      "opcvm": "FCP HARVEST TRÉSORERIE",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 14037.32,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 14131.05,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "11/10/2019",
+      "variation_origine_pct": "41,31%",
+      "variation_precedente_pct": "0,67%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "BGFIBANK CAMEROUN",
+      "opcvm": "FCP BGFIBank ATLAS",
+      "categorie": "O",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 122724.77,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 122830.63,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "18/11/2022",
+      "variation_origine_pct": "22,83%",
+      "variation_precedente_pct": "0,09%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "CCA -Bank",
+      "opcvm": "FCP CCA INVEST",
+      "categorie": "M",
+      "valeur_liquidative_origine": 1000000,
+      "valeur_liquidative_precedente": 1039024.87,
+      "date_precedente": "07/09/2026",
+      "valeur_liquidative_actuelle": 1039041.43,
+      "date_actuelle": "14/09/2026",
+      "date_origine": "24/04/2026",
+      "variation_origine_pct": "3,90%",
+      "variation_precedente_pct": "0,00%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "CCA -Bank",
+      "opcvm": "FCP CCA HORIZON CROISSANCE",
+      "categorie": "O",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 104075.88,
+      "date_precedente": "07/09/2026",
+      "valeur_liquidative_actuelle": 104085.76,
+      "date_actuelle": "14/09/2026",
+      "date_origine": "24/04/2026",
+      "variation_origine_pct": "4,09%",
+      "variation_precedente_pct": "0,01%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP CRBC LONGEVITÉ",
+      "categorie": "O",
+      "valeur_liquidative_origine": 1000000,
+      "valeur_liquidative_precedente": 1285599.63,
+      "date_precedente": "07/09/2026",
+      "valeur_liquidative_actuelle": 1286903.42,
+      "date_actuelle": "14/09/2026",
+      "date_origine": "28/10/2022",
+      "variation_origine_pct": "28,69%",
+      "variation_precedente_pct": "0,10%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "KORI ASSET MANAGEMENT",
+      "depositaire": "ECOBANK CAMEROUN",
+      "opcvm": "FCP KORI SERENITE",
+      "categorie": "D",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 11461.94,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 11468.5,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "28/07/2025",
+      "variation_origine_pct": "14,69%",
+      "variation_precedente_pct": "0,06%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "L'ARCHER ASSET MANAGEMENT",
+      "depositaire": "UBA CAMEROUN",
+      "opcvm": "FCP L'ACM KIMIA",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12103,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 12117,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "28/10/2022",
+      "variation_origine_pct": "21,17%",
+      "variation_precedente_pct": "0,12%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "L'ARCHER ASSET MANAGEMENT",
+      "depositaire": "UBA CAMEROUN",
+      "opcvm": "FCP L'ACM PERFORMANCE",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 13951,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 13969,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "28/10/2022",
+      "variation_origine_pct": "39,69%",
+      "variation_precedente_pct": "0,13%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "L'ARCHER ASSET MANAGEMENT",
+      "depositaire": "UBA CAMEROUN",
+      "opcvm": "FCP RAPEC",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12266,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 12284,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "11/11/2022",
+      "variation_origine_pct": "22,84%",
+      "variation_precedente_pct": "0,15%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "MAKEDA ASSET MANAGEMENT",
+      "depositaire": "UBA CAMEROUN",
+      "opcvm": "FCP MAKEDA HORIZON",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12294.26,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 12308.07,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "11/05/2023",
+      "variation_origine_pct": "23,08%",
+      "variation_precedente_pct": "0,11%"
+    },
+    {
+      "periodicite": "Hebdomadaires",
+      "societe_de_gestion": "SOCIETE GENERALE CAPITAL ASSET MANAGEMENT CENTRAL AFRICA",
+      "depositaire": "SOCIETE GENERALE\nCAMEROUN",
+      "opcvm": "FCP SOGEFIRST",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 11302,
+      "date_precedente": "10/09/2026",
+      "valeur_liquidative_actuelle": 11316,
+      "date_actuelle": "17/09/2026",
+      "date_origine": "18/01/2024",
+      "variation_origine_pct": "13,16%",
+      "variation_precedente_pct": "0,12%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "AFRICA BRIGHT ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ABD KOMO",
+      "categorie": "A",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 11068.06,
+      "date_precedente": "11/09/2026",
+      "valeur_liquidative_actuelle": 11068.06,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "11/08/2022",
+      "variation_origine_pct": "10,68%",
+      "variation_precedente_pct": "0,00%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS CONFORT",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12895,
+      "date_precedente": "11/08/2026",
+      "valeur_liquidative_actuelle": 12980,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "29,80%",
+      "variation_precedente_pct": "0,66%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS TRESO PRIVILEGE",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12562,
+      "date_precedente": "11/08/2026",
+      "valeur_liquidative_actuelle": 12636,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "26,36%",
+      "variation_precedente_pct": "0,59%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS PROMO PME",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12127,
+      "date_precedente": "11/08/2026",
+      "valeur_liquidative_actuelle": 12178,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "21,78%",
+      "variation_precedente_pct": "0,42%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS PREMIUM PERSO",
+      "categorie": "D",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 10321,
+      "date_precedente": "11/08/2026",
+      "valeur_liquidative_actuelle": 10415,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "4,15%",
+      "variation_precedente_pct": "0,91%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCPHARVEST DIVERSIFIE",
+      "categorie": "0",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 108409.52,
+      "date_precedente": "18/08/2026",
+      "valeur_liquidative_actuelle": 108535.1,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "21/12/2018",
+      "variation_origine_pct": "8,54%",
+      "variation_precedente_pct": "0,12%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP ATLANTIQUE PERFORMANCE",
+      "categorie": "0",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 15319.07,
+      "date_precedente": "14/08/2026",
+      "valeur_liquidative_actuelle": 15492.76,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "17/09/2021",
+      "variation_origine_pct": "54,93%",
+      "variation_precedente_pct": "1,13%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP HARVEST LIQUIDITÉS",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12694,
+      "date_precedente": "14/08/2026",
+      "valeur_liquidative_actuelle": 12739.46,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "05/04/2021",
+      "variation_origine_pct": "27,39%",
+      "variation_precedente_pct": "0,36%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP EVEREST FINANCE\nRENDEMENT",
+      "categorie": "O",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 128451.07,
+      "date_precedente": "14/08/2026",
+      "valeur_liquidative_actuelle": 129033.82,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "06/08/2021",
+      "variation_origine_pct": "29,03%",
+      "variation_precedente_pct": "0,45%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP HARVEST ACTIONS CEMAC",
+      "categorie": "A",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 134796.15,
+      "date_precedente": "31/07/2026",
+      "valeur_liquidative_actuelle": 145905.83,
+      "date_actuelle": "11/08/2026",
+      "date_origine": "11/10/2019",
+      "variation_origine_pct": "46%",
+      "variation_precedente_pct": "8,24%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "ECOBANK CAMEROUN",
+      "opcvm": "FCP HARVEST TRÉSORERIE",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 14001.27,
+      "date_precedente": "14/08/2026",
+      "valeur_liquidative_actuelle": 14131.05,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "18/11/2022",
+      "variation_origine_pct": "41,31%",
+      "variation_precedente_pct": "0,93%"
+    },
+    {
+      "periodicite": "Mensuelles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "BGFIBANK CAMEROUN",
+      "opcvm": "FCP BGFIBank ATLAS",
+      "categorie": "O",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 122298.48,
+      "date_precedente": "14/08/2026",
+      "valeur_liquidative_actuelle": 122830.63,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "06/02/2023",
+      "variation_origine_pct": "22,83%",
+      "variation_precedente_pct": "0,44%"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS CONFORT",
+      "categorie": "O",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12660,
+      "date_precedente": "09/06/2026",
+      "valeur_liquidative_actuelle": 12980,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "29,80%",
+      "variation_precedente_pct": "2,53%"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS TRESO PRIVILEGE",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12462,
+      "date_precedente": "09/06/2026",
+      "valeur_liquidative_actuelle": 12636,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "26,36%",
+      "variation_precedente_pct": "1,40%"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS PROMO PME",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12027,
+      "date_precedente": "09/06/2026",
+      "valeur_liquidative_actuelle": 12178,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "19/07/2022",
+      "variation_origine_pct": "21,78%",
+      "variation_precedente_pct": "1,26%"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "ESS ASSET MANAGEMENT",
+      "depositaire": "ORABANK GABON",
+      "opcvm": "FCP ESS PREMIUM PERSO",
+      "categorie": "D",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 10162,
+      "date_precedente": "09/06/2026",
+      "valeur_liquidative_actuelle": 10415,
+      "date_actuelle": "15/09/2026",
+      "date_origine": "26/05/2026",
+      "variation_origine_pct": "4,15%",
+      "variation_precedente_pct": "-"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCPHARVEST DIVERSIFIE",
+      "categorie": "0",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 107118.16,
+      "date_precedente": "18/06/2026",
+      "valeur_liquidative_actuelle": 108535.1,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "21/12/2018",
+      "variation_origine_pct": "8,54%",
+      "variation_precedente_pct": "1,32%"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP ATLANTIQUE PERFORMANCE",
+      "categorie": "0",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 15159.35,
+      "date_precedente": "12/06/2026",
+      "valeur_liquidative_actuelle": 15492.76,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "17/09/2021",
+      "variation_origine_pct": "54,93%",
+      "variation_precedente_pct": "2,20%"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP HARVEST LIQUIDITÉS",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 12602.8,
+      "date_precedente": "12/06/2026",
+      "valeur_liquidative_actuelle": 12739.46,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "05/04/2021",
+      "variation_origine_pct": "27,39%",
+      "variation_precedente_pct": "1,08%"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP EVEREST FINANCE\nRENDEMENT",
+      "categorie": "O",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 127419.4,
+      "date_precedente": "12/06/2026",
+      "valeur_liquidative_actuelle": 129033.82,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "06/08/2021",
+      "variation_origine_pct": "29,03%",
+      "variation_precedente_pct": "1,27%"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "AFG BANK CAMEROUN",
+      "opcvm": "FCP HARVEST ACTIONS CEMAC",
+      "categorie": "A",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 134498.26,
+      "date_precedente": "05/06/2026",
+      "valeur_liquidative_actuelle": 145905.83,
+      "date_actuelle": "11/08/2026",
+      "date_origine": "11/10/2019",
+      "variation_origine_pct": "45,91%",
+      "variation_precedente_pct": "8,48%"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "ECOBANK CAMEROUN",
+      "opcvm": "FCP HARVEST TRÉSORERIE",
+      "categorie": "M",
+      "valeur_liquidative_origine": 10000,
+      "valeur_liquidative_precedente": 13899.6,
+      "date_precedente": "12/06/2026",
+      "valeur_liquidative_actuelle": 14131.05,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "18/11/2022",
+      "variation_origine_pct": "41,31%",
+      "variation_precedente_pct": "1,67%"
+    },
+    {
+      "periodicite": "Trimestrielles",
+      "societe_de_gestion": "HARVEST ASSET MANAGEMENT",
+      "depositaire": "BGFIBANK CAMEROUN",
+      "opcvm": "FCP BGFIBank ATLAS",
+      "categorie": "O",
+      "valeur_liquidative_origine": 100000,
+      "valeur_liquidative_precedente": 120694.12,
+      "date_precedente": "12/06/2026",
+      "valeur_liquidative_actuelle": 122830.63,
+      "date_actuelle": "18/09/2026",
+      "date_origine": "06/02/2023",
+      "variation_origine_pct": "22,83%",
+      "variation_precedente_pct": "1,77%"
+    }
+  ],
+  "fiches_emetteurs": {
+    "SEMC": {
+      "type": "action",
+      "profil": {
+        "denomination_sociale": "Société des Eaux Minérales du Cameroun",
+        "sigle_social": "SEMC",
+        "secteur_activite": "Agro-Alimentaire",
+        "date_introduction_bvmac": "30/06/2006",
+        "capital_social_fcfa": 1924730000,
+        "mnemo": "SEMC"
+      },
+      "conseil_administration": [
+        {
+          "nom": "Aïssatou YAOU",
+          "fonction": "Présidente du Conseil d'Administration"
+        },
+        {
+          "nom": "Guy DE CLERCQ",
+          "fonction": "Administrateur et membre du comité d'audit"
+        },
+        {
+          "nom": "Jean-Claude PALU",
+          "fonction": "Administrateur"
+        },
+        {
+          "nom": "André SIAKA",
+          "fonction": "Administrateur et membre du comité d'audit"
+        },
+        {
+          "nom": "Paul Alain DANG BABAGNA, représentant permanent SNI",
+          "fonction": "Administrateur"
+        },
+        {
+          "nom": "Stéphane DESCAZEAUD, représentant permanent SABC",
+          "fonction": "Administrateur"
+        },
+        {
+          "nom": "Michel PALU",
+          "fonction": "Administrateur"
+        },
+        {
+          "nom": "Simon Pierre MVONDO EYA",
+          "fonction": "Administrateur"
+        },
+        {
+          "nom": "Mathurin DOUMBE EPEE",
+          "fonction": "Administrateur et membre du comité d'audit"
+        },
+        {
+          "nom": "Gregory CLERC",
+          "fonction": "Administrateur"
+        }
+      ],
+      "directeur_general": "Stéphane DESCAZEAUD",
+      "actionnariat": {
+        "nombre_total_actions": 192473,
+        "nominatif_pur_noyau_dur": {
+          "total": 154106,
+          "pct": "80,07%",
+          "detail": [
+            {
+              "actionnaire": "Société Anonyme des Boissons du Cameroun (SABC)",
+              "parts": 109524,
+              "pct": "56,90%"
+            },
+            {
+              "actionnaire": "Société Nationale d'Investissement (SNI)",
+              "parts": 33694,
+              "pct": "17,51%"
+            },
+            {
+              "actionnaire": "NESTLE WATERS Emena",
+              "parts": 10888,
+              "pct": "5,66%"
+            }
+          ]
+        },
+        "bloc_flottant": {
+          "parts": 38367,
+          "pct": "19,93%"
+        }
+      },
+      "indicateurs_activite_au_31_decembre": {
+        "unite": "FCFA",
+        "annees": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "total_bilan": [
+          6891925812,
+          6243670659,
+          5931628960,
+          7848354395
+        ],
+        "capitaux_propres": [
+          2405262981,
+          3385320228,
+          4042117686,
+          4767320406
+        ],
+        "chiffre_affaires": [
+          10528222112,
+          9788997070,
+          10104143421,
+          10456986789
+        ],
+        "valeur_ajoutee": [
+          3267736337,
+          3209348246,
+          3048600671,
+          3261827127
+        ],
+        "resultat_net": [
+          504920466,
+          980057247,
+          772281258,
+          840686520
+        ],
+        "dividende_brut_unitaire": [
+          "-",
+          600,
+          600,
+          800
+        ],
+        "taux_rendement_brut_pct": [
+          "-",
+          1.28,
+          1.28,
+          1.72
+        ]
+      },
+      "adresses_contacts": {
+        "adresse": "77 rue prince Bell BP 4036 Douala Cameroun",
+        "contacts": "sabc.siège@castel-afrique.com",
+        "site_web": "boissonsducameroun.com"
+      }
+    },
+    "SAFACAM": {
+      "type": "action",
+      "profil": {
+        "denomination_sociale": "Société Africaine Forestière et Agricole du Cameroun",
+        "sigle_social": "SAFACAM",
+        "secteur_activite": "Agro-Industrie Palmier / Hévéa",
+        "date_introduction_bvmac": "09/07/2008",
+        "capital_social_fcfa": 6210000000,
+        "mnemo": "SAF"
+      },
+      "conseil_administration": [
+        {
+          "nom": "Régis HELSMOORTEL",
+          "fonction": "Président du Conseil d'Administration"
+        },
+        {
+          "nom": "François FABRI",
+          "fonction": "Administrateur"
+        },
+        {
+          "nom": "Philippe FABRI",
+          "fonction": "Administrateur"
+        },
+        {
+          "nom": "Elisabeth NKONO",
+          "fonction": "Administrateur représentant les actionnaires boursiers"
+        },
+        {
+          "nom": "Société National d'Investissement (SNI)",
+          "fonction": "Administrateur"
+        },
+        {
+          "nom": "Société Anonyme Forestière et Agricole (SAFA)",
+          "fonction": "Administrateur"
+        },
+        {
+          "nom": "Bolloré Participations",
+          "fonction": "Administrateur"
+        }
+      ],
+      "directeur_general": "Jean François PAJOT",
+      "actionnariat": {
+        "nombre_total_actions": 1242000,
+        "nominatif_pur_noyau_dur": {
+          "total": 993600,
+          "pct": "80%",
+          "detail": [
+            {
+              "actionnaire": "Société Anonyme Forestière et Agricole (SAFA)",
+              "parts": 854982,
+              "pct": "68,839%"
+            },
+            {
+              "actionnaire": "Société Nationale d'Investissement (SNI)",
+              "parts": 138594,
+              "pct": "11,159%"
+            },
+            {
+              "actionnaire": "Autres",
+              "parts": 27,
+              "pct": "0,002%"
+            }
+          ]
+        },
+        "bloc_flottant": {
+          "parts": 248400,
+          "pct": "20%"
+        }
+      },
+      "indicateurs_activite_au_31_decembre": {
+        "unite": "FCFA",
+        "annees": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "total_bilan": [
+          30151841941,
+          31708610667,
+          32139531395,
+          33435932621
+        ],
+        "capitaux_propres": [
+          21373900522,
+          19241624597,
+          21414462333,
+          22149885911
+        ],
+        "chiffre_affaires": [
+          23224733981,
+          23577227331,
+          29510124866,
+          28351042176
+        ],
+        "valeur_ajoutee": [
+          10961193659,
+          9084692605,
+          12325346505,
+          12984837707
+        ],
+        "resultat_net": [
+          2747697994,
+          612544286,
+          2781417736,
+          3219423726
+        ],
+        "dividende_brut_unitaire": [
+          2210,
+          490,
+          2000,
+          2200
+        ],
+        "taux_rendement_brut_pct": [
+          10.27,
+          1.97,
+          7.51,
+          8.17
+        ]
+      },
+      "adresses_contacts": {
+        "adresse": "Avenue de Japoma, BP 100 Douala, Cameroun",
+        "contacts": "safacam@safacam.com",
+        "site_web": "https://www.socfin.com/fr/implantations/safacam/"
+      }
+    },
+    "LA_REGIONALE": {
+      "type": "action",
+      "profil": {
+        "denomination_sociale": "La Régionale BANK",
+        "sigle_social": "LA REGIONALE",
+        "secteur_activite": "Banque",
+        "date_introduction_bvmac": "16/07/2021",
+        "capital_social_fcfa": 10125360000,
+        "mnemo": "REG"
+      },
+      "conseil_administration": [
+        {
+          "nom": "Isaac KUL",
+          "fonction": "Président du Conseil d'Administration"
+        },
+        {
+          "nom": "Charles Rollin OMBANG EKATH",
+          "fonction": "Administrateur Membre du Conseil"
+        },
+        {
+          "nom": "Henri Blaise TIAM, Représentant NORDIC MICROCAP INVESTMENT",
+          "fonction": "Administrateur Membre du Conseil"
+        },
+        {
+          "nom": "Gabriel ESSAKAL",
+          "fonction": "Administrateur Membre du Conseil"
+        },
+        {
+          "nom": "Samuel KOTTO NDOUMBE",
+          "fonction": "Administrateur indépendant"
+        }
+      ],
+      "directeur_general": "Charles Rollin OMBANG EKATH",
+      "actionnariat": {
+        "nombre_total_actions": 1012536,
+        "nominatif_pur_noyau_dur": {
+          "total": 940447,
+          "pct": "92,88%",
+          "detail": [
+            {
+              "actionnaire": "Charles Rolin OMBANG EKATH",
+              "parts": 604824,
+              "pct": "59,73%"
+            },
+            {
+              "actionnaire": "Nordic Microcap Investment",
+              "parts": 133203,
+              "pct": "13,16%"
+            },
+            {
+              "actionnaire": "Autres",
+              "parts": 202420,
+              "pct": "19,99%"
+            }
+          ]
+        },
+        "bloc_flottant": {
+          "parts": 72089,
+          "pct": "7,12%"
+        }
+      },
+      "indicateurs_activite_au_31_decembre": {
+        "unite": "FCFA",
+        "annees": [
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "total_bilan": [
+          35293587227,
+          40005863069,
+          45682771845,
+          64170053150
+        ],
+        "capitaux_propres": [
+          12251765946,
+          13472883815,
+          13292712110,
+          12455210665
+        ],
+        "produit_net_bancaire": [
+          5271190748,
+          5943912015,
+          5915919627,
+          6024301610
+        ],
+        "resultat_net": [
+          1112842792,
+          1221117869,
+          814020480,
+          162498555
+        ],
+        "dividende_verse": [
+          "-",
+          1004.5,
+          993.334,
+          "Non distribué"
+        ],
+        "taux_rendement_brut_pct": [
+          "-",
+          2.33,
+          2.34,
+          "Bénéfices réintégrés"
+        ]
+      },
+      "adresses_contacts": {
+        "adresse": "30145 Rond-Point Nlongkak",
+        "contacts": "650 26 51 45 – 673 38 45 16 – 673 45 65 71",
+        "site_web": "www.laregionalebank.com",
+        "reseaux_sociaux": [
+          "Facebook : La Regional BANK",
+          "LinkedIn : La Regional BANK",
+          "Twitter : @Regionale_BANK",
+          "Instagram : la regionale bank",
+          "YouTube : La Regionale BANK"
+        ]
+      }
+    },
+    "BANGE": {
+      "type": "action",
+      "profil": {
+        "denomination_sociale": "Banco Nacional de Guinea Ecuatorial S.A",
+        "sigle_social": "BANGE S.A",
+        "secteur_activite": "Banque",
+        "date_introduction_bvmac": "28/09/2022",
+        "capital_social_fcfa": 55896000000,
+        "mnemo": "BANGE"
+      },
+      "conseil_administration": [
+        {
+          "nom": "Sr. D. Martin Crisanto EBE MBA",
+          "fonction": "Président du Conseil d'Administration"
+        },
+        {
+          "nom": "Sr. D. Carlos NZE NSUGA",
+          "fonction": "Administrateur indépendant"
+        },
+        {
+          "nom": "Sr. D. Jaime ELA NDONG",
+          "fonction": "Administrateur représentant l'Etat de Guinée Equatoriale"
+        },
+        {
+          "nom": "Sr. D. Carlos Esono MIKO NSING",
+          "fonction": "Administrateur indépendant"
+        },
+        {
+          "nom": "Sr. D. Hassan Pastor OBIANG",
+          "fonction": "Administrateur représentant l'Etat de Guinée Equatoriale"
+        },
+        {
+          "nom": "Sr. D. Rafael Tung NSUE BILOGO",
+          "fonction": "Administrateur représentant d'ABAYAK"
+        },
+        {
+          "nom": "Sra. Dña. Francisca TATCHOUOP BELOBE",
+          "fonction": "Administrateur représentant les Investisseurs privés"
+        },
+        {
+          "nom": "Sra. Dña. Teresa Isabel NNAG AVOMO",
+          "fonction": "Administrateur représentant des entreprises à participation de l'Etat"
+        }
+      ],
+      "directeur_general": "Emilio MOYO AVORO",
+      "actionnariat": {
+        "nombre_total_actions": 558960,
+        "nominatif_pur_noyau_dur": {
+          "total": 508960,
+          "pct": "91,06%",
+          "detail": [
+            {
+              "actionnaire": "Republique de la Guinée Équatoriale",
+              "parts": 358260,
+              "pct": "64,10"
+            },
+            {
+              "actionnaire": "ABAYAK",
+              "parts": 30000,
+              "pct": "5,37"
+            },
+            {
+              "actionnaire": "Bank of Commerce",
+              "parts": 17140,
+              "pct": "3,07"
+            },
+            {
+              "actionnaire": "Autres",
+              "parts": 103560,
+              "pct": "18,52"
+            }
+          ]
+        },
+        "bloc_flottant": {
+          "parts": 50000,
+          "pct": "8,94%"
+        }
+      },
+      "indicateurs_activite_au_31_decembre": {
+        "unite": "FCFA",
+        "annees": [
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "total_bilan": [
+          379535385750,
+          427944480363,
+          681658000000,
+          664490430363
+        ],
+        "capitaux_propres": [
+          34331542919,
+          80753891397,
+          80847000000,
+          81987020373
+        ],
+        "produit_bancaire_net": [
+          24338220647,
+          31281043130,
+          29295246649,
+          33356617515
+        ],
+        "resultat_net": [
+          2578239953,
+          5215348478,
+          4243000000,
+          4502594568
+        ],
+        "dividende_brut_unitaire": [
+          "-",
+          8397,
+          5043,
+          4472
+        ],
+        "taux_rendement_brut_pct": [
+          "-",
+          "4,06%",
+          "2,44%",
+          "2,16%"
+        ]
+      },
+      "adresses_contacts": {
+        "adresse": "Avda. De las Naciones Unidas, n°28 Apdo 430, Malabo, Guinea Ecuatorial",
+        "contacts": "00240333099575",
+        "site_web": "www.bannge.com"
+      }
+    },
+    "SCG_RE": {
+      "type": "action",
+      "profil": {
+        "denomination_sociale": "Société Commerciale Gabonaise de Réassurance",
+        "sigle_social": "SCG-Ré",
+        "secteur_activite": "Réassurance",
+        "date_introduction_bvmac": "26/01/2023",
+        "capital_social_fcfa": 15000000000,
+        "mnemo": "SCGRE"
+      },
+      "administrateur_directeur_general": "M. Thierry ABELOKO",
+      "actionnariat": {
+        "nombre_total_actions": 1500000,
+        "nominatif_pur_noyau_dur": {
+          "total": 1200000,
+          "pct": "80%",
+          "detail": [
+            {
+              "actionnaire": "Groupe Etat Gabonais",
+              "parts": 826680,
+              "pct": "55%"
+            },
+            {
+              "actionnaire": "Groupe des Compagnies d'Assurances du Gabon",
+              "parts": 373320,
+              "pct": "25%"
+            }
+          ]
+        },
+        "bloc_flottant": {
+          "parts": 300000,
+          "pct": "20%"
+        }
+      },
+      "indicateurs_activite_au_31_decembre": {
+        "unite": "FCFA",
+        "annees": [
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "total_bilan": [
+          39223374169,
+          48556853541,
+          50167646021,
+          52836633625
+        ],
+        "capitaux_propres": [
+          11551490514,
+          12169629122,
+          17706803122,
+          18321562111
+        ],
+        "primes_acquises_brutes": [
+          14643569322,
+          17671523490,
+          19644862830,
+          22181448836
+        ],
+        "resultat_net": [
+          1018138609,
+          1442174000,
+          1524415047,
+          1504514887
+        ],
+        "dividende_brut_unitaire": [
+          400,
+          724,
+          728,
+          481.3
+        ],
+        "taux_rendement_brut_pct": [
+          "-",
+          "-",
+          "3,47%",
+          "2,28%"
+        ]
+      },
+      "commissaires_aux_comptes": {
+        "titulaires": [
+          "NEW ACE BAKER TILLY GABON",
+          "DELOITTE TOUCHE TOHMATSU GABON"
+        ],
+        "suppleants": [
+          "CABINET EXPERTS MAC",
+          "CABINET FIGEAC"
+        ]
+      },
+      "actionnaires_reference": [
+        "Groupe ETAT",
+        "Groupe des Assureurs Gabonais",
+        "Nouveaux Administrateurs",
+        "Fonds Gabonais d'Investissements Stratégiques (FGIS)",
+        "SANLAM",
+        "Caisse Nationale de Prévoyance Sociale du Cameroun (CNPS)",
+        "Fonds Souverain de la République Gabonaise (FSRG)",
+        "OGAR",
+        "Société Centrale de Réassurance du Maroc (SCR)",
+        "Caisse des Dépôts & Consignations (CDC)",
+        "ASSINCO SA",
+        "Représentant des petits porteurs",
+        "AXA GABON",
+        "Représentant des salariés & Dirigeants du Groupe FGIS & ses filiales",
+        "Administrateur Indépendant"
+      ],
+      "adresses_contacts": {
+        "site_web": "www.scg-re.ga",
+        "email": "Infos@scg-reass.com",
+        "telephone": "(+241) 011 74 80 80 / (+241) 011 74 80 81 / (+241) 011 74 80 83",
+        "reseaux_sociaux": [
+          "Twitter : @SCG-Ré",
+          "Instagram : Scgreass",
+          "Facebook : Société Commerciale Gabonaise de Réassurance",
+          "LinkedIn : Société Commerciale Gabonaise de Réassurance"
+        ]
+      }
+    },
+    "BGFI_HC": {
+      "type": "action",
+      "profil": {
+        "denomination_sociale": "BGFI HOLDING CORPORATION SA",
+        "sigle_social": "BHC",
+        "secteur_activite": "Holding bancaire",
+        "date_introduction_bvmac": "07/05/2026",
+        "capital_social_fcfa": 147283850000,
+        "mnemo": "BHC"
+      },
+      "conseil_administration": [
+        {
+          "nom": "Henri-Claude OYIMA",
+          "fonction": "Président du Conseil d'Administration"
+        },
+        {
+          "nom": "Pascaline BONGO ONDIMBA MFERRI",
+          "fonction": "Administrateur non-exécutif"
+        },
+        {
+          "nom": "Claude LE MONNIER",
+          "fonction": "Administrateur non-exécutif"
+        },
+        {
+          "nom": "Romain BOUTONNET",
+          "fonction": "Administrateur non-exécutif"
+        },
+        {
+          "nom": "Brenda BOUKOUBI",
+          "fonction": "Administrateur non-exécutif"
+        },
+        {
+          "nom": "Boris KERANGALL",
+          "fonction": "Administrateur non-exécutif"
+        },
+        {
+          "nom": "Amadou KANE",
+          "fonction": "Administrateur indépendant"
+        },
+        {
+          "nom": "Eveline TALL",
+          "fonction": "Administrateur indépendant"
+        },
+        {
+          "nom": "Blandine Aline ANDZE OLINGA",
+          "fonction": "Administrateur indépendant"
+        },
+        {
+          "nom": "Juliette WEISFLOG",
+          "fonction": "Administrateur indépendant"
+        },
+        {
+          "nom": "Rafael TUNG NSUE BILOGO",
+          "fonction": "Administrateur indépendant"
+        }
+      ],
+      "president_directeur_general": "Monsieur Henri-Claude OYIMA",
+      "actionnariat": {
+        "nombre_total_actions": 14728385,
+        "nominatif_pur_noyau_dur": {
+          "total": 14161824,
+          "pct": "96,15%",
+          "detail": [
+            {
+              "actionnaire": "Institutionnels privés",
+              "parts": 4135253,
+              "pct": "28,08%"
+            },
+            {
+              "actionnaire": "Investisseurs privés",
+              "parts": 3115601,
+              "pct": "21,15%"
+            },
+            {
+              "actionnaire": "Sogafric Holding",
+              "parts": 1770228,
+              "pct": "12,02%"
+            },
+            {
+              "actionnaire": "Salariés du Groupe BGFIBank",
+              "parts": 1416182,
+              "pct": "9,62%"
+            },
+            {
+              "actionnaire": "Delta Synergie",
+              "parts": 1402021,
+              "pct": "9,52%"
+            },
+            {
+              "actionnaire": "NAHOR Capital",
+              "parts": 1359535,
+              "pct": "9,23%"
+            },
+            {
+              "actionnaire": "Groupe Carlo Tassara Assets Management",
+              "parts": 963004,
+              "pct": "6,54%"
+            }
+          ]
+        },
+        "bloc_flottant_cote_bvmac": {
+          "parts": 566561,
+          "pct": "3,85%"
+        }
+      },
+      "indicateurs_activite_au_31_decembre": {
+        "unite": "millions de FCFA",
+        "annees": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "total_bilan": [
+          332601,
+          340696,
+          354518,
+          371801
+        ],
+        "capitaux_propres": [
+          212781,
+          222728,
+          226117,
+          265937
+        ],
+        "chiffre_affaires": [
+          18485,
+          21427,
+          24054,
+          30334
+        ],
+        "resultat_net": [
+          5602,
+          34888,
+          20698,
+          59489
+        ],
+        "dividende_brut_unitaire": [
+          15850,
+          11000,
+          12500,
+          2500
+        ]
+      },
+      "adresses_contacts": {
+        "adresse": "Boulevard de la Nation, Immeuble ATLAS, B.P : 25 200, Libreville-Gabon",
+        "contacts": "+241 11 44 17 07 / 0809 ; eqc@bgfi.com",
+        "site_web": "Groupe BGFIBank - Accueil",
+        "comptes_sociaux": [
+          "Facebook",
+          "LinkedIn",
+          "YouTube"
+        ]
+      }
+    },
+    "ALIOS_FINANCE": {
+      "type": "obligation",
+      "profil": {
+        "denomination_sociale": "Société Camerounaise de Crédit Automobile (SOCCA)",
+        "nom_commercial": "ALIOS FINANCE Cameroun",
+        "secteur_activite": "Finance - Leasing",
+        "capital_social_fcfa": 2499200000,
+        "mnemo": "AFC",
+        "encours_titres_circulant_cote_fcfa": 9483403889,
+        "date_encours": "17/08/2026"
+      },
+      "conseil_administration": [
+        {
+          "nom": "Serge BILE",
+          "fonction": "Président du Conseil d'Administration"
+        },
+        {
+          "nom": "Jerome EHUI",
+          "fonction": "Administrateur non exécutif"
+        },
+        {
+          "nom": "Jacques BAKELAK",
+          "fonction": "Administrateur non exécutif"
+        },
+        {
+          "nom": "Hadidjatou GOGGO",
+          "fonction": "Administrateur non exécutif"
+        },
+        {
+          "nom": "Oumarou PAT OUEDRAOGO",
+          "fonction": "Administrateur non exécutif"
+        },
+        {
+          "nom": "Jeanne Chantal AFFIAN",
+          "fonction": "Administrateur non exécutif"
+        },
+        {
+          "nom": "Denis ZAPULLA",
+          "fonction": "Administrateur non exécutif"
+        },
+        {
+          "nom": "Zouhir RHAZI",
+          "fonction": "Administrateur non exécutif"
+        },
+        {
+          "nom": "Mathurin DOUA",
+          "fonction": "Administrateur non exécutif"
+        },
+        {
+          "nom": "Edgar NGALANI",
+          "fonction": "Administrateur non exécutif"
+        }
+      ],
+      "directeur_general_adjoint": "Olivier BAMAN",
+      "actionnariat": {
+        "nombre_total_actions": 249920,
+        "actionnaires": [
+          {
+            "actionnaire": "CREDAF Group",
+            "parts": 176407,
+            "pct": 70.59
+          },
+          {
+            "actionnaire": "RCI BANQUE",
+            "parts": 27418,
+            "pct": 10.97
+          },
+          {
+            "actionnaire": "MITCAM/SACAM",
+            "parts": 15110,
+            "pct": 5.35
+          },
+          {
+            "actionnaire": "BICEC",
+            "parts": 7620,
+            "pct": 3.05
+          },
+          {
+            "actionnaire": "SGC",
+            "parts": 4428,
+            "pct": 1.77
+          },
+          {
+            "actionnaire": "SAFACAM",
+            "parts": 797,
+            "pct": 0.69
+          },
+          {
+            "actionnaire": "BAT CAMEROUN",
+            "parts": 787,
+            "pct": 0.31
+          },
+          {
+            "actionnaire": "RW KING",
+            "parts": 72,
+            "pct": 0.03
+          },
+          {
+            "actionnaire": "AXA ASSURANCES CMR",
+            "parts": 847,
+            "pct": 0.34
+          },
+          {
+            "actionnaire": "Autres privés camerounais",
+            "parts": 16434,
+            "pct": 6.58
+          }
+        ]
+      },
+      "indicateurs_activite_au_31_decembre": {
+        "unite": "millions FCFA",
+        "annees": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "total_bilan": [
+          64130,
+          74691,
+          68494,
+          66334
+        ],
+        "produit_bancaire_net": [
+          4649,
+          4902,
+          5157,
+          5174
+        ],
+        "resultat_net": [
+          1049,
+          1569,
+          1101,
+          1408
+        ]
+      },
+      "historique_emissions": [
+        {
+          "nom": "ALIOS 01 5.75% BRUT 2018-2023",
+          "montant_fcfa": 8000000000,
+          "taux_interet": "5,75%",
+          "date_cotation": "06/02/2019",
+          "date_echeance": "19/12/2023",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ALIOS 02 5.40% BRUT 2021-2025",
+          "montant_fcfa": 8542500000,
+          "taux_interet": "5,40%",
+          "date_cotation": "14/09/2021",
+          "date_echeance": "10/08/2025",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ALIOS 04 6.00% BRUT 2023-2026",
+          "montant_fcfa": 4612850000,
+          "taux_interet": "6%",
+          "date_cotation": "05/02/2024",
+          "date_echeance": "16/08/2026",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ALIOS 03 6.50% BRUT 2023-2028",
+          "montant_fcfa": 3468030000,
+          "taux_interet": "6,50%",
+          "date_cotation": "05/02/2024",
+          "date_echeance": "22/08/2028",
+          "encours_residuel_cote_fcfa": 1736515000
+        },
+        {
+          "nom": "ALIOS-05 6% BRUT 2025-2028",
+          "montant_fcfa": 2873000000,
+          "taux_interet": "6%",
+          "date_cotation": "19/12/2025",
+          "date_echeance": "07/08/2028",
+          "encours_residuel_cote_fcfa": 2298400000
+        },
+        {
+          "nom": "ALIOS-06 7% BRUT 2025-2030",
+          "montant_fcfa": 6129550000,
+          "taux_interet": "7%",
+          "date_cotation": "19/12/2025",
+          "date_echeance": "07/08/2030",
+          "encours_residuel_cote_fcfa": 5448488889
+        }
+      ],
+      "echeancier_emprunts": [
+        {
+          "valeur": "ALIOS 03 6.50% BRUT 2023-2028",
+          "montant_leve_fcfa": 3468030000,
+          "echeances": [
+            {
+              "date": "16/02/2027",
+              "amortissement_capital": 434128750,
+              "interets": 56436738,
+              "total": 490565488
+            },
+            {
+              "date": "16/08/2027",
+              "amortissement_capital": 434128750,
+              "interets": 42327553,
+              "total": 476456303
+            },
+            {
+              "date": "16/02/2028",
+              "amortissement_capital": 434128750,
+              "interets": 28218369,
+              "total": 462347119
+            },
+            {
+              "date": "16/08/2028",
+              "amortissement_capital": 434128750,
+              "interets": 14109184,
+              "total": 448237934
+            }
+          ],
+          "total_amortissement_capital": 1736515000,
+          "total_interets": 141091844,
+          "total_general": 1877606844
+        },
+        {
+          "valeur": "ALIOS-05 6% BRUT 2025-2028",
+          "montant_leve_fcfa": 2873000000,
+          "echeances": [
+            {
+              "date": "07/11/2026",
+              "amortissement_capital": 287300000,
+              "interets": 35242133,
+              "total": 322542133
+            },
+            {
+              "date": "07/02/2027",
+              "amortissement_capital": 287300000,
+              "interets": 30836867,
+              "total": 318136867
+            },
+            {
+              "date": "07/05/2027",
+              "amortissement_capital": 287300000,
+              "interets": 25569700,
+              "total": 312869700
+            },
+            {
+              "date": "07/08/2027",
+              "amortissement_capital": 287300000,
+              "interets": 22026333,
+              "total": 309326333
+            },
+            {
+              "date": "07/11/2027",
+              "amortissement_capital": 287300000,
+              "interets": 17621067,
+              "total": 304921067
+            },
+            {
+              "date": "07/02/2028",
+              "amortissement_capital": 287300000,
+              "interets": 13215800,
+              "total": 300515800
+            },
+            {
+              "date": "07/05/2028",
+              "amortissement_capital": 287300000,
+              "interets": 8619000,
+              "total": 295919000
+            },
+            {
+              "date": "07/08/2028",
+              "amortissement_capital": 287300000,
+              "interets": 4405267,
+              "total": 291705267
+            }
+          ],
+          "total_amortissement_capital": 2298400000,
+          "total_interets": 157536167,
+          "total_general": 2455936167
+        },
+        {
+          "valeur": "ALIOS-06 7% BRUT 2025-2030",
+          "montant_leve_fcfa": 6129550000,
+          "echeances": [
+            {
+              "date": "07/11/2026",
+              "amortissement_capital": 340530556,
+              "interets": 97467412,
+              "total": 437997968
+            },
+            {
+              "date": "07/02/2027",
+              "amortissement_capital": 340530556,
+              "interets": 91375699,
+              "total": 431906255
+            },
+            {
+              "date": "07/05/2027",
+              "amortissement_capital": 340530556,
+              "interets": 82502986,
+              "total": 423033542
+            },
+            {
+              "date": "07/08/2027",
+              "amortissement_capital": 340530556,
+              "interets": 79192273,
+              "total": 419722828
+            },
+            {
+              "date": "07/11/2027",
+              "amortissement_capital": 340530556,
+              "interets": 73100559,
+              "total": 413631115
+            },
+            {
+              "date": "07/02/2028",
+              "amortissement_capital": 340530556,
+              "interets": 67008846,
+              "total": 407539402
+            },
+            {
+              "date": "07/05/2028",
+              "amortissement_capital": 340530556,
+              "interets": 59592847,
+              "total": 400123403
+            },
+            {
+              "date": "07/08/2028",
+              "amortissement_capital": 340530556,
+              "interets": 54825419,
+              "total": 395355975
+            },
+            {
+              "date": "07/11/2028",
+              "amortissement_capital": 340530556,
+              "interets": 48733706,
+              "total": 389264262
+            },
+            {
+              "date": "07/02/2029",
+              "amortissement_capital": 340530556,
+              "interets": 42641993,
+              "total": 383172548
+            },
+            {
+              "date": "07/05/2029",
+              "amortissement_capital": 340530556,
+              "interets": 35358423,
+              "total": 375888978
+            },
+            {
+              "date": "07/08/2029",
+              "amortissement_capital": 340530556,
+              "interets": 30458566,
+              "total": 370989122
+            },
+            {
+              "date": "07/11/2029",
+              "amortissement_capital": 340530556,
+              "interets": 24366853,
+              "total": 364897409
+            },
+            {
+              "date": "07/02/2030",
+              "amortissement_capital": 340530556,
+              "interets": 18275140,
+              "total": 358805695
+            },
+            {
+              "date": "07/05/2030",
+              "amortissement_capital": 340530556,
+              "interets": 11786141,
+              "total": 352316696
+            },
+            {
+              "date": "07/08/2030",
+              "amortissement_capital": 340530556,
+              "interets": 6091713,
+              "total": 346622269
+            }
+          ],
+          "total_amortissement_capital": 5448488889,
+          "total_interets": 822778577,
+          "total_general": 6271267466
+        }
+      ],
+      "adresses_contacts": {
+        "adresse": "BP 554 DOUALA",
+        "contacts": "+237 2 33 50 23 00 ; cameroun@alios-finance.com",
+        "point_focal": "Irène Bertille AMAYANA / TEL: 233 50 23 30 / 233 50 23 00",
+        "site_web": "https://www.alios-finance.com"
+      }
+    },
+    "ACEP_CAMEROUN": {
+      "type": "obligation",
+      "profil": {
+        "denomination_sociale": "Agence de Crédit pour l'Entreprise Privée CAMEROUN SA",
+        "nom_commercial": "ACEP CAMEROUN",
+        "secteur_activite": "Services financiers",
+        "capital_social_fcfa": 1444000000,
+        "mnemo": "ACEP 1",
+        "encours_titres_circulant_cote_fcfa": 3000000000,
+        "date_encours": "25/08/2026"
+      },
+      "conseil_administration": [
+        {
+          "nom": "Ambroise ONDOA ONANA",
+          "fonction": "Président du Conseil d'Administration"
+        },
+        {
+          "nom": "Jocelyne Sylvie NDOMBO",
+          "fonction": "Administrateur représentant la SNI"
+        },
+        {
+          "nom": "Mohamed SIMPORE",
+          "fonction": "Administrateur représentant la BICEC"
+        },
+        {
+          "nom": "Omar ES-SABBANE",
+          "fonction": "Administrateur représentant la BICEC"
+        },
+        {
+          "nom": "Younes ABATAL",
+          "fonction": "Administrateur représentant la BICEC"
+        },
+        {
+          "nom": "Vivian TCHATCHUENG",
+          "fonction": "Administrateur représentant Investisseurs & Partenaires (IPDEV)"
+        },
+        {
+          "nom": "Jeremy HAJDENBERG",
+          "fonction": "Administrateur représentant Investisseurs & Partenaires (IPDEV)"
+        },
+        {
+          "nom": "Thierry PERREAU",
+          "fonction": "Administrateur représentant ACEP INTERNATIONAL"
+        },
+        {
+          "nom": "Etienne NKOLO",
+          "fonction": "Administrateur représentant la CCIMA"
+        },
+        {
+          "nom": "Raïssa KOLOKO Epse NOUNGA",
+          "fonction": "Administrateur représentant des Petits Porteurs"
+        }
+      ],
+      "actionnariat": {
+        "nombre_total_actions": 144000,
+        "actionnaires": [
+          {
+            "actionnaire": "Banque Internationale du Cameroun pour l'Epargne et le Crédit (BICEC)",
+            "parts": 38880,
+            "pct": "27%"
+          },
+          {
+            "actionnaire": "Investisseurs & Partenaires (IPDEV)",
+            "parts": 28800,
+            "pct": "20%"
+          },
+          {
+            "actionnaire": "Société Nationale d'Investissement (SNI)",
+            "parts": 21600,
+            "pct": "15%"
+          },
+          {
+            "actionnaire": "ACEP INTERNATIONAL",
+            "parts": 18720,
+            "pct": "13%"
+          },
+          {
+            "actionnaire": "Petits Porteurs au capital d'ACEP CAMEROUN",
+            "parts": 15840,
+            "pct": "11%"
+          },
+          {
+            "actionnaire": "Chambre de Commerce, de l'Industrie, des Mines et de l'Artisanat (CCIMA)",
+            "parts": 14400,
+            "pct": "10%"
+          },
+          {
+            "actionnaire": "Groupement du Personnel d'ACEP (GPAC)",
+            "parts": 5760,
+            "pct": "4%"
+          }
+        ]
+      },
+      "indicateurs_activite_au_31_decembre": {
+        "unite": "FCFA",
+        "annees": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "total_bilan": [
+          31410841983,
+          33588478125,
+          35912687911,
+          4104573357700
+        ],
+        "produit_net_financier": [
+          6153733712,
+          6826114052,
+          7745408679,
+          7970261674
+        ],
+        "resultat_net": [
+          905033498,
+          536566549,
+          755643950,
+          803621227
+        ]
+      },
+      "historique_emissions": [
+        {
+          "nom": "ACEP 7% BRUT 2024-2027",
+          "montant_fcfa": 5000000000,
+          "taux_interet": "7%",
+          "date_cotation": "08/04/2025",
+          "date_echeance": "30/12/2027",
+          "encours_residuel_cote_fcfa": 3000000000
+        }
+      ],
+      "echeancier_emprunts": [
+        {
+          "date": "30/12/2026",
+          "amortissement_capital": 1000000000,
+          "interets": 105000000,
+          "total": 1105000000
+        },
+        {
+          "date": "30/06/2027",
+          "amortissement_capital": 1000000000,
+          "interets": 70000000,
+          "total": 1070000000
+        },
+        {
+          "date": "30/12/2027",
+          "amortissement_capital": 1000000000,
+          "interets": 35000000,
+          "total": 1035000000
+        }
+      ],
+      "total_echeancier": {
+        "amortissement_capital": 3000000000,
+        "interets": 210000000,
+        "total": 3210000000
+      },
+      "adresses_contacts": {
+        "adresse": "Yaoundé, Bastos - Derrière l'Ambassade de Chine",
+        "contacts": "+237 698 08 11 11 / 671 71 72 72, info@acep-cameroun.org"
+      }
+    },
+    "ETAT_DU_CAMEROUN": {
+      "type": "obligation_etat",
+      "profil": {
+        "nom": "ETAT DU CAMEROUN",
+        "chef_etat": "S.E Paul BIYA",
+        "forme_etat": "Etat unitaire décentralisée, une et indivisible, laïque, démocratique et sociale où le président est Chef de l'Etat, et Chef des forces armées.",
+        "capitale": "Yaoundé",
+        "langues_officielles": "Anglais et français",
+        "richesses": "Hydrocarbures (gaz naturel liquéfié et huile brute de pétrole), cacao brut en fèves, coton brut, la pâte du cacao, bois brute et scié, poivre blanc de Penja.",
+        "superficie_km2": 475440,
+        "superficie_source": "Banque Mondiale du 24/08/25",
+        "population": 29879337,
+        "population_source": "Banque Mondiale du 24/08/26",
+        "mnemo": "ECMR",
+        "encours_titres_circulant_cote_fcfa": 207842110000,
+        "date_encours": "24/08/26"
+      },
+      "indicateurs_economiques": {
+        "photo": "15/10/25",
+        "annees": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "taux_inflation_annuel_moyen_pct": [
+          6.2,
+          7.4,
+          4.5,
+          3.4
+        ],
+        "pib_nominal_milliards_usd": [
+          44.35,
+          48.81,
+          53.3,
+          58.93
+        ],
+        "ide_entrees_nettes_milliards_usd": [
+          0.92,
+          0.82,
+          0.88,
+          "-"
+        ],
+        "dettes_exterieures_milliards_usd": [
+          15.12,
+          15.4,
+          15.77,
+          "-"
+        ]
+      },
+      "rating_solvabilite_long_terme": {
+        "annees": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "Fitch": [
+          "B (perspective stable)",
+          "B- (hautement spéculatif)",
+          "B- (hautement spéculatif)",
+          "B- (hautement spéculatif) *"
+        ],
+        "S&P": [
+          "ND",
+          "B-/B (perspective stable)",
+          "B-/B (perspective stable)",
+          "-"
+        ],
+        "note": "*au 9 avril"
+      },
+      "historique_emissions": [
+        {
+          "nom": "ECMR 5,60% NET 2010-2015",
+          "montant_fcfa": 200000000000,
+          "taux_interet_net": "5,6 %",
+          "date_cotation": "14/04/2011",
+          "date_echeance": "29/12/2015",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ECMR 5,90% NET 2013-2018",
+          "montant_fcfa": 80000000000,
+          "taux_interet_net": "5,9 %",
+          "date_cotation": "31/01/2014",
+          "date_echeance": "27/12/2018",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ECMR 5,50% NET 2014-2019",
+          "montant_fcfa": 150000000000,
+          "taux_interet_net": "5,5 %",
+          "date_cotation": "23/02/2015",
+          "date_echeance": "26/12/2019",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ECMR 5,50% NET 2016-2021",
+          "montant_fcfa": 165000000000,
+          "taux_interet_net": "5,5 %",
+          "date_cotation": "15/02/2017",
+          "date_echeance": "17/10/2021",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ECMR 5,60% NET 2018-2023",
+          "montant_fcfa": 200000000000,
+          "taux_interet_net": "5,6 %",
+          "date_cotation": "27/03/2019",
+          "date_echeance": "15/11/2023",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ECMR 5,80% NET 2023-2026",
+          "montant_fcfa": 78676830000,
+          "taux_interet_net": "5,8%",
+          "date_cotation": "23/11/2023",
+          "date_echeance": "23/06/2026",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ECMR 6,25% NET 2022-2029",
+          "montant_fcfa": 235000000000,
+          "taux_interet_net": "6,25%",
+          "date_cotation": "28/09/2022",
+          "date_echeance": "27/05/2029",
+          "encours_residuel_cote_fcfa": 141000000000
+        },
+        {
+          "nom": "ECMR 6,00% NET 2023-2027",
+          "montant_fcfa": 61514680000,
+          "taux_interet_net": "6%",
+          "date_cotation": "23/11/2023",
+          "date_echeance": "23/06/2027",
+          "encours_residuel_cote_fcfa": 30757340000
+        },
+        {
+          "nom": "ECMR 6,75% NET 2023-2029",
+          "montant_fcfa": 25052520000,
+          "taux_interet_net": "6,75%",
+          "date_cotation": "23/11/2023",
+          "date_echeance": "23/06/2029",
+          "encours_residuel_cote_fcfa": 25052520000
+        },
+        {
+          "nom": "ECMR 7,25% NET 2023-2031",
+          "montant_fcfa": 11032250000,
+          "taux_interet_net": "7,25%",
+          "date_cotation": "23/11/2023",
+          "date_echeance": "23/06/2031",
+          "encours_residuel_cote_fcfa": 11032250000
+        }
+      ],
+      "echeancier_emprunts": [
+        {
+          "valeur": "ECMR 6,25% NET 2022-2029",
+          "montant_leve_fcfa": 235000000000,
+          "echeances": [
+            {
+              "date": "27/05/2027",
+              "amortissement_capital": 47000000000,
+              "coupon_interets_annuels": 8812500000,
+              "total": 55812500000
+            },
+            {
+              "date": "27/05/2028",
+              "amortissement_capital": 47000000000,
+              "coupon_interets_annuels": 5875000000,
+              "total": 52875000000
+            },
+            {
+              "date": "27/05/2029",
+              "amortissement_capital": 47000000000,
+              "coupon_interets_annuels": 2937500000,
+              "total": 49937500000
+            }
+          ],
+          "total_amortissement_capital": 141000000000,
+          "total_interets": 17625500000,
+          "total_general": 158625000000
+        },
+        {
+          "valeur": "ECMR 6,00% NET 2023-2027",
+          "montant_leve_fcfa": 61514680000,
+          "echeances": [
+            {
+              "date": "23/06/2027",
+              "amortissement_capital": 30757340000,
+              "coupon_interets_annuels": 1845440400,
+              "total": 32602780400
+            }
+          ],
+          "total_amortissement_capital": 30757340000,
+          "total_interets": 1845440400,
+          "total_general": 32602780400
+        },
+        {
+          "valeur": "ECMR 6,75% NET 2023-2029",
+          "montant_leve_fcfa": 25052520000,
+          "echeances": [
+            {
+              "date": "23/06/2027",
+              "amortissement_capital": 8350840000,
+              "coupon_interets_annuels": 1691045100,
+              "total": 10041885100
+            },
+            {
+              "date": "23/06/2028",
+              "amortissement_capital": 8350840000,
+              "coupon_interets_annuels": 1127363400,
+              "total": 9478203400
+            },
+            {
+              "date": "23/06/2029",
+              "amortissement_capital": 8350840000,
+              "coupon_interets_annuels": 563681700,
+              "total": 8914521700
+            }
+          ],
+          "total_amortissement_capital": 25052520000,
+          "total_interets": 3382090200,
+          "total_general": 30125709200
+        },
+        {
+          "valeur": "ECMR 7,25% NET 2023-2031",
+          "montant_leve_fcfa": 11032250000,
+          "echeances": [
+            {
+              "date": "23/06/2027",
+              "amortissement_capital": 2206450000,
+              "coupon_interets_annuels": 799838125,
+              "total": 3006288125
+            },
+            {
+              "date": "23/06/2028",
+              "amortissement_capital": 2206450000,
+              "coupon_interets_annuels": 639870500,
+              "total": 2846320500
+            },
+            {
+              "date": "23/06/2029",
+              "amortissement_capital": 2206450000,
+              "coupon_interets_annuels": 479902875,
+              "total": 2686352875
+            },
+            {
+              "date": "23/06/2030",
+              "amortissement_capital": 2206450000,
+              "coupon_interets_annuels": 319935250,
+              "total": 2526385250
+            },
+            {
+              "date": "23/06/2031",
+              "amortissement_capital": 2206450000,
+              "coupon_interets_annuels": 159967625,
+              "total": 2366417625
+            }
+          ],
+          "total_amortissement_capital": 11032250000,
+          "total_interets": 2399514375,
+          "total_general": 13431764375
+        }
+      ]
+    },
+    "ETAT_DU_GABON": {
+      "type": "obligation_etat",
+      "profil": {
+        "nom": "ETAT DU GABON",
+        "chef_etat": "S.E. Brice OLIGUI NGUEMA",
+        "forme_etat": "Etat unitaire décentralisé, une et indivisible, laïque, démocratique, et sociale où le Président de la République est le chef de l'Etat, chef des administrations civiles et militaires et Chef suprême des forces de défense et de sécurité.",
+        "capitale": "Libreville",
+        "langues_officielles": "Français et Anglais",
+        "richesses": "Pétrole, manganèse, bois, uranium, or, fer, niobium, café, cacao, hévéa.",
+        "superficie_km2": 267670,
+        "superficie_source": "Banque Mondiale du 15/10/2025",
+        "population": 2593130,
+        "population_source": "Banque Mondiale du 24/08/26",
+        "mnemo": "EGA",
+        "encours_titres_circulant_cote_fcfa": 682992510000,
+        "date_encours": "24/08/26"
+      },
+      "indicateurs_economiques": {
+        "photo": "24/08/26",
+        "annees": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "taux_inflation_annuel_moyen_pct": [
+          4.2,
+          3.6,
+          1.2,
+          1.8
+        ],
+        "pib_nominal_milliards_usd": [
+          20.44,
+          19.39,
+          20.9,
+          21.43
+        ],
+        "ide_entrees_nettes_milliards_usd": [
+          1.1,
+          1.15,
+          1.14,
+          "-"
+        ],
+        "dettes_exterieures_milliards_usd": [
+          7.99,
+          7.58,
+          6.82,
+          "-"
+        ]
+      },
+      "rating_solvabilite_long_terme": {
+        "annees": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "Fitch": [
+          "B-",
+          "CCC+",
+          "CCC-",
+          "CCC-"
+        ],
+        "note": "*Au 22 mai 2026"
+      },
+      "historique_emissions": [
+        {
+          "nom": "ETAT GABONAIS 5,5% NET 2008-2013",
+          "montant_fcfa": 82000000000,
+          "taux_interet_net": "5,5%",
+          "date_cotation": "13/08/2008",
+          "date_echeance": "2013",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ETAT GABONAIS 6,00% NET 2015-2020",
+          "montant_fcfa": 84616530000,
+          "taux_interet_net": "6%",
+          "date_cotation": "03/11/2015",
+          "date_echeance": "29/09/2020",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ETAT GABONAIS 6,50% NET 2016-2021",
+          "montant_fcfa": 134940500000,
+          "taux_interet_net": "6,5%",
+          "date_cotation": "19/07/2016",
+          "date_echeance": "09/06/2021",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ETAT GABONAIS 6,50% NET 2017-2022",
+          "montant_fcfa": 131387530000,
+          "taux_interet_net": "6,50%",
+          "date_cotation": "-",
+          "date_echeance": "04/12/2022",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "EOG 6,25% NET 2019-2024",
+          "montant_fcfa": 126341350000,
+          "taux_interet_net": "6,25%",
+          "date_cotation": "21/02/2020",
+          "date_echeance": "04/10/2024",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "EOG 6,00% NET 2021-2026",
+          "montant_fcfa": 188827750000,
+          "taux_interet_net": "6%",
+          "date_cotation": "30/07/2021",
+          "date_echeance": "04/06/2026",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "EOG 6,25% NET 2022-2028",
+          "montant_fcfa": 175000000000,
+          "taux_interet_net": "6,25%",
+          "date_cotation": "26/01/2023",
+          "date_echeance": "01/11/2028",
+          "encours_residuel_cote_fcfa": 105000000000
+        },
+        {
+          "nom": "EOG 6.25% NET 2023-2028",
+          "montant_fcfa": 154605500000,
+          "taux_interet_net": "6,25%",
+          "date_cotation": "30/12/2024",
+          "date_echeance": "15/07/2028",
+          "encours_residuel_cote_fcfa": 77302750000
+        },
+        {
+          "nom": "EOG 6% NET 2024-2027",
+          "montant_fcfa": 109889950000,
+          "taux_interet_net": "6%",
+          "date_cotation": "30/12/2024",
+          "date_echeance": "29/03/2027",
+          "encours_residuel_cote_fcfa": 109889950000
+        },
+        {
+          "nom": "EOG 6,5% NET 2024-2029",
+          "montant_fcfa": 8272950000,
+          "taux_interet_net": "6,5%",
+          "date_cotation": "30/12/2024",
+          "date_echeance": "29/03/2029",
+          "encours_residuel_cote_fcfa": 8272950000
+        },
+        {
+          "nom": "EOG 7,5% NET 2024-2031",
+          "montant_fcfa": 50945040000,
+          "taux_interet_net": "7,5%",
+          "date_cotation": "30/12/2024",
+          "date_echeance": "29/03/2031",
+          "encours_residuel_cote_fcfa": 50945040000
+        },
+        {
+          "nom": "EOG MT 6,60% NET 2024-2027",
+          "montant_fcfa": 46629860000,
+          "taux_interet_net": "6,60%",
+          "date_cotation": "30/12/2024",
+          "date_echeance": "01/07/2027",
+          "encours_residuel_cote_fcfa": 23314930000
+        },
+        {
+          "nom": "EOG MT 6,75% NET 2024-2028",
+          "montant_fcfa": 120300000,
+          "taux_interet_net": "6,75%",
+          "date_cotation": "30/12/2024",
+          "date_echeance": "01/07/2028",
+          "encours_residuel_cote_fcfa": 120300000
+        },
+        {
+          "nom": "EOG MT 7% NET 2024-2030",
+          "montant_fcfa": 1691350000,
+          "taux_interet_net": "7%",
+          "date_cotation": "30/12/2024",
+          "date_echeance": "01/07/2030",
+          "encours_residuel_cote_fcfa": 1691350000
+        },
+        {
+          "nom": "EOG MT 6,6% NET 2024-2027",
+          "montant_fcfa": 66249570000,
+          "taux_interet_net": "6,6%",
+          "date_cotation": "30/05/2025",
+          "date_echeance": "30/12/2027",
+          "encours_residuel_cote_fcfa": 66249570000
+        },
+        {
+          "nom": "EOG MT 6,75% NET 2024-2028",
+          "montant_fcfa": 356230000,
+          "taux_interet_net": "6,75%",
+          "date_cotation": "30/05/2025",
+          "date_echeance": "30/12/2028",
+          "encours_residuel_cote_fcfa": 356230000
+        },
+        {
+          "nom": "EOG MT 7,00% NET 2024-2030",
+          "montant_fcfa": 13459960000,
+          "taux_interet_net": "7%",
+          "date_cotation": "30/05/2025",
+          "date_echeance": "30/12/2030",
+          "encours_residuel_cote_fcfa": 13459960000
+        },
+        {
+          "nom": "EOG 5,6% NET 2025-2027",
+          "montant_fcfa": 63318040000,
+          "taux_interet_net": "5,6%",
+          "date_cotation": "23/02/2026",
+          "date_echeance": "05/04/2027",
+          "encours_residuel_cote_fcfa": 63318040000
+        },
+        {
+          "nom": "EOG 6% NET 2025-2028",
+          "montant_fcfa": 56592680000,
+          "taux_interet_net": "6%",
+          "date_cotation": "23/02/2026",
+          "date_echeance": "05/04/2028",
+          "encours_residuel_cote_fcfa": 56592680000
+        },
+        {
+          "nom": "EOG 5,6% NET 2025-2027 II",
+          "montant_fcfa": 85216350000,
+          "taux_interet_net": "5,6%",
+          "date_cotation": "18/05/2026",
+          "date_echeance": "01/10/2027",
+          "encours_residuel_cote_fcfa": 85216350000
+        },
+        {
+          "nom": "EOG 6% NET 2025-2028 II",
+          "montant_fcfa": 21262410000,
+          "taux_interet_net": "6%",
+          "date_cotation": "18/05/2026",
+          "date_echeance": "01/10/2028",
+          "encours_residuel_cote_fcfa": 21262410000
+        }
+      ],
+      "echeancier_emprunts": [
+        {
+          "valeur": "EOG 6,25% NET 2022-2028",
+          "montant_leve_fcfa": 175000000000,
+          "echeances": [
+            {
+              "date": "01/11/2026",
+              "amortissement_capital": 35000000000,
+              "interets": 6562500000,
+              "total": 41562500000
+            },
+            {
+              "date": "01/11/2027",
+              "amortissement_capital": 35000000000,
+              "interets": 4375000000,
+              "total": 39375000000
+            },
+            {
+              "date": "01/11/2028",
+              "amortissement_capital": 35000000000,
+              "interets": 2187500000,
+              "total": 37187500000
+            }
+          ],
+          "total_amortissement_capital": 105000000000,
+          "total_interets": 13125000000,
+          "total_general": 118125000000
+        },
+        {
+          "valeur": "EOG 6.25% NET 2023-2028",
+          "montant_leve_fcfa": 154605500000,
+          "echeances": [
+            {
+              "date": "15/07/2027",
+              "amortissement_capital": 38651375000,
+              "interets": 4831421875,
+              "total": 43482796875
+            },
+            {
+              "date": "15/07/2028",
+              "amortissement_capital": 38651375000,
+              "interets": 2415710938,
+              "total": 41067085938
+            }
+          ],
+          "total_amortissement_capital": 77302750000,
+          "total_interets": 7247132813,
+          "total_general": 84549882813
+        },
+        {
+          "valeur": "EOG 6% NET 2024-2027",
+          "montant_leve_fcfa": 109889950000,
+          "echeances": [
+            {
+              "date": "29/03/2027",
+              "amortissement_capital": 109889950000,
+              "interets": 6593397000,
+              "total": 116483347000
+            }
+          ],
+          "total_amortissement_capital": 109889950000,
+          "total_interets": 6593397000,
+          "total_general": 116483347000
+        },
+        {
+          "valeur": "EOG 5,6% NET 2025-2027",
+          "montant_leve_fcfa": 63318040000,
+          "echeances": [
+            {
+              "date": "05/04/2027",
+              "amortissement_capital": 63318040000,
+              "interets": 3545810240,
+              "total": 66863850240
+            }
+          ],
+          "total_amortissement_capital": 63318040000,
+          "total_interets": 3545810240,
+          "total_general": 66863850240
+        },
+        {
+          "valeur": "EOG 6,5% NET 2024-2029",
+          "montant_leve_fcfa": 8272950000,
+          "echeances": [
+            {
+              "date": "29/03/2027",
+              "amortissement_capital": 2757650000,
+              "interets": 537741750,
+              "total": 3295391750
+            },
+            {
+              "date": "29/03/2028",
+              "amortissement_capital": 2757650000,
+              "interets": 358494500,
+              "total": 3116144500
+            },
+            {
+              "date": "29/03/2029",
+              "amortissement_capital": 2757650000,
+              "interets": 179247250,
+              "total": 2936897250
+            }
+          ],
+          "total_amortissement_capital": 8272950000,
+          "total_interets": 1075483500,
+          "total_general": 9348433500
+        },
+        {
+          "valeur": "EOG 6% NET 2025-2028",
+          "montant_leve_fcfa": 56592680000,
+          "echeances": [
+            {
+              "date": "05/04/2027",
+              "amortissement_capital": "-",
+              "interets": 3395560800,
+              "total": 3395560800
+            },
+            {
+              "date": "05/04/2028",
+              "amortissement_capital": 56592680000,
+              "interets": 3395560800,
+              "total": 59988240800
+            }
+          ],
+          "total_amortissement_capital": 56592680000,
+          "total_interets": 6791121600,
+          "total_general": 63383801600
+        },
+        {
+          "valeur": "EOG 7,5% NET 2024-2031",
+          "montant_leve_fcfa": 50945040000,
+          "echeances": [
+            {
+              "date": "29/03/2027",
+              "amortissement_capital": 10189008000,
+              "interets": 14009886000,
+              "total": 14009886000
+            },
+            {
+              "date": "29/03/2028",
+              "amortissement_capital": 10189008000,
+              "interets": 13245710400,
+              "total": 13245710400
+            },
+            {
+              "date": "29/03/2029",
+              "amortissement_capital": 10189008000,
+              "interets": 12481534800,
+              "total": 12481534800
+            },
+            {
+              "date": "29/03/2030",
+              "amortissement_capital": 10189008000,
+              "interets": 11717359200,
+              "total": 11717359200
+            },
+            {
+              "date": "29/03/2031",
+              "amortissement_capital": 10189008000,
+              "interets": 10953183600,
+              "total": 10953183600
+            }
+          ],
+          "total_amortissement_capital": 50945040000,
+          "total_interets": 11462634000,
+          "total_general": 62407674000
+        },
+        {
+          "valeur": "EOG 5,6% NET 2025-2027 II",
+          "montant_leve_fcfa": 85216350000,
+          "echeances": [
+            {
+              "date": "01/10/2026",
+              "amortissement_capital": "-",
+              "interets": 4772115600,
+              "total": 4772115600
+            },
+            {
+              "date": "01/10/2027",
+              "amortissement_capital": 85216350000,
+              "interets": 4772115600,
+              "total": 89988465600
+            }
+          ],
+          "total_amortissement_capital": 85216350000,
+          "total_interets": 9544231200,
+          "total_general": 94760581200
+        },
+        {
+          "valeur": "EOG MT 6,60% NET 2024-2027",
+          "montant_leve_fcfa": 46629860000,
+          "echeances": [
+            {
+              "date": "01/07/2027",
+              "amortissement_capital": 23314930000,
+              "interets": 1538785380,
+              "total": 24853715380
+            }
+          ],
+          "total_amortissement_capital": 23314930000,
+          "total_interets": 1538785380,
+          "total_general": 24853715380
+        },
+        {
+          "valeur": "EOG 6% NET 2025-2028 II",
+          "montant_leve_fcfa": 21262410000,
+          "echeances": [
+            {
+              "date": "01/10/2026",
+              "amortissement_capital": "-",
+              "interets": 1275744600,
+              "total": 1275744600
+            },
+            {
+              "date": "01/10/2027",
+              "amortissement_capital": "-",
+              "interets": 1275744600,
+              "total": 1275744600
+            },
+            {
+              "date": "01/10/2028",
+              "amortissement_capital": 21262410000,
+              "interets": 1275744600,
+              "total": 22538154600
+            }
+          ],
+          "total_amortissement_capital": 21262410000,
+          "total_interets": 3827233800,
+          "total_general": 25089643800
+        },
+        {
+          "valeur": "EOG MT 6,75% NET 2024-2028",
+          "montant_leve_fcfa": 120300000,
+          "echeances": [
+            {
+              "date": "01/07/2027",
+              "amortissement_capital": 60150000,
+              "interets": 8120250,
+              "total": 68270250
+            },
+            {
+              "date": "01/07/2028",
+              "amortissement_capital": 60150000,
+              "interets": 4060125,
+              "total": 64210125
+            }
+          ],
+          "total_amortissement_capital": 120300000,
+          "total_interets": 12180375,
+          "total_general": 132480375
+        },
+        {
+          "valeur": "EOG MT 7% NET 2024-2030",
+          "montant_leve_fcfa": 1691350000,
+          "echeances": [
+            {
+              "date": "01/07/2027",
+              "amortissement_capital": 422837500,
+              "interets": 118394500,
+              "total": 541232000
+            },
+            {
+              "date": "01/07/2028",
+              "amortissement_capital": 422837500,
+              "interets": 88795875,
+              "total": 511633375
+            },
+            {
+              "date": "01/07/2029",
+              "amortissement_capital": 422837500,
+              "interets": 59197250,
+              "total": 482034750
+            },
+            {
+              "date": "01/07/2030",
+              "amortissement_capital": 422837500,
+              "interets": 29598625,
+              "total": 452436125
+            }
+          ],
+          "total_amortissement_capital": 1691350000,
+          "total_interets": 295986250,
+          "total_general": 1987336250
+        },
+        {
+          "valeur": "EOG MT 6,6% NET 2024-2027",
+          "montant_leve_fcfa": 66249570000,
+          "echeances": [
+            {
+              "date": "30/12/2026",
+              "amortissement_capital": 33124785000,
+              "interets": 4372471620,
+              "total": 37497256620
+            },
+            {
+              "date": "30/12/2027",
+              "amortissement_capital": 33124785000,
+              "interets": 2186235810,
+              "total": 35311020810
+            }
+          ],
+          "total_amortissement_capital": 66249570000,
+          "total_interets": 6558707430,
+          "total_general": 72808277430
+        },
+        {
+          "valeur": "EOG MT 6,75% NET 2024-2028",
+          "montant_leve_fcfa": 356230000,
+          "echeances": [
+            {
+              "date": "30/12/2026",
+              "amortissement_capital": 0,
+              "interets": 24045525,
+              "total": 24045525
+            },
+            {
+              "date": "30/12/2027",
+              "amortissement_capital": 178115000,
+              "interets": 24045525,
+              "total": 202160525
+            },
+            {
+              "date": "30/12/2028",
+              "amortissement_capital": 178115000,
+              "interets": 12022763,
+              "total": 190137763
+            }
+          ],
+          "total_amortissement_capital": 356230000,
+          "total_interets": 60113813,
+          "total_general": 416343813
+        },
+        {
+          "valeur": "EOG MT 7,00% NET 2024-2030",
+          "montant_leve_fcfa": 13459960000,
+          "echeances": [
+            {
+              "date": "30/12/2026",
+              "amortissement_capital": 0,
+              "interets": 942197200,
+              "total": 942197200
+            },
+            {
+              "date": "30/12/2027",
+              "amortissement_capital": 3364990000,
+              "interets": 942197200,
+              "total": 4307187200
+            },
+            {
+              "date": "30/12/2028",
+              "amortissement_capital": 3364990000,
+              "interets": 706647900,
+              "total": 4071637900
+            },
+            {
+              "date": "30/12/2029",
+              "amortissement_capital": 3364990000,
+              "interets": 471098600,
+              "total": 3836088600
+            },
+            {
+              "date": "30/12/2030",
+              "amortissement_capital": 3364990000,
+              "interets": 235549300,
+              "total": 3600539300
+            }
+          ],
+          "total_amortissement_capital": 13459960000,
+          "total_interets": 3297690200,
+          "total_general": 16757650200
+        }
+      ]
+    },
+    "ETAT_DU_TCHAD": {
+      "type": "obligation_etat",
+      "profil": {
+        "nom": "ETAT DU TCHAD",
+        "chef_etat": "S.E Mahamat IDRISS DEBY",
+        "forme_etat": "République souveraine, indépendante, laïque, sociale, une et indivisible où le Président de la République, occupe les fonctions de Chef de l'Etat et Chef Suprême des Armées.",
+        "capitale": "N'Djamena",
+        "langues_officielles": "Français et arabe",
+        "richesses": "bovins, coton, pétrole, gomme arabique, mil, sorgho, arachide, natron.",
+        "superficie_km2": 1284000,
+        "superficie_source": "Banque Mondiale du 25/08/26",
+        "population": 21003705,
+        "population_source": "Banque Mondiale du 25/08/26",
+        "mnemo": "EOTD",
+        "encours_titres_circulant_cote_fcfa": 50000000000,
+        "date_encours": "13/01/2026"
+      },
+      "indicateurs_economiques": {
+        "photo": "15/10/25",
+        "annees": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "taux_inflation_annuel_moyen_pct": [
+          5.8,
+          10.8,
+          8.9,
+          -3.9
+        ],
+        "pib_nominal_milliards_usd": [
+          17.83,
+          18.35,
+          19.91,
+          21.47
+        ],
+        "ide_entrees_nettes_milliards_usd": [
+          0.61,
+          0.91,
+          1.02,
+          "-"
+        ],
+        "dettes_exterieures_milliards_usd": [
+          3.27,
+          3.19,
+          3.35,
+          "-"
+        ]
+      },
+      "rating_solvabilite_long_terme": {
+        "annees": [
+          2024,
+          2025
+        ],
+        "Fitch": [
+          "B- (Perspective stable)",
+          "B- (Perspective stable) *"
+        ],
+        "S&P": [
+          "B-/B (stable)",
+          "B-/B (stable) **"
+        ],
+        "note": "*Au 27 octobre ; **Au 28 février"
+      },
+      "historique_emissions": [
+        {
+          "nom": "ETAT TCHADIEN 6 % NET 2011 – 2016",
+          "montant_fcfa": 100000000000,
+          "taux_interet_net": "6 %",
+          "date_cotation": "-",
+          "date_echeance": "2016",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "ETAT DU TCHAD 6 % NET 2013 – 2018",
+          "montant_fcfa": 85000000000,
+          "taux_interet_net": "6 %",
+          "date_cotation": "24 février 2014",
+          "date_echeance": "2018",
+          "encours_residuel_cote_fcfa": 0
+        },
+        {
+          "nom": "EOTD 6,5% NET 2022-2027",
+          "montant_fcfa": 100000000000,
+          "taux_interet_net": "6,5%",
+          "date_cotation": "24 mars 2023",
+          "date_echeance": "30/12/2027",
+          "encours_residuel_cote_fcfa": 50000000000
+        }
+      ],
+      "echeancier_emprunts": [
+        {
+          "valeur": "EOTD 6,5% NET 2022-2027",
+          "montant_leve_fcfa": 100000000000,
+          "echeances": [
+            {
+              "date": "30/12/2026",
+              "amortissement_capital": 25000000000,
+              "coupon_interets_annuels": 3250000000,
+              "total": 28250000000
+            },
+            {
+              "date": "30/12/2027",
+              "amortissement_capital": 25000000000,
+              "coupon_interets_annuels": 1625000000,
+              "total": 26625000000
+            }
+          ],
+          "total_amortissement_capital": 50000000000,
+          "total_interets": 9750000000,
+          "total_general": 59750000000
+        }
+      ]
+    },
+    "SNPC": {
+      "type": "obligation",
+      "profil": {
+        "denomination_sociale": "Société Nationale des Pétroles du Congo",
+        "nom_commercial": "SNPC",
+        "secteur_activite": "pétrolier",
+        "capital_social_fcfa": 81334654844,
+        "mnemo": "SNPC 1",
+        "encours_titres_dette_cotes_fcfa": 25668800000,
+        "date_encours": "31/12/25"
+      },
+      "conseil_administration": [
+        {
+          "nom": "Enoch MIATABOUNA",
+          "fonction": "Président du Conseil d'Administration, représentant Présidence de la République"
+        },
+        {
+          "nom": "Katia MOUNTHAULT-TATU",
+          "fonction": "Administrateur, représentant de la Primature"
+        },
+        {
+          "nom": "Brice DEBI",
+          "fonction": "Administrateur, représentant du Ministère des Hydrocarbures"
+        },
+        {
+          "nom": "Serge NDEKO",
+          "fonction": "Administrateur, représentant du Ministère chargé des finances et du budget"
+        },
+        {
+          "nom": "Brice ONDONGO-EZHET",
+          "fonction": "Administrateur, représentant du Ministère chargé du portefeuille public"
+        },
+        {
+          "nom": "Mildia Harold Cardorel MILANDOU",
+          "fonction": "Administrateur, représentant du Ministère chargé de l'environnement"
+        },
+        {
+          "nom": "IBATA BI-DIA-AYO",
+          "fonction": "Administrateur, représentant du personnel de la SNPC"
+        },
+        {
+          "nom": "Antoine DELICA",
+          "fonction": "Administrateur"
+        },
+        {
+          "nom": "Paul Junior KINGA SATHOUD",
+          "fonction": "Administrateur"
+        }
+      ],
+      "actionnariat": {
+        "ETAT CONGOLAIS, ACTIONNAIRE UNIQUE": "100%"
+      },
+      "indicateurs_activite_au_31_decembre": {
+        "unite": "FCFA",
+        "annees": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "total_bilan": [
+          4764254303.55,
+          5213654943.58,
+          5927488903.59,
+          6289992105.49
+        ],
+        "chiffre_affaires": [
+          1595554734.5,
+          1260850516.02,
+          1175843506.47,
+          1057484290.77
+        ],
+        "resultat_net": [
+          110507439.31,
+          122923786.91,
+          34121923.46,
+          2350610.62
+        ]
+      },
+      "historique_emissions": [
+        {
+          "nom": "SNPC 6,5% NET 2024-2029",
+          "montant_fcfa": 32086000000,
+          "taux_interet": "6,5%",
+          "date_cotation": "15/10/2025",
+          "date_echeance": "31/12/2029",
+          "encours_residuel_cote_fcfa": 25668800000
+        }
+      ],
+      "echeancier_emprunts": [
+        {
+          "date": "31/12/2026",
+          "amortissement_capital": 6417200000,
+          "coupon_interets_annuels": 1668472000,
+          "total": 8085672000
+        },
+        {
+          "date": "31/12/2027",
+          "amortissement_capital": 6417200000,
+          "coupon_interets_annuels": 1251354000,
+          "total": 7668554000
+        },
+        {
+          "date": "31/12/2028",
+          "amortissement_capital": 6417200000,
+          "coupon_interets_annuels": 834236000,
+          "total": 7251436000
+        },
+        {
+          "date": "31/12/2029",
+          "amortissement_capital": 6417200000,
+          "coupon_interets_annuels": 417118000,
+          "total": 6834318000
+        }
+      ],
+      "total_echeancier": {
+        "amortissement_capital": 25668800000,
+        "coupon_interets_annuels": 4171180000,
+        "total": 29839980000
+      },
+      "adresses_contacts": {
+        "adresse": "Boulevard Denis SASSOU-NGUESSO, boite postale 188, Brazzaville - République du Congo"
+      }
+    }
+  }
+}
